@@ -4,27 +4,29 @@ const currentYear = new Date().getFullYear();
 
 document.querySelector('#app').innerHTML = `
   <div class="page">
-    <header class="top-header">
-      <div class="brand-block">
-        <div class="logo-mark" aria-hidden="true">AP</div>
-        <div>
-          <span class="brand-name">APS 행정사사무소</span>
-          <span class="brand-name">APS 컨설팅 그룹</span>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand-block">
+          <div class="logo-mark" aria-hidden="true">AP</div>
+          <div class="brand-text">
+            <span class="brand-name">APS 행정사사무소</span>
+            <span class="brand-name">APS 컨설팅 그룹</span>
+          </div>
         </div>
+        <nav class="primary-nav" aria-label="주요 메뉴">
+          <ul>
+            <li><button type="button" class="nav-link active" data-target="intro">소개</button></li>
+            <li><button type="button" class="nav-link" data-target="members">구성원</button></li>
+            <li><button type="button" class="nav-link" data-target="services">업무</button></li>
+            <li><button type="button" class="nav-link" data-target="alliances">협력 네트워크</button></li>
+            <li><button type="button" class="nav-link" data-target="advisory">전문 자문</button></li>
+            <li><button type="button" class="nav-link" data-target="news">소식</button></li>
+            <li><button type="button" class="nav-link" data-target="contact">문의</button></li>
+          </ul>
+        </nav>
+        <div class="header-spacer" aria-hidden="true"></div>
       </div>
     </header>
-
-    <nav class="primary-nav" aria-label="주요 메뉴">
-      <ul>
-        <li><button type="button" class="nav-link active" data-target="intro">소개</button></li>
-        <li><button type="button" class="nav-link" data-target="members">구성원</button></li>
-        <li><button type="button" class="nav-link" data-target="services">업무</button></li>
-        <li><button type="button" class="nav-link" data-target="alliances">협력 네트워크</button></li>
-        <li><button type="button" class="nav-link" data-target="advisory">전문 자문</button></li>
-        <li><button type="button" class="nav-link" data-target="news">소식</button></li>
-        <li><button type="button" class="nav-link" data-target="contact">문의</button></li>
-      </ul>
-    </nav>
 
     <main>
       <section data-view="intro" class="view active">
