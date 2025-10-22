@@ -1,14 +1,13 @@
-/* style.css (최종 수정: sticky 유지, main min-height로 찌그러짐 방지, 콘텐츠 확장 허용) */
 :root {
   --header-height: 80px;
-  --footer-height: 64px;
+  --footer-height: 64px; /* 푸터 높이 줄임: 88px -> 64px */
   color-scheme: light;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   line-height: 1.7;
   font-size: 16px;
-  background-color: #f0f8ff;
-  color: #2c3e50;
-  scrollbar-gutter: stable;
+  background-color: #f0f8ff; /* 은은한 연한 블루 배경 */
+  color: #2c3e50; /* 부드러운 다크 텍스트 */
+  scrollbar-gutter: stable; /* 스크롤바 공간 고정으로 레이아웃 시프트 방지 */
 }
 
 * {
@@ -16,17 +15,14 @@
 }
 
 html {
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: scroll; /* 스크롤바 공간 항상 예약하여 탭 전환 시 밀림 방지 */
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #fafafa;
-  /* padding 제거: sticky가 공간 차지 */
-  overflow-x: hidden;
-  scroll-padding-top: var(--header-height);
+  background-color: #fafafa; /* 아주 연한 회색 배경 */
+  scroll-padding-top: var(--header-height); /* scroll-padding을 헤더 높이만큼만: +8px 제거로 이격 최소화 */
 }
 
 a {
@@ -42,19 +38,20 @@ a:not(.button):not(.inline-link) {
 }
 
 .page {
-  display: block; /* flex에서 block으로 변경: sticky 기준을 viewport로 맞춤 */
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  background-color: transparent;
+  background-color: transparent; /* 투명하게 변경하여 body 배경 보이게 */
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(30, 58, 138, 0.95);
-  color: #ffffff;
+  background: rgba(30, 58, 138, 0.95); /* 신뢰감 주는 어두운 네이비 블루 */
+  color: #ffffff; /* 흰 텍스트로 대비 */
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 흰 테두리 */
 }
 
 .header-inner {
@@ -87,7 +84,7 @@ a:not(.button):not(.inline-link) {
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  background: linear-gradient(135deg, #1e40af, #1e3a8a); /* 어두운 네이비 그라데이션 */
   display: grid;
   place-items: center;
   font-weight: 700;
@@ -103,7 +100,7 @@ a:not(.button):not(.inline-link) {
 }
 
 .menu-toggle {
-  display: none;
+  display: none; /* 데스크톱에서 숨김 */
   flex-direction: column;
   justify-content: space-around;
   width: 32px;
@@ -155,7 +152,7 @@ a:not(.button):not(.inline-link) {
   display: block;
   padding: 8px 14px;
   border-radius: 999px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9); /* 연한 흰 텍스트 */
   font-weight: 600;
   font-size: 0.9rem;
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -184,8 +181,11 @@ a:not(.button):not(.inline-link) {
 }
 
 main {
-  display: block; /* flex에서 block으로 변경: sticky와의 충돌 방지 */
-  padding: 20px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 calc(var(--footer-height) + 24px); /* 상단 20px로 적당히 유지, 이유 없는 이격 제거 */
   gap: 40px;
   width: 100%;
   max-width: 1400px;
@@ -193,16 +193,14 @@ main {
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(30, 58, 138, 0.1);
-  min-height: calc(100vh - var(--header-height) - var(--footer-height)); /* 최소 높이: 찌그러짐 방지, 확장 허용 */
-  overflow-y: visible; /* auto에서 visible로 변경: sticky 기준 회복 */
 }
 
 .view {
   display: none;
   flex-direction: column;
-  gap: 40px;
+  gap: 40px; /* gap 줄임: 80px -> 40px */
   width: 100%;
-  padding: 0 clamp(24px, 6vw, 120px);
+  padding: 0 clamp(24px, 6vw, 120px); /* 내부 콘텐츠에만 패딩으로 여백 주기 (고정 사이즈 안에서) */
   overflow: hidden;
 }
 
@@ -213,7 +211,7 @@ main {
 .section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 16px; /* gap 줄임: 32px -> 16px */
 }
 
 .section-heading h2 {
@@ -233,7 +231,7 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 48px;
   align-items: center;
-  background: linear-gradient(135deg, rgba(225, 245, 254, 0.9), rgba(179, 229, 252, 0.9)), url('');
+  background: linear-gradient(135deg, rgba(225, 245, 254, 0.9), rgba(179, 229, 252, 0.9)), url(''); /* 은은한 블루 */
   padding: clamp(48px, 8vw, 96px);
   color: #2c3e50;
   border-radius: 32px;
@@ -295,7 +293,7 @@ main {
 }
 
 .button.primary {
-  background: #fff9c4;
+  background: #fff9c4; /* 연한 옐로우 유지 */
   color: #2c3e50;
   box-shadow: 0 16px 32px rgba(255, 249, 196, 0.3);
 }
@@ -354,7 +352,7 @@ main {
 }
 
 .values-grid article {
-  background: #e1f5fe;
+  background: #e1f5fe; /* 연한 블루 백그라운드 */
   color: rgba(44, 62, 80, 0.9);
   border-radius: 22px;
   padding: 24px;
@@ -377,7 +375,7 @@ main {
 }
 
 .inline-link {
-  color: #1e40af;
+  color: #1e40af; /* 어두운 네이비 링크 */
   font-weight: 600;
   text-decoration: none;
   display: inline-flex;
@@ -445,7 +443,7 @@ main {
 .service-card {
   padding: 24px;
   border-radius: 22px;
-  background: linear-gradient(145deg, #e1f5fe, #e3f2fd);
+  background: linear-gradient(145deg, #e1f5fe, #e3f2fd); /* 연한 블루 그라데이션 */
   color: #2c3e50;
   box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
 }
@@ -495,7 +493,7 @@ main {
   content: counter(steps, decimal-leading-zero);
   font-size: 0.8rem;
   font-weight: 700;
-  color: #1e40af;
+  color: #1e40af; /* 어두운 네이비 번호 */
   margin-right: 8px;
 }
 
@@ -584,7 +582,7 @@ main {
 }
 
 .newsletter-box {
-  background: linear-gradient(145deg, #e1f5fe, #e3f2fd);
+  background: linear-gradient(145deg, #e1f5fe, #e3f2fd); /* 연한 블루 그라데이션 */
   color: #2c3e50;
   padding: 28px;
   border-radius: 24px;
@@ -692,13 +690,13 @@ main {
 }
 
 .page-footer {
+  background: rgba(30, 58, 138, 0.95); /* 신뢰감 주는 어두운 네이비 블루 */
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8px clamp(20px, 5vw, 64px); /* 푸터 패딩 줄임: 12px -> 8px */
+  font-size: 0.82rem;
   position: sticky;
   bottom: 0;
   z-index: 35;
-  background: rgba(30, 58, 138, 0.95);
-  color: rgba(255, 255, 255, 0.9);
-  padding: 8px clamp(20px, 5vw, 64px);
-  font-size: 0.82rem;
   backdrop-filter: blur(6px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -711,7 +709,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: clamp(8px, 2vw, 16px);
+  gap: clamp(8px, 2vw, 16px); /* 푸터 내부 gap 줄임: 12px~32px -> 8px~16px */
   flex-wrap: wrap;
 }
 
@@ -736,13 +734,14 @@ main {
   opacity: 0.7;
 }
 
+
 @media (max-width: 1200px) {
   :root {
     --header-height: 88px;
   }
 
   main {
-    max-width: 1200px;
+    max-width: 1200px; /* 고정 사이즈를 반응형으로 조정 */
   }
 
   .hero {
@@ -751,17 +750,21 @@ main {
 }
 
 @media (max-width: 960px) {
+  body {
+    background-color: #fafafa; /* 모바일에서도 연한 회색 유지 */
+    scroll-padding-top: var(--header-height); /* 모바일 scroll-padding 헤더 높이만큼만 */
+  }
+
   :root {
-    --header-height: 72px;
-    --footer-height: 56px;
+    --header-height: 72px; /* 모바일 헤더 높이 줄임: 104px -> 72px */
+    --footer-height: 56px; /* 모바일 푸터 높이 줄임: 80px -> 56px */
   }
 
   main {
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    padding: 20px 0;
-    max-width: 960px;
-    border-radius: 16px;
-    gap: 32px;
+    padding: var(--header-height) 0 calc(var(--footer-height) + 16px); /* 모바일 상단 패딩을 헤더 높이만큼 추가, 하단 최소화 */
+    max-width: 960px; /* 고정 사이즈를 반응형으로 조정 */
+    border-radius: 16px; /* 모바일에서 둥근 모서리 줄임 */
+    gap: 32px; /* 모바일 gap 추가 줄임: 40px -> 32px */
   }
 
   .hero {
@@ -778,11 +781,11 @@ main {
   }
 
   .header-inner {
-    flex-direction: row;
+    flex-direction: row; /* row로 유지하되, 메뉴 토글 추가 */
     align-items: center;
     justify-content: space-between;
     gap: 0;
-    padding: 8px clamp(16px, 4vw, 48px);
+    padding: 8px clamp(16px, 4vw, 48px); /* 헤더 내부 패딩 줄임 */
   }
 
   .header-spacer {
@@ -790,27 +793,22 @@ main {
   }
 
   .menu-toggle {
-    display: flex;
-    order: 3;
+    display: flex; /* 모바일에서 햄버거 버튼 표시 */
+    order: 3; /* 브랜드와 네비 사이에 위치 */
   }
 
   .primary-nav {
-    position: fixed;
-    top: var(--header-height);
+    position: fixed; /* fixed로 변경해서 헤더와 독립 */
+    top: var(--header-height); /* 헤더 높이만큼 아래로 고정 */
     left: 0;
     right: 0;
-    width: 100%;
-    max-width: none;
     background: rgba(30, 58, 138, 0.98);
     backdrop-filter: blur(12px);
     flex-direction: column;
-    padding: clamp(16px, 4vw, 48px);
-    margin: 0;
+    padding: 16px;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
-    z-index: 50;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    z-index: 50; /* 헤더(60) 아래로 낮춤: 레이어 충돌 방지 */
   }
 
   .primary-nav.active {
@@ -820,64 +818,65 @@ main {
   .primary-nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 12px; /* 세로 간격 증가 */
     width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
   }
 
   .primary-nav .nav-link {
     flex: none;
     width: 100%;
     text-align: center;
-    padding: clamp(12px, 3vw, 16px) clamp(20px, 5vw, 20px);
-    font-size: 1rem;
+    padding: 16px 20px; /* 패딩 증가로 터치 편하게 */
+    font-size: 1rem; /* 폰트 크기 약간 증가 */
     border-radius: 12px;
   }
 
   .view {
-    padding: 0 clamp(20px, 6vw, 48px);
-    gap: 32px;
+    padding: 0 clamp(20px, 6vw, 48px); /* 모바일 패딩 조정 */
+    gap: 32px; /* 모바일 view gap 줄임 */
   }
 
   .section {
-    gap: 12px;
+    gap: 12px; /* 모바일 section gap 추가 줄임 */
   }
 
   .page-footer {
-    padding: 6px clamp(16px, 4vw, 48px);
+    padding: 6px clamp(16px, 4vw, 48px); /* 모바일 푸터 패딩 줄임 */
+  }
+
+  .footer-inner {
+    gap: clamp(6px, 2vw, 12px); /* 모바일 푸터 내부 gap 더 줄임 */
+    align-items: flex-start; /* 위아래 촘촘하게: flex-start로 정렬 */
   }
 }
 
 @media (max-width: 640px) {
   :root {
-    --header-height: 64px;
-    --footer-height: 48px;
+    --header-height: 64px; /* 작은 화면 헤더 더 줄임: 72px -> 64px */
+    --footer-height: 48px; /* 작은 화면 푸터 더 줄임: 56px -> 48px */
   }
 
   .header-inner,
   .primary-nav ul,
   .page-footer {
     padding-left: 16px;
-    padding-right: 16px;
+    padding-right: 16px; /* 패딩 더 줄임 */
   }
 
   main {
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
-    padding: 20px 0;
-    gap: 24px;
-    max-width: 100%;
+    padding: var(--header-height) 0 calc(var(--footer-height) + 12px); /* 작은 화면 상단 헤더 패딩 유지, 하단 최소화 */
+    gap: 24px; /* 작은 화면 gap 더 줄임 */
+    max-width: 100%; /* 모바일에서 풀 너비 고정 */
   }
 
   .hero {
-    padding: 40px 20px;
+    padding: 40px 20px; /* hero 패딩 줄임 */
   }
 
   .footer-inner {
     justify-content: center;
     text-align: center;
-    gap: 4px;
+    gap: 4px; /* 작은 화면 푸터 gap 최소화 */
   }
 
   .footer-line,
@@ -886,23 +885,23 @@ main {
   }
 
   .view {
-    padding: 0 16px;
-    gap: 24px;
+    padding: 0 16px; /* 모바일 풀 패딩 더 줄임 */
+    gap: 24px; /* 작은 화면 view gap 줄임 */
   }
 
   .section {
-    gap: 8px;
+    gap: 8px; /* 작은 화면 section gap 최소화 */
   }
 
   .primary-nav .nav-link {
-    padding: clamp(12px, 3vw, 14px) clamp(16px, 4vw, 16px);
+    padding: 14px 16px;
   }
 
   .brand-text {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* 작은 화면 브랜드 텍스트 크기 줄임 */
   }
 
   .page-footer {
-    padding: 4px 16px;
+    padding: 4px 16px; /* 작은 화면 푸터 패딩 최소화 */
   }
 }

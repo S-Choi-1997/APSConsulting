@@ -461,7 +461,6 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
-// DOM이 완전히 로드된 후 실행 (innerHTML 설정 후)
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const views = document.querySelectorAll('.view');
@@ -471,12 +470,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const headerInner = document.querySelector('.header-inner');
   const page = document.querySelector('.page');
 
-  // 모바일(960px 이하)일 때만 primary-nav를 header-inner에서 page로 이동: 부모-자식 관계 분리
-  // 데스크톱에서는 원래 위치 유지
-  const isMobile = window.innerWidth <= 960;
-  if (isMobile && primaryNav && headerInner && page) {
-    page.appendChild(primaryNav); // page (body 역할)로 이동
-    // CSS에서 이미 position: fixed이므로 자동으로 분리됨
+  // 화면 크기에 따라 primary-nav 위치 결정
+  if (primaryNav && headerInner && page) {
+    if (window.innerWidth > 960) {
+      // 데스크톱: header-inner 안에 넣기
+      if (!headerInner.contains(primaryNav)) {
+        headerInner.insertBefore(primaryNav, headerInner.querySelector('.header-spacer'));
+      }
+    } else {
+      // 모바일: page로 이동
+      page.appendChild(primaryNav);
+    }
   }
 
   const activateView = (target) => {
@@ -506,31 +510,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 햄버거 메뉴 토글: 이제 primary-nav가 body에 있으므로 독립적으로 토글 (모바일 한정)
+  // 햄버거 메뉴 토글
   menuToggle.addEventListener('click', () => {
     const isExpanded = primaryNav.classList.toggle('active');
     menuToggle.setAttribute('aria-expanded', isExpanded);
-  });
-
-  // 리사이즈 핸들러: 화면 크기 변경 시 모바일/데스크톱 전환 처리
-  let resizeTimeout;
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      const newIsMobile = window.innerWidth <= 960;
-      if (newIsMobile !== isMobile && primaryNav && headerInner && page) {
-        if (newIsMobile) {
-          // 모바일로 전환: 이동
-          if (primaryNav.parentNode !== page) {
-            page.appendChild(primaryNav);
-          }
-        } else {
-          // 데스크톱으로 전환: 원래 위치로 복귀
-          if (primaryNav.parentNode === page) {
-            headerInner.appendChild(primaryNav);
-          }
-        }
-      }
-    }, 100); // 디바운스: 100ms 지연
   });
 });
