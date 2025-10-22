@@ -12,11 +12,6 @@ document.querySelector('#app').innerHTML = `
           <span class="brand-name">APS 컨설팅 그룹</span>
         </div>
       </div>
-      <div class="contact-mini">
-        <a href="tel:0223457890" aria-label="전화 02-2345-7890">Tel. 02-2345-7890</a>
-        <span aria-hidden="true">/</span>
-        <a href="mailto:contact@apsconsulting.kr">contact@apsconsulting.kr</a>
-      </div>
     </header>
 
     <nav class="primary-nav" aria-label="주요 메뉴">
@@ -434,9 +429,26 @@ document.querySelector('#app').innerHTML = `
     </main>
 
     <footer class="page-footer">
-      <div>APS 행정사사무소 &amp; APS 컨설팅 그룹 · 사업자등록번호 511-26-00645</div>
-      <div>[06716] 서울 서초구 반포대로20 정주빌딩6층1호 · Tel. 02-2345-7890 · Fax. 02-6941-0219</div>
-      <div>© ${currentYear} APS Consulting Group. All Rights Reserved.</div>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo" aria-hidden="true">AP</span>
+          <div>
+            <div>APS 행정사사무소 &amp; APS 컨설팅 그룹</div>
+            <div>사업자등록번호 511-26-00645</div>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <div>[06716] 서울 서초구 반포대로20 정주빌딩6층1호</div>
+          <div>
+            <a href="tel:0223457890" aria-label="전화 02-2345-7890">Tel. 02-2345-7890</a>
+            <span aria-hidden="true">·</span>
+            <span>Fax. 02-6941-0219</span>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:contact@apsconsulting.kr">contact@apsconsulting.kr</a>
+          </div>
+        </div>
+        <div>© ${currentYear} APS Consulting Group. All Rights Reserved.</div>
+      </div>
     </footer>
   </div>
 `;
