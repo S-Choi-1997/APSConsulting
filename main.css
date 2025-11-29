@@ -424,16 +424,18 @@ input:focus, textarea:focus, select:focus {
 #main-visual .swiper-pagination-bullet {
     width: 14px;
     height: 14px;
-    background: var(--primary);
-    opacity: 0.3;
+    background: #ffffff;
+    opacity: 0.5;
     margin: 0 8px;
+    transition: all 0.3s ease;
 }
 
 #main-visual .swiper-pagination-bullet-active {
-    background: var(--second);
+    background: var(--primary-lighter);
     opacity: 1;
     width: 45px;
     border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(5, 99, 184, 0.4);
 }
 
 /* ============================================
