@@ -13,6 +13,11 @@ document.querySelector('#app').innerHTML = `
             <span class="brand-name">APS 컨설팅 그룹</span>
           </div>
         </div>
+        <button type="button" class="menu-toggle" aria-label="메뉴 토글" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <nav class="primary-nav" aria-label="주요 메뉴">
           <ul>
             <li><button type="button" class="nav-link active" data-target="intro">소개</button></li>
@@ -108,7 +113,7 @@ document.querySelector('#app').innerHTML = `
             <h2>핵심 구성원</h2>
             <p>현장 실무와 전략 컨설팅을 겸비한 팀이 통합 솔루션을 제공합니다.</p>
           </div>
-          <div class="card-grid three">
+          <div class="card-grid four">
             <article class="profile-card">
               <div class="image-placeholder" role="img" aria-label="수석 행정사 사진"></div>
               <h3>수석 행정사</h3>
@@ -137,6 +142,16 @@ document.querySelector('#app').innerHTML = `
                 <li>디지털 문서 중앙 관리</li>
                 <li>온라인 브리핑 &amp; 보고</li>
                 <li>대외 커뮤니케이션 전담</li>
+              </ul>
+            </article>
+            <article class="profile-card">
+              <div class="image-placeholder" role="img" aria-label="행정사 사진"></div>
+              <h3>행정사</h3>
+              <p>인허가 절차 전문가. 환경·안전·건축 분야의 실무 경험을 바탕으로 고객 프로젝트를 지원합니다.</p>
+              <ul>
+                <li>환경부 인허가 심사위원</li>
+                <li>중소기업 지원 프로젝트 리더</li>
+                <li>지역 개발 규제 컨설턴트</li>
               </ul>
             </article>
           </div>
@@ -446,30 +461,58 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
-const navLinks = document.querySelectorAll('.nav-link');
-const views = document.querySelectorAll('.view');
-const heroButtons = document.querySelectorAll('.hero-actions .button');
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const views = document.querySelectorAll('.view');
+  const heroButtons = document.querySelectorAll('.hero-actions .button');
+  const menuToggle = document.querySelector('.menu-toggle');
+  const primaryNav = document.querySelector('.primary-nav');
+  const headerInner = document.querySelector('.header-inner');
+  const page = document.querySelector('.page');
 
-const activateView = (target) => {
+  // 화면 크기에 따라 primary-nav 위치 결정
+  if (primaryNav && headerInner && page) {
+    if (window.innerWidth > 960) {
+      // 데스크톱: header-inner 안에 넣기
+      if (!headerInner.contains(primaryNav)) {
+        headerInner.insertBefore(primaryNav, headerInner.querySelector('.header-spacer'));
+      }
+    } else {
+      // 모바일: page로 이동
+      page.appendChild(primaryNav);
+    }
+  }
+
+  const activateView = (target) => {
+    navLinks.forEach((link) => {
+      link.classList.toggle('active', link.dataset.target === target);
+    });
+
+    views.forEach((view) => {
+      view.classList.toggle('active', view.dataset.view === target);
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   navLinks.forEach((link) => {
-    link.classList.toggle('active', link.dataset.target === target);
+    link.addEventListener('click', () => {
+      activateView(link.dataset.target);
+      // 모바일 메뉴 닫기
+      primaryNav.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 
-  views.forEach((view) => {
-    view.classList.toggle('active', view.dataset.view === target);
+  heroButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      activateView(button.dataset.target);
+    });
   });
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-};
-
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    activateView(link.dataset.target);
-  });
-});
-
-heroButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    activateView(button.dataset.target);
+  // 햄버거 메뉴 토글
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = primaryNav.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', isExpanded);
   });
 });
