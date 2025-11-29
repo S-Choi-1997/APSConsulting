@@ -184,14 +184,7 @@
 
                 <div class="location-container" data-aos="fade-up">
                     <div class="location-map">
-                        <!-- 지도는 실제로는 구글 지도나 네이버 지도 API를 사용 -->
-                        <div class="map-placeholder">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                                <circle cx="12" cy="10" r="3"></circle>
-                            </svg>
-                            <p>지도를 표시하려면 지도 API를 연동하세요</p>
-                        </div>
+                        <div id="map" style="width:100%;height:100%;"></div>
                     </div>
 
                     <div class="location-info">
@@ -336,6 +329,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=swbbjut5yp"></script>
     <script src="./main.js"></script>
+    <script>
+        // 네이버 지도 초기화
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.385034, 127.120439),
+            zoom: 17
+        };
+        var map = new naver.maps.Map('map', mapOptions);
+
+        // 마커 추가
+        var marker = new naver.maps.Marker({
+            position: new naver.maps.LatLng(37.385034, 127.120439),
+            map: map
+        });
+    </script>
 </body>
 </html>
