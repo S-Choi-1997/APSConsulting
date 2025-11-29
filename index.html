@@ -1,17 +1,455 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <title>APS 행정사 사무소</title>
-    <meta
-      name="description"
-      content="APS 행정사 사무소 소개 및 제공 서비스 안내 페이지"
-    />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO 메타태그 -->
+    <title>○○ 행정사합동사무소 | 인허가 전문</title>
+    <meta name="description" content="전문 행정사가 제공하는 인허가, 기업인증, 토지보상, 부동산 행정 등 종합 행정법률 서비스">
+    <meta name="keywords" content="행정사, 인허가, 기업인증, 토지보상, 부동산행정, 민원행정">
+
+    <!-- Open Graph (SNS 공유) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="○○ 행정사합동사무소">
+    <meta property="og:description" content="전문 행정사가 제공하는 종합 행정법률 서비스">
+    <meta property="og:image" content="./images/og-image.jpg">
+    <meta property="og:url" content="https://yoursite.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/logo.ico">
+
+    <!-- CSS - CDN 라이브러리 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- CSS - 메인 스타일 -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!-- 메인 래퍼 -->
+    <div id="wrapper">
+
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="header-inner">
+                <!-- 로고 -->
+                <h1 class="logo">
+                    <a href="index.html">
+                        <img src="./images/logo.png" alt="○○ 행정사합동사무소">
+                    </a>
+                </h1>
+
+                <!-- PC 메뉴 -->
+                <nav class="main-nav" aria-label="주 메뉴">
+                    <ul>
+                        <li><a href="index.html" class="active">홈</a></li>
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="services.html">업무분야</a></li>
+                        <li><a href="cases.html">성공사례</a></li>
+                        <li><a href="contact.html">상담신청</a></li>
+                    </ul>
+                </nav>
+
+                <!-- 모바일 메뉴 버튼 -->
+                <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- 모바일 메뉴 -->
+            <div class="mobile-menu">
+                <nav aria-label="모바일 메뉴">
+                    <ul>
+                        <li><a href="index.html">홈</a></li>
+                        <li><a href="about.html">회사소개</a></li>
+                        <li><a href="services.html">업무분야</a></li>
+                        <li><a href="cases.html">성공사례</a></li>
+                        <li><a href="contact.html">상담신청</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 메인 컨텐츠 -->
+        <main id="main-content">
+
+            <!-- 섹션 1: 메인 비주얼 슬라이더 -->
+            <section id="main-visual" class="section">
+                <div class="visual-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <span class="subtitle" data-aos="fade-up">With Professional</span>
+                                <p class="title" data-aos="fade-up" data-aos-delay="100">
+                                    전문 행정사와<br>
+                                    함께하는<br>
+                                    <strong>신뢰의 파트너</strong>
+                                </p>
+                                <p class="desc" data-aos="fade-up" data-aos-delay="200">
+                                    복잡한 행정 절차부터 기업 인증까지,<br>
+                                    15년 경험의 전문가가 빠르고 정확하게 처리합니다.
+                                </p>
+                                <div class="slide-buttons" data-aos="fade-up" data-aos-delay="300">
+                                    <a href="contact.html" class="btn-main">무료 상담 신청</a>
+                                    <a href="services.html" class="btn-secondary">업무분야 보기</a>
+                                </div>
+                            </div>
+                            <div class="slide-bg bg01"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <span class="subtitle" data-aos="fade-up">Success Together</span>
+                                <p class="title" data-aos="fade-up" data-aos-delay="100">
+                                    사업의 시작을<br>
+                                    함께하는<br>
+                                    <strong>행정 전문가</strong>
+                                </p>
+                                <p class="desc" data-aos="fade-up" data-aos-delay="200">
+                                    인허가부터 기업인증, 토지보상까지<br>
+                                    모든 행정 업무를 원스톱으로 지원합니다.
+                                </p>
+                                <div class="slide-buttons" data-aos="fade-up" data-aos-delay="300">
+                                    <a href="contact.html" class="btn-main">무료 상담 신청</a>
+                                    <a href="cases.html" class="btn-secondary">성공사례 보기</a>
+                                </div>
+                            </div>
+                            <div class="slide-bg bg02"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <span class="subtitle" data-aos="fade-up">Trust & Expertise</span>
+                                <p class="title" data-aos="fade-up" data-aos-delay="100">
+                                    850건 이상의<br>
+                                    성공 경험으로<br>
+                                    <strong>증명합니다</strong>
+                                </p>
+                                <p class="desc" data-aos="fade-up" data-aos-delay="200">
+                                    98% 고객 만족도와 95% 재의뢰율,<br>
+                                    숫자로 증명되는 전문성을 경험하세요.
+                                </p>
+                                <div class="slide-buttons" data-aos="fade-up" data-aos-delay="300">
+                                    <a href="contact.html" class="btn-main">무료 상담 신청</a>
+                                    <a href="about.html" class="btn-secondary">회사소개 보기</a>
+                                </div>
+                            </div>
+                            <div class="slide-bg bg03"></div>
+                        </div>
+                    </div>
+                    <!-- 페이지네이션 -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- 섹션 2: 간략 소개 -->
+            <section id="intro" class="section section-intro">
+                <div class="intro-container" data-aos="fade-up">
+                    <div class="intro-content">
+                        <span class="section-subtitle">ABOUT US</span>
+                        <h2 class="section-title">
+                            고객의 입장에서 생각하고,<br>
+                            고객의 권익을 최우선으로 생각합니다
+                        </h2>
+                        <p class="intro-desc">
+                            ○○ 행정사합동사무소는 고객의 이익을 최우선으로 생각하며,<br>
+                            전문성과 열정을 바탕으로 합리적이고 효과적인 행정법률 서비스를 제공합니다.<br><br>
+                            인허가부터 기업인증, 토지보상, 민원행정까지 다양한 분야에서<br>
+                            축적된 노하우와 전문성으로 고객님의 성공을 함께 만들어갑니다.
+                        </p>
+                        <a href="about.html" class="btn-primary">회사소개 자세히 보기</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 섹션 3: 주요 업무분야 -->
+            <section id="services" class="section section-services-preview">
+                <div class="section-header" data-aos="fade-in">
+                    <span class="section-subtitle">OUR SERVICES</span>
+                    <h2 class="section-title">주요 업무분야</h2>
+                    <p class="section-desc">전문성과 경험을 바탕으로 최상의 서비스를 제공합니다</p>
+                </div>
+
+                <div class="services-grid" data-aos="fade-up">
+                    <article class="service-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                            </svg>
+                        </div>
+                        <div class="card-header">
+                            <h3>인허가 행정</h3>
+                            <span class="card-subtitle">License Administration</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-desc">
+                                의약품&식품 인허가, 환경인허가, 금융인허가, 면허, 비영리법인 등
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="card-header">
+                            <h3>기업인증 및 컨설팅</h3>
+                            <span class="card-subtitle">Corporate Certification</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-desc">
+                                연구소, 벤처, ISO인증, 여성기업, 직접생산확인증명서 등
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <div class="card-header">
+                            <h3>부동산인허가 및 토지보상</h3>
+                            <span class="card-subtitle">Real Estate License</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-desc">
+                                개발행위허가, 토지보상행정업무, 국유재산매수, 위법건축물 등
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <div class="card-header">
+                            <h3>민원행정 및 행정심판</h3>
+                            <span class="card-subtitle">Administrative Judgement</span>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-desc">
+                                출입국비자, 행정심판, 정보공개청구 등
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta" data-aos="fade-up">
+                    <a href="services.html" class="btn-outline">전체 업무분야 보기</a>
+                </div>
+            </section>
+
+<!-- 섹션 5: 선택하는 이유 -->
+            <section id="why-us" class="section section-why-us">
+                <div class="why-us-container">
+                    <div class="why-us-header" data-aos="fade-up">
+                        <span class="section-subtitle">WHY CHOOSE US</span>
+                        <h2 class="section-title">○○행정사를 선택하는 이유</h2>
+                        <p class="section-desc">차별화된 전문성과 서비스로 고객의 성공을 보장합니다</p>
+                    </div>
+                    <div class="why-us-grid">
+                        <div class="why-card" data-aos="fade-right" data-aos-delay="0">
+                            <div class="why-number">01</div>
+                            <div class="why-content">
+                                <h3 class="why-title">풍부한 경험과 전문성</h3>
+                                <p class="why-desc">
+                                    850건 이상의 성공사례와 15년 이상의 노하우를 바탕으로
+                                    복잡한 행정 절차를 빠르고 정확하게 처리합니다.
+                                </p>
+                            </div>
+                            <div class="why-bg">01</div>
+                        </div>
+                        <div class="why-card" data-aos="fade-left" data-aos-delay="100">
+                            <div class="why-number">02</div>
+                            <div class="why-content">
+                                <h3 class="why-title">맞춤형 컨설팅</h3>
+                                <p class="why-desc">
+                                    고객의 상황과 요구사항을 면밀히 분석하여
+                                    최적의 솔루션을 제공하는 1:1 맞춤 상담 서비스를 제공합니다.
+                                </p>
+                            </div>
+                            <div class="why-bg">02</div>
+                        </div>
+                        <div class="why-card" data-aos="fade-right" data-aos-delay="200">
+                            <div class="why-number">03</div>
+                            <div class="why-content">
+                                <h3 class="why-title">투명한 프로세스</h3>
+                                <p class="why-desc">
+                                    모든 진행 과정을 실시간으로 공유하며,
+                                    명확한 비용 안내와 일정 관리로 신뢰를 구축합니다.
+                                </p>
+                            </div>
+                            <div class="why-bg">03</div>
+                        </div>
+                        <div class="why-card" data-aos="fade-left" data-aos-delay="300">
+                            <div class="why-number">04</div>
+                            <div class="why-content">
+                                <h3 class="why-title">사후관리 시스템</h3>
+                                <p class="why-desc">
+                                    업무 완료 후에도 지속적인 관리와 상담을 제공하여
+                                    고객의 안정적인 사업 운영을 지원합니다.
+                                </p>
+                            </div>
+                            <div class="why-bg">04</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 섹션 5: CTA (상담신청) -->
+            <section id="cta" class="section section-cta" data-aos="fade-up">
+                <div class="cta-container">
+                    <div class="cta-content">
+                        <h2 class="cta-title">전문 행정사와 상담하세요</h2>
+                        <p class="cta-desc">
+                            복잡한 행정 절차, 전문가와 함께라면 쉽고 빠르게 해결할 수 있습니다.<br>
+                            지금 바로 무료 상담을 신청하세요.
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn-primary btn-lg">온라인 상담신청</a>
+                            <a href="tel:0212345678" class="btn-outline btn-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                02-1234-5678
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 하단 고정 메뉴 -->
+        <div id="fixed-footer">
+            <div class="fixed-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <div>
+                    <strong>02-1234-5678</strong>
+                    <span>실시간 전화상담을 통해서 보다 빠른 상담 받으세요</span>
+                </div>
+            </div>
+            <ul class="fixed-links">
+                <li><a href="contact.html">빠른 상담신청</a></li>
+                <li><a href="about.html">회사소개</a></li>
+                <li><a href="cases.html">성공사례</a></li>
+            </ul>
+            <button class="to-top" aria-label="맨 위로">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                <span>TOP</span>
+            </button>
+        </div>
+
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="footer-inner">
+                <!-- 상단 -->
+                <div class="footer-top">
+                    <div class="footer-about">
+                        <img src="./images/logo.png" alt="○○ 행정사합동사무소" class="footer-logo">
+                        <p>
+                            고객의 입장에서 생각하고, 고객의 권익을 최우선으로 생각합니다.<br>
+                            전문성과 열정을 바탕으로 합리적이고 효과적인 행정법률 서비스를 제공합니다.
+                        </p>
+                        <div class="footer-contact-info">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                02-1234-5678
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                contact@example.com
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>빠른 링크</h4>
+                        <ul>
+                            <li><a href="about.html">회사소개</a></li>
+                            <li><a href="services.html">업무분야</a></li>
+                            <li><a href="cases.html">성공사례</a></li>
+                            <li><a href="contact.html">상담신청</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>주요 업무</h4>
+                        <ul>
+                            <li><a href="services.html">인허가 행정</a></li>
+                            <li><a href="services.html">기업인증 컨설팅</a></li>
+                            <li><a href="services.html">부동산인허가</a></li>
+                            <li><a href="services.html">민원행정</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 중단 -->
+                <div class="footer-info">
+                    <address>
+                        본점 : 서울특별시 강남구 테헤란로 123, 456호 &nbsp;|&nbsp; 대표 : 홍길동 &nbsp;|&nbsp; 사업자등록번호 : 123-45-67890<br>
+                        대표전화 : 02-1234-5678 &nbsp;|&nbsp; Email : contact@example.com
+                    </address>
+                </div>
+
+                <!-- 하단 -->
+                <div class="footer-copy">
+                    <p>&copy; 2025 ○○ 행정사합동사무소 All rights reserved.</p>
+                    <div class="footer-sns">
+                        <a href="#" aria-label="네이버 블로그">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16.273 12.845L7.376 0H0v24h7.726l8.898-12.845V24H24V0h-7.727v12.845z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="카카오톡">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 3c5.799 0 10.5 3.664 10.5 8.185 0 4.52-4.701 8.184-10.5 8.184a13.5 13.5 0 0 1-1.727-.11l-4.408 2.883c-.501.265-.678.236-.472-.413l.892-3.678c-2.88-1.46-4.785-3.99-4.785-6.866C1.5 6.665 6.201 3 12 3zm5.907 8.06l1.47-1.424a.472.472 0 0 0-.656-.678l-1.928 1.866V9.282a.472.472 0 0 0-.944 0v2.557a.471.471 0 0 0 0 .222V13.5a.472.472 0 0 0 .944 0v-1.363l.427-.413 1.428 2.033a.472.472 0 1 0 .773-.543l-1.514-2.155zm-2.958 1.924h-1.46V9.297a.472.472 0 0 0-.943 0v4.159c0 .26.21.472.471.472h1.932a.472.472 0 1 0 0-.944zm-5.857-1.092l.696-1.707.638 1.707H9.092zm2.523.488l.002-.016a.469.469 0 0 0-.127-.32l-1.046-2.8a.69.69 0 0 0-.627-.474.696.696 0 0 0-.653.447l-1.661 4.075a.472.472 0 0 0 .874.357l.33-.813h2.07l.299.8a.472.472 0 1 0 .884-.330l-.345-.926zM8.293 9.302a.472.472 0 0 0-.471-.472H4.577a.472.472 0 1 0 0 .944h1.16v3.736a.472.472 0 0 0 .944 0V9.774h1.14c.261 0 .472-.212.472-.472z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="인스타그램">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 모바일 전화 버튼 -->
+        <a href="contact.html" class="mobile-call-btn" aria-label="채팅상담">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </a>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./main.js"></script>
+</body>
 </html>
