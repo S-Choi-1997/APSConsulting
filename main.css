@@ -95,17 +95,17 @@ input:focus, textarea:focus, select:focus {
 /* ============================================
    3. 헤더 (화이트 배경, 두껍게)
    ============================================ */
-/* 헤더 Placeholder (sticky 작동을 위해) */
+/* 헤더 Placeholder - 컨테이너 역할만 */
 #header-placeholder {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    display: contents;
 }
 
 #header {
-    position: relative;
+    position: sticky;
+    top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
     padding: 35px 0;
     background: #ffffff;
     transition: all 0.3s ease;
@@ -1052,9 +1052,9 @@ input:focus, textarea:focus, select:focus {
 /* ============================================
    10. 하단 고정 메뉴 (중간 크기)
    ============================================ */
-/* 푸터 Placeholder */
+/* 푸터 Placeholder - 컨테이너 역할만 */
 #footer-placeholder {
-    position: relative;
+    display: contents;
 }
 
 #fixed-footer {
@@ -1062,12 +1062,12 @@ input:focus, textarea:focus, select:focus {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: 50;
     background: var(--primary-lighter);
     color: #fff;
     display: flex;
     align-items: center;
     padding: 0;
-    z-index: 50;
     min-height: 65px;
     box-shadow: 0 -3px 15px rgba(2, 49, 99, 0.2);
 }
