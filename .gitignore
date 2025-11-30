@@ -1,34 +1,32 @@
-# 에디터 설정
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# ============================================
+# 호스팅 관련 파일만 Git에 포함
+# ============================================
 
-# OS 파일
-.DS_Store
-Thumbs.db
-desktop.ini
+# 모든 파일 제외
+*
 
-# 임시 파일
-*.tmp
-*.bak
-*.log
+# 호스팅 필수 파일만 포함
+!index.html
+!about.html
+!services.html
+!cases.html
+!contact.html
+!header.html
+!footer.html
+!main.css
+!main.js
 
-# 환경 변수 (민감 정보)
-.env
-.env.local
-.env.*.local
+# images 폴더 포함
+!images/
+!images/**
 
-# 의존성 (필요시)
-node_modules/
-package-lock.json
-yarn.lock
+# .gitignore 자체는 포함
+!.gitignore
 
-# 빌드 결과물 (필요시)
-dist/
-build/
-
-# 백업 파일
-*.zip.bak
-backup/
+# ============================================
+# 제외되는 파일들 (참고용)
+# ============================================
+# docs/           - 문서 폴더
+# CLAUDE.md       - Claude Code 설정
+# start_server.bat - 로컬 서버 스크립트
+# *.md            - 모든 마크다운 문서

@@ -5,7 +5,9 @@
       "Bash(python update_html.py:*)",
       "Bash(python update_headers.py:*)",
       "Bash(find:*)",
-      "Bash(python update_info.py:*)"
+      "Bash(python update_info.py:*)",
+      "Bash(git add:*)",
+      "Bash(git ls-tree:*)"
     ],
     "deny": [],
     "ask": []
