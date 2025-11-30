@@ -5,49 +5,42 @@
 ## 📁 파일 구조
 
 ```
-website/
-├── index.html                  # 메인 HTML (단일 파일)
-├── css/
-│   ├── libs.css               # 라이브러리 CSS (Swiper, AOS는 CDN 사용)
-│   └── main.css               # 메인 스타일 (모든 CSS 통합)
-├── js/
-│   └── main.js                # 메인 스크립트 (모든 JS 통합)
-└── images/                    # 이미지 폴더
-    ├── logo.png               # PC 로고 (250×80px)
-    ├── logo.ico               # 파비콘 (32×32px)
-    ├── main_img01.jpg         # 슬라이더 1 (1920×1080px)
-    ├── main_img02.jpg         # 슬라이더 2 (1920×1080px)
-    ├── main_img03.jpg         # 슬라이더 3 (1920×1080px)
-    ├── bg01.jpg               # 섹션 배경 (1920×600px)
-    └── og-image.jpg           # SNS 공유 이미지 (1200×630px)
+APSConsulting/
+├── index.html                  # 메인 페이지
+├── about.html                  # 회사소개
+├── services.html               # 업무분야
+├── cases.html                  # 성공사례
+├── contact.html                # 상담신청 (구글 지도 연동)
+├── main.css                    # 메인 스타일 (루트)
+├── main.js                     # 메인 스크립트 (루트)
+└── images/                     # 이미지 폴더
+    ├── logo.png               # 로고
+    ├── logo.ico               # 파비콘
+    └── (기타 이미지)
 ```
 
 ## ✨ 주요 개선 사항
 
-### 1. 파일 통합
-- **이전**: CSS 12개, JS 10개 분산
-- **개선**: CSS 2개, JS 1개 + CDN
+### 1. 다중 페이지 구조 (SPA → MPA)
+- 메인, 회사소개, 업무분야, 성공사례, 상담신청 페이지 분리
+- 독립적인 페이지 관리 및 SEO 최적화
 
-### 2. 코드 최적화
-- jQuery 최신 버전 (3.7.1) 사용
-- Swiper 최신 버전 (11) 사용
-- AOS 최신 버전 (2.3.4) 사용
-- 불필요한 라이브러리 제거
+### 2. 차별화된 디자인
+- Glassmorphism, 3D 회전, Shine/Ripple 효과
+- Sticky 헤더 + Blur 효과
+- 인터랙티브 애니메이션 (13가지 고급 효과)
 
-### 3. SEO 최적화
-- 시맨틱 HTML5 구조
-- Open Graph 메타태그
-- JSON-LD 구조화 데이터
-- 적절한 heading 계층
+### 3. 구글 지도 API 연동
+- contact.html에 실제 지도 표시
+- 마커 및 인포윈도우 기능
 
-### 4. 성능 개선
-- CDN 사용으로 로딩 속도 향상
-- 이미지 레이지 로딩
-- CSS/JS 압축 가능
+### 4. 반응형 디자인
+- 모든 페이지 완벽 대응 (PC/태블릿/모바일)
+- 4단계 브레이크포인트 (1400/1024/768/480px)
 
 ## 🎨 색상 변경 방법
 
-`css/main.css` 파일의 상단에 있는 CSS 변수만 수정하면 됩니다:
+`main.css` 파일의 상단에 있는 CSS 변수만 수정하면 됩니다:
 
 ```css
 :root {
@@ -216,5 +209,6 @@ website/
 
 ---
 
-**버전**: 2.0  
-**최종 수정**: 2025-11-29
+**버전**: 2.3.0
+**최종 수정**: 2025-11-30
+**변경 이력**: CHANGELOG.md 참조

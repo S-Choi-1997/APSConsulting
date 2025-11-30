@@ -9,12 +9,45 @@
     // 1. 문서 준비
     // ============================================
     $(document).ready(function() {
-        initHeader();
-        initSliders();
-        initAnimations();
-        initForms();
-        initScrollEffects();
+        // 헤더/푸터 로드 후 초기화
+        loadHeaderFooter(function() {
+            initHeader();
+            initSliders();
+            initAnimations();
+            initForms();
+            initScrollEffects();
+        });
     });
+
+    // ============================================
+    // 1-1. 헤더/푸터 로드
+    // ============================================
+    function loadHeaderFooter(callback) {
+        var headerLoaded = false;
+        var footerLoaded = false;
+
+        // 헤더 로드
+        $('#header-placeholder').load('header.html', function(response, status) {
+            if (status === "error") {
+                console.warn('헤더 파일을 찾을 수 없습니다. 기본 헤더를 사용합니다.');
+            }
+            headerLoaded = true;
+            if (headerLoaded && footerLoaded) {
+                callback();
+            }
+        });
+
+        // 푸터 로드
+        $('#footer-placeholder').load('footer.html', function(response, status) {
+            if (status === "error") {
+                console.warn('푸터 파일을 찾을 수 없습니다. 기본 푸터를 사용합니다.');
+            }
+            footerLoaded = true;
+            if (headerLoaded && footerLoaded) {
+                callback();
+            }
+        });
+    }
 
     // ============================================
     // 2. 헤더 (모바일 메뉴)

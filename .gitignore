@@ -1,0 +1,34 @@
+# 에디터 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS 파일
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 임시 파일
+*.tmp
+*.bak
+*.log
+
+# 환경 변수 (민감 정보)
+.env
+.env.local
+.env.*.local
+
+# 의존성 (필요시)
+node_modules/
+package-lock.json
+yarn.lock
+
+# 빌드 결과물 (필요시)
+dist/
+build/
+
+# 백업 파일
+*.zip.bak
+backup/
