@@ -1467,45 +1467,67 @@ input:focus, textarea:focus, select:focus {
         gap: 15px;
     }
 
-    /* 슬라이더 */
+    /* 슬라이더 - 모바일에서 배경 통합 */
     #main-visual {
         height: auto;
-        min-height: 450px;
+        min-height: 500px;
     }
 
     .swiper-slide {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .slide-content {
+        position: relative;
+        z-index: 10;
         width: 100%;
         max-width: 100%;
         margin-left: 0;
-        padding: 30px 20px;
-        order: 1;
+        padding: 60px 30px;
+        text-align: center;
+        background: rgba(4, 31, 47, 0.85);
+        backdrop-filter: blur(10px);
     }
 
     .slide-bg {
-        position: relative;
-        width: 100%;
-        height: 250px;
-        clip-path: none;
-        order: 2;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        clip-path: none !important;
+        order: 0;
+    }
+
+    .slide-bg::after {
+        background: linear-gradient(180deg, rgba(4, 31, 47, 0.4) 0%, rgba(4, 31, 47, 0.7) 100%);
     }
 
     .slide-content .subtitle {
         font-size: 13px;
         margin-bottom: 8px;
+        color: #5eb3e4 !important;
     }
 
     .slide-content .title {
         font-size: 28px;
         margin-bottom: 12px;
+        color: #ffffff !important;
+    }
+
+    .slide-content .title strong {
+        color: #5eb3e4 !important;
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: #5eb3e4 !important;
     }
 
     .slide-content .desc {
         font-size: 14px;
         margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.95) !important;
     }
 
     .slide-content .btn-main,
@@ -1619,26 +1641,34 @@ input:focus, textarea:focus, select:focus {
     }
 
     #fixed-footer {
-        flex-wrap: wrap;
+        justify-content: space-between;
         min-height: 50px;
+        padding: 0 15px;
     }
 
     .fixed-contact {
-        width: 100%;
-        padding: 12px 15px;
-        font-size: 13px;
+        display: none !important;
     }
 
-    .fixed-contact strong {
-        font-size: 14px;
+    .fixed-links {
+        flex: 1;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .fixed-links a {
+        font-size: 13px;
+        padding: 15px 0;
     }
 
     .to-top {
         position: relative;
         right: auto;
         width: auto;
-        padding: 12px 20px;
-        font-size: 13px;
+        padding: 12px 16px;
+        font-size: 12px;
+        flex-shrink: 0;
     }
 
     /* 푸터 최적화 - 대폭 축소 */
@@ -1939,6 +1969,130 @@ input:focus, textarea:focus, select:focus {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    /* 대표 행정사 소개 모바일 - 2x2 그리드 */
+    .section-team {
+        padding: 30px 20px;
+    }
+
+    .team-slider-wrapper {
+        padding: 0 20px;
+        max-width: 100%;
+        position: static;
+    }
+
+    /* Swiper 완전 비활성화 */
+    .team-slider {
+        overflow: visible !important;
+        padding: 0;
+        height: auto !important;
+    }
+
+    .team-slider .swiper-wrapper {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        transform: none !important;
+        transition: none !important;
+        height: auto !important;
+        width: 100% !important;
+        position: static !important;
+    }
+
+    .team-slider .swiper-slide {
+        width: 100% !important;
+        margin: 0 !important;
+        transform: none !important;
+        transition: none !important;
+        position: static !important;
+        opacity: 1 !important;
+        display: block !important;
+    }
+
+    .team-profile {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        padding: 18px 12px !important;
+        max-width: 100% !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        height: auto !important;
+        min-height: auto !important;
+        align-items: center !important;
+    }
+
+    .profile-image {
+        max-width: 100px !important;
+        margin: 0 auto !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .profile-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+        height: auto !important;
+        min-height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0 !important;
+    }
+
+    .profile-name {
+        font-size: 15px !important;
+        text-align: center !important;
+        margin-bottom: 4px !important;
+        height: auto !important;
+        line-height: 1.3 !important;
+    }
+
+    .profile-position {
+        font-size: 12px !important;
+        text-align: center !important;
+        height: auto !important;
+        line-height: 1.3 !important;
+        margin: 0 !important;
+    }
+
+    .profile-header {
+        text-align: center !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        border: none !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 4px !important;
+    }
+
+    /* 상세 정보 완전 제거 */
+    .team-slider .profile-info,
+    .team-slider .profile-info * {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        visibility: hidden !important;
+        position: absolute !important;
+    }
+
+    /* 슬라이더 컨트롤 완전 제거 */
+    .team-slider .slider-prev,
+    .team-slider .slider-next,
+    .team-pagination,
+    .team-slider .swiper-button-prev,
+    .team-slider .swiper-button-next,
+    .team-slider .swiper-pagination {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
     }
 
     /* 성공사례 카드 - 2열 */
@@ -2360,32 +2514,58 @@ input:focus, textarea:focus, select:focus {
         gap: 12px;
     }
 
-    /* 슬라이더 */
+    /* 슬라이더 - 모바일에서 배경 통합 */
     #main-visual {
-        min-height: 380px;
+        min-height: 450px;
+    }
+
+    .swiper-slide {
+        justify-content: center;
+        align-items: center;
     }
 
     .slide-content {
-        padding: 25px 15px;
+        padding: 50px 24px;
+        text-align: center;
+        background: rgba(4, 31, 47, 0.88);
+        backdrop-filter: blur(10px);
     }
 
     .slide-bg {
-        height: 200px;
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .slide-bg::after {
+        background: linear-gradient(180deg, rgba(4, 31, 47, 0.5) 0%, rgba(4, 31, 47, 0.75) 100%);
     }
 
     .slide-content .subtitle {
         font-size: 12px;
         margin-bottom: 6px;
+        color: #5eb3e4 !important;
     }
 
     .slide-content .title {
         font-size: 22px;
         margin-bottom: 10px;
+        color: #ffffff !important;
+    }
+
+    .slide-content .title strong {
+        color: #5eb3e4 !important;
+        background: none !important;
+        -webkit-background-clip: unset !important;
+        -webkit-text-fill-color: #5eb3e4 !important;
     }
 
     .slide-content .desc {
         font-size: 13px;
         margin-bottom: 15px;
+        color: rgba(255, 255, 255, 0.95) !important;
     }
 
     .slide-content .btn-main,
@@ -2568,6 +2748,36 @@ input:focus, textarea:focus, select:focus {
     .vision-desc {
         font-size: 13px;
         line-height: 1.5;
+    }
+
+    /* 대표 행정사 소개 480px */
+    .section-team {
+        padding: 25px 16px !important;
+    }
+
+    .team-slider-wrapper {
+        padding: 0 16px !important;
+    }
+
+    .team-slider .swiper-wrapper {
+        gap: 10px !important;
+    }
+
+    .team-profile {
+        padding: 16px 10px !important;
+        gap: 10px !important;
+    }
+
+    .profile-image {
+        max-width: 90px !important;
+    }
+
+    .profile-name {
+        font-size: 14px !important;
+    }
+
+    .profile-position {
+        font-size: 11px !important;
     }
 
     /* 모바일에서 성공사례 상세내용 숨김 - 제목만 표시 */
@@ -2777,19 +2987,25 @@ input:focus, textarea:focus, select:focus {
     /* 푸터 */
     #fixed-footer {
         min-height: 45px;
+        padding: 0 12px;
     }
 
     .fixed-contact {
-        padding: 8px 10px;
-        font-size: 11px;
+        display: none !important;
     }
 
-    .fixed-contact strong {
+    .fixed-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .fixed-links a {
         font-size: 12px;
+        padding: 12px 0;
     }
 
     .to-top {
-        padding: 8px 12px;
+        padding: 10px 12px;
         font-size: 11px;
     }
 
@@ -3372,6 +3588,145 @@ input:focus, textarea:focus, select:focus {
     font-size: 15px;
     line-height: 1.8;
     color: var(--text-dark);
+}
+
+/* 대표 행정사 소개 */
+.section-team {
+    padding: 100px 50px;
+    background: #fff;
+}
+
+.team-slider-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 80px;
+}
+
+.team-slider {
+    overflow: hidden;
+}
+
+.team-profile {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 50px;
+    align-items: center;
+    background: var(--bg-lighter);
+    padding: 50px;
+    border-radius: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--primary-lighter) 0%, var(--primary-light) 100%);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.profile-header {
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.profile-position {
+    font-size: 18px;
+    color: var(--second);
+    font-weight: 600;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin: 0;
+    padding-left: 16px;
+    position: relative;
+}
+
+.profile-info p:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--second);
+    font-weight: 700;
+}
+
+.team-slider .slider-prev,
+.team-slider .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.team-slider .slider-prev:hover,
+.team-slider .slider-next:hover {
+    background: var(--primary-dark);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.team-slider .slider-prev {
+    left: 0;
+}
+
+.team-slider .slider-next {
+    right: 0;
+}
+
+.team-pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.team-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--primary-lighter);
+    opacity: 0.5;
+}
+
+.team-pagination .swiper-pagination-bullet-active {
+    background: var(--primary);
+    opacity: 1;
 }
 
 /* 업무분야 상세 페이지 */

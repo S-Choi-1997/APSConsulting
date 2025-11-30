@@ -86,9 +86,12 @@
             new Swiper('#main-visual .visual-slider', {
                 loop: true,
                 effect: 'fade',
-                speed: 1800,
+                speed: 800,
+                fadeEffect: {
+                    crossFade: true
+                },
                 autoplay: {
-                    delay: 4000,
+                    delay: 5000,
                     disableOnInteraction: false,
                 },
                 pagination: {
@@ -124,13 +127,14 @@
             });
         }
 
-        // 팀 소개 슬라이더
-        if ($('.team-slider').length) {
+        // 팀 소개 슬라이더 (PC만)
+        if ($('.team-slider').length && $(window).width() > 768) {
             new Swiper('.team-slider', {
                 loop: true,
                 speed: 600,
                 slidesPerView: 1,
                 spaceBetween: 0,
+                autoHeight: true,
                 autoplay: {
                     delay: 4000,
                     disableOnInteraction: false,
