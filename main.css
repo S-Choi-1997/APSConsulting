@@ -496,11 +496,12 @@ input:focus, textarea:focus, select:focus {
     font-size: 23px;
     font-weight: 500;
     margin-bottom: 8px;
+    color: #fff;
 }
 
 .card-subtitle {
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
     transition: all 0.3s;
 }
 
