@@ -183,6 +183,11 @@ input:focus, textarea:focus, select:focus {
     width: 30px;
     height: 30px;
     padding: 0;
+    position: relative;
+    z-index: 10001;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .mobile-menu-btn span {
@@ -194,7 +199,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
 .mobile-menu-btn.active span:nth-child(2) {
@@ -202,7 +207,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .mobile-menu-btn.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 /* 모바일 메뉴 */
@@ -217,6 +222,7 @@ input:focus, textarea:focus, select:focus {
     padding: 80px 30px;
     transition: right 0.4s;
     box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 10000;
 }
 
 .mobile-menu.active {
@@ -1343,11 +1349,25 @@ input:focus, textarea:focus, select:focus {
     .main-nav {
         display: none;
     }
-    
+
     .mobile-menu-btn {
         display: flex;
     }
-    
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu-btn {
+        width: 28px;
+        height: 28px;
+        gap: 5px;
+    }
+
+    .mobile-menu-btn span {
+        height: 2px;
+    }
+
     .services-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1369,30 +1389,88 @@ input:focus, textarea:focus, select:focus {
 /* 모바일 (768px 이하) */
 @media (max-width: 768px) {
     .section {
-        padding: 80px 0;
+        padding: 50px 0;
+        margin-bottom: 0;
+    }
+
+    .section-header {
+        margin-bottom: 35px;
+        padding: 0 30px;
     }
 
     .section-title {
-        font-size: 28px;
+        font-size: 24px;
+        margin-bottom: 12px;
+        line-height: 1.3;
     }
 
-    /* 헤더 */
+    .section-subtitle {
+        font-size: 12px;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+
+    .section-desc {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    /* 텍스트 컨텐츠 섹션 여백 */
+    .intro-content,
+    .about-intro,
+    .section-header + p {
+        padding: 0 30px;
+    }
+
+    /* 헤더 - 얇게 */
     #header {
-        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        padding: 10px 0;
+        z-index: 1000;
     }
 
     #header.scrolled {
-        padding: 15px 0;
+        padding: 8px 0;
+    }
+
+    .logo img {
+        height: 26px;
     }
 
     .main-nav {
         display: none;
     }
 
+    /* 모바일 메뉴 최적화 */
+    .mobile-menu {
+        width: 240px;
+        padding: 60px 20px;
+    }
+
+    .mobile-menu-btn {
+        width: 26px;
+        height: 26px;
+        gap: 4px;
+    }
+
+    .mobile-menu-btn span {
+        height: 2px;
+    }
+
+    .mobile-menu a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+    .mobile-menu ul {
+        gap: 15px;
+    }
+
     /* 슬라이더 */
     #main-visual {
         height: auto;
-        min-height: 550px;
+        min-height: 450px;
     }
 
     .swiper-slide {
@@ -1403,60 +1481,125 @@ input:focus, textarea:focus, select:focus {
         width: 100%;
         max-width: 100%;
         margin-left: 0;
-        padding: 50px 30px;
+        padding: 30px 20px;
         order: 1;
     }
 
     .slide-bg {
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 250px;
         clip-path: none;
         order: 2;
     }
 
     .slide-content .subtitle {
-        font-size: 16px;
+        font-size: 13px;
+        margin-bottom: 8px;
     }
 
     .slide-content .title {
-        font-size: 36px;
+        font-size: 28px;
+        margin-bottom: 12px;
     }
 
     .slide-content .desc {
-        font-size: 15px;
+        font-size: 14px;
+        margin-bottom: 20px;
     }
 
     .slide-content .btn-main,
     .slide-content .btn-secondary {
-        padding: 14px 28px;
-        font-size: 15px;
+        padding: 12px 24px;
+        font-size: 14px;
     }
 
     #main-visual .swiper-pagination {
-        left: 30px;
-        bottom: 30px;
+        left: 20px;
+        bottom: 20px;
     }
 
     /* Footer */
     .footer-top {
         grid-template-columns: 1fr;
-        gap: 40px;
-        padding-bottom: 40px;
+        gap: 25px;
+        padding-bottom: 25px;
     }
 
     .footer-copy {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         text-align: center;
     }
 
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+        padding: 0 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-card {
+        padding: 20px 16px !important;
+        min-height: auto !important;
+        min-width: 0 !important;
+        width: 100%;
+        max-width: none !important;
+        box-sizing: border-box;
+        border-radius: 12px;
     }
 
     .service-card:hover {
         transform: none;
+        padding: 20px 16px !important;
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .card-header h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .card-subtitle {
+        font-size: 11px;
+        word-break: keep-all;
+    }
+
+    .card-body {
+        margin-top: 12px;
+    }
+
+    .card-desc {
+        font-size: 13px;
+        line-height: 1.5;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 홈 페이지 서비스 카드 모바일 최적화 */
+    .section-services-preview .service-card {
+        padding: 18px 12px;
+        border-radius: 10px;
+    }
+
+    .section-services-preview .card-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 10px;
     }
 
     .contact-form-wrapper {
@@ -1477,42 +1620,1418 @@ input:focus, textarea:focus, select:focus {
 
     #fixed-footer {
         flex-wrap: wrap;
+        min-height: 50px;
     }
 
     .fixed-contact {
         width: 100%;
-        padding: 20px;
+        padding: 12px 15px;
+        font-size: 13px;
+    }
+
+    .fixed-contact strong {
+        font-size: 14px;
     }
 
     .to-top {
         position: relative;
         right: auto;
         width: auto;
-        padding: 15px 30px;
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    /* 푸터 최적화 - 대폭 축소 */
+    footer {
+        padding: 20px 0 10px;
+    }
+
+    .footer-inner {
+        padding: 0 20px !important;
+    }
+
+    .footer-top {
+        padding-bottom: 12px;
+        gap: 15px;
+        margin-bottom: 12px;
+    }
+
+    .footer-about p {
+        font-size: 11px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-contact-info {
+        display: none !important;
+    }
+
+    .footer-logo {
+        width: 120px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .footer-logo img {
+        height: 20px;
+    }
+
+    .footer-links h4 {
+        font-size: 13px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-links ul {
+        flex-direction: row !important;
+        gap: 12px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        font-size: 11px !important;
+        white-space: nowrap;
+    }
+
+    .footer-links:nth-child(3) {
+        display: none !important;
+    }
+
+    .footer-info {
+        padding: 0 0 12px 0 !important;
+    }
+
+    .footer-info address {
+        font-size: 10px !important;
+        line-height: 1.5 !important;
+    }
+
+    .footer-copy {
+        padding: 12px 0 !important;
+    }
+
+    .footer-copy p {
+        font-size: 10px !important;
+    }
+
+    .footer-sns {
+        gap: 8px !important;
+    }
+
+    .footer-sns a {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .footer-sns svg {
+        width: 14px !important;
+        height: 14px !important;
+    }
+
+    /* 터치 타겟 최적화 (최소 44px) */
+    .btn-main,
+    .btn-secondary,
+    .submit-btn,
+    .mobile-call-btn {
+        min-height: 44px;
+        padding: 12px 24px;
+        font-size: 15px;
+    }
+
+    input,
+    textarea,
+    select {
+        min-height: 44px;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+
+    /* 서비스 상세 페이지 카드 - 2열 */
+    .services-detail-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .service-detail-card {
+        padding: 20px 16px !important;
+        min-width: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .service-detail-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .service-detail-title {
+        font-size: 16px;
+        margin-bottom: 6px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .service-detail-subtitle {
+        font-size: 11px;
+        margin-bottom: 10px;
+        word-break: keep-all;
+    }
+
+    .service-detail-desc {
+        font-size: 13px;
+        margin-bottom: 12px;
+        line-height: 1.5;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 모바일에서 상세 리스트 숨김 */
+    .service-detail-list {
+        display: none;
+    }
+
+    .service-detail-link {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+
+    /* 상담 방법 카드 - 3개 중 2개는 위, 1개는 아래 */
+    .contact-methods-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .contact-method-card {
+        padding: 20px 16px !important;
+        min-width: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .contact-method-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .method-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .method-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .method-desc {
+        font-size: 12px;
+        margin-bottom: 10px;
+        word-break: keep-all;
+    }
+
+    .method-link {
+        font-size: 13px;
+        word-break: break-all;
+    }
+
+    /* 상담 폼 컨테이너 */
+    .contact-form-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .form-intro {
+        margin-bottom: 0;
+    }
+
+    .form-intro-desc {
+        font-size: 13px;
+        margin: 12px 0 15px;
+        line-height: 1.5;
+    }
+
+    .form-benefits {
+        gap: 10px;
+    }
+
+    .benefit-item {
+        font-size: 13px;
+    }
+
+    .form-wrapper {
+        padding: 0;
+    }
+
+    .form-row {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .contact-form-wrapper {
+        padding: 30px 15px;
+    }
+
+    .news-wrapper {
+        padding: 30px 15px;
+    }
+
+    /* 비전 카드 - 2열 (3개 중 2개 위, 1개 아래) */
+    .vision-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .vision-card {
+        padding: 20px 16px !important;
+        min-width: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .vision-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .vision-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .vision-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    .vision-desc {
+        font-size: 13px;
+        line-height: 1.5;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* 성공사례 카드 - 2열 */
+    .cases-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .case-item {
+        padding: 20px 16px !important;
+        min-width: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+
+    .case-category {
+        margin-bottom: 12px;
+        font-size: 11px;
+        padding: 5px 12px;
+    }
+
+    .case-item-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+        line-height: 1.3;
+    }
+
+    /* 모바일에서 성공사례 상세내용 숨김 - 제목만 표시 */
+    .case-item-desc {
+        display: none !important;
+    }
+
+    .case-meta {
+        display: none !important;
+    }
+
+    .case-item-title {
+        font-size: 15px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .case-client {
+        font-size: 12px;
+    }
+
+    .case-time {
+        font-size: 11px;
+    }
+
+    /* 페이지 헤더 - 텍스트만 있으므로 간격 최소화 */
+    .page-header {
+        padding: 50px 30px 30px;
+    }
+
+    .page-subtitle {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .page-title {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .page-desc {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* 인트로 타이틀 */
+    .intro-title {
+        font-size: 24px !important;
+        margin-bottom: 15px;
+        padding: 0 30px;
+    }
+
+    .intro-desc {
+        padding: 0 30px;
+    }
+
+    .page-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .page-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* 회사소개 */
+    .about-detail-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 30px;
+    }
+
+    .about-text,
+    .about-description {
+        font-size: 15px;
+        line-height: 1.7;
+        margin-bottom: 15px;
+        padding: 0 30px;
+    }
+
+    .about-content h3,
+    .about-detail h3 {
+        padding: 0 30px;
+        margin-bottom: 12px;
+    }
+
+    .about-content p,
+    .about-detail p {
+        padding: 0 30px;
+    }
+
+    /* 선택하는 이유 - 2열 */
+    .about-features {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .feature-item {
+        padding: 15px 10px !important;
+        min-width: 0 !important;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .feature-number {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .feature-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .feature-desc {
+        font-size: 11px;
+        line-height: 1.4;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    /* 통계 섹션 */
+    .section-stats {
+        padding: 30px 15px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    /* 프로세스 */
+    .section-process {
+        padding: 30px 15px;
+    }
+
+    .process-container {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .process-step {
+        flex: 0 0 90px;
+    }
+
+    .process-number {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .process-title {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .process-desc {
+        font-size: 10px;
+    }
+
+    .process-arrow {
+        font-size: 14px;
+    }
+
+    /* 지도 섹션 - 양옆 마진 추가 */
+    .section-location {
+        padding: 50px 0;
+    }
+
+    .location-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .location-map {
+        height: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .location-info {
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+    }
+
+    .info-group {
+        margin-bottom: 12px;
+    }
+
+    .info-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .info-text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* CTA 섹션 폰트 대폭 축소 */
+    .cta-title {
+        font-size: 20px !important;
+        margin-bottom: 10px;
+    }
+
+    .cta-desc {
+        font-size: 13px !important;
+        margin-bottom: 20px;
+    }
+
+    .section-cta {
+        padding: 40px 20px !important;
+        margin-top: 30px !important;
+    }
+
+    /* 버튼 2열 배치 - 더 컴팩트하게 */
+    .slide-buttons,
+    .cta-buttons {
+        display: flex !important;
+        gap: 10px !important;
+        justify-content: center;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .slide-buttons a,
+    .cta-buttons a,
+    .slide-buttons .btn-primary,
+    .slide-buttons .btn-outline,
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-outline {
+        flex: 1;
+        padding: 14px 20px !important;
+        font-size: 14px !important;
+        justify-content: center;
+        white-space: nowrap;
+        min-height: 48px;
+    }
+
+    /* 모든 섹션 패딩 적절히 축소 */
+    .section-intro,
+    .section-about-detail,
+    .section-vision,
+    .section-services-detail,
+    .section-cases-list,
+    .section-contact-methods,
+    .section-contact-form {
+        padding: 40px 0 !important;
+    }
+
+    /* 카드 섹션 아래 여백 추가 (색상 변경 전) */
+    .section-services,
+    .section-services-detail,
+    .section-contact-methods,
+    .section-vision,
+    .section-cases,
+    .section-cases-list,
+    .section-about-detail {
+        margin-bottom: 30px !important;
+    }
+
+    /* 슬라이더 타이틀 크기 조정 */
+    .slide-content .title {
+        font-size: 24px !important;
+    }
+
+    .slide-content .subtitle {
+        font-size: 12px !important;
+    }
+
+    .slide-content .desc {
+        font-size: 13px !important;
+    }
+
+    /* 페이지 타이틀들 축소 */
+    .intro-title,
+    .section-title {
+        font-size: 22px !important;
+    }
+
+    .section-subtitle {
+        font-size: 11px !important;
+    }
+
+    .section-desc {
+        font-size: 13px !important;
     }
 }
 
 /* 모바일 (480px 이하) */
 @media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+        margin-bottom: 0;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+        padding: 0 24px;
+    }
+
     .section-title {
-        font-size: 24px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        line-height: 1.3;
     }
-    
+
+    .section-subtitle {
+        font-size: 11px;
+        margin-bottom: 10px;
+        letter-spacing: 0.8px;
+    }
+
+    .section-desc {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* 텍스트 컨텐츠 섹션 여백 */
+    .intro-content,
+    .about-intro,
+    .section-header + p {
+        padding: 0 24px;
+    }
+
+    /* 헤더 더 얇게 */
+    #header {
+        position: sticky;
+        top: 0;
+        padding: 8px 0;
+        z-index: 1000;
+    }
+
+    #header.scrolled {
+        padding: 6px 0;
+    }
+
+    .logo img {
+        height: 22px;
+    }
+
+    /* 모바일 메뉴 더 작게 */
+    .mobile-menu {
+        width: 220px;
+        padding: 50px 15px;
+    }
+
+    .mobile-menu-btn {
+        width: 24px;
+        height: 24px;
+        gap: 4px;
+    }
+
+    .mobile-menu-btn span {
+        height: 2px;
+    }
+
+    .mobile-menu-btn.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-menu-btn.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .mobile-menu a {
+        font-size: 15px;
+        padding: 8px 0;
+    }
+
+    .mobile-menu ul {
+        gap: 12px;
+    }
+
+    /* 슬라이더 */
+    #main-visual {
+        min-height: 380px;
+    }
+
+    .slide-content {
+        padding: 25px 15px;
+    }
+
+    .slide-bg {
+        height: 200px;
+    }
+
+    .slide-content .subtitle {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
     .slide-content .title {
-        font-size: 28px;
+        font-size: 22px;
+        margin-bottom: 10px;
     }
-    
+
+    .slide-content .desc {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    .slide-content .btn-main,
+    .slide-content .btn-secondary {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+    /* 서비스 카드 (2열 유지) */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px;
+        padding: 0 16px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .service-card {
+        padding: 18px 14px !important;
+        min-width: 0 !important;
+        min-height: auto !important;
+        width: 100%;
+        max-width: none !important;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .section-services-preview .service-card {
+        padding: 18px 14px !important;
+        min-width: 0 !important;
+        min-height: auto !important;
+    }
+
+    .card-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 10px;
+    }
+
+    .section-services-preview .card-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 10px;
+    }
+
+    .card-header h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+        line-height: 1.3;
+    }
+
+    .card-subtitle {
+        font-size: 10px;
+    }
+
+    .card-body {
+        margin-top: 10px;
+    }
+
+    .card-desc {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* 폼 */
     .form-group {
         width: 100%;
     }
-    
+
+    .form-row {
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
     .form-footer {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
-    
+
     .submit-btn {
         width: 100%;
+    }
+
+    /* 페이지 헤더 - 텍스트만 있으므로 간격 최소화 */
+    .page-header {
+        padding: 40px 24px 25px;
+    }
+
+    .page-subtitle {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .page-desc {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* 인트로 타이틀 */
+    .intro-title {
+        font-size: 20px !important;
+        margin-bottom: 12px;
+        padding: 0 24px;
+    }
+
+    .intro-desc {
+        padding: 0 24px;
+    }
+
+    .page-title {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .page-desc {
+        font-size: 13px;
+    }
+
+    /* 기타 카드들 - 모두 2열 유지 */
+    .services-detail-grid,
+    .cases-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .contact-methods-grid,
+    .vision-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .contact-method-card:last-child,
+    .vision-card:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .service-detail-card,
+    .contact-method-card,
+    .vision-card,
+    .case-item {
+        padding: 18px 14px !important;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .service-detail-icon,
+    .method-icon,
+    .vision-icon {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 10px;
+    }
+
+    .service-detail-title,
+    .method-title,
+    .vision-title {
+        font-size: 15px;
+        margin-bottom: 8px;
+        line-height: 1.3;
+    }
+
+    .service-detail-subtitle {
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+
+    .service-detail-desc,
+    .vision-desc {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* 모바일에서 성공사례 상세내용 숨김 - 제목만 표시 */
+    .case-item-desc {
+        display: none !important;
+    }
+
+    .service-detail-list {
+        margin-bottom: 10px;
+    }
+
+    .service-detail-list li {
+        font-size: 11px;
+        padding: 4px 0 4px 14px;
+    }
+
+    .method-desc {
+        font-size: 11px;
+        margin-bottom: 6px;
+    }
+
+    .method-link {
+        font-size: 12px;
+    }
+
+    .case-category {
+        font-size: 11px;
+        padding: 4px 10px;
+        margin-bottom: 0;
+    }
+
+    .case-item-title {
+        font-size: 14px;
+        margin-bottom: 0 !important;
+    }
+
+    .case-meta {
+        display: none !important;
+    }
+
+    .case-client {
+        font-size: 11px;
+    }
+
+    .case-time {
+        font-size: 10px;
+    }
+
+    /* 회사소개 */
+    .about-detail-container {
+        gap: 15px;
+        padding: 0 24px;
+    }
+
+    .about-text,
+    .about-description {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 12px;
+        padding: 0 24px;
+    }
+
+    .about-content h3,
+    .about-detail h3 {
+        padding: 0 24px;
+        margin-bottom: 10px;
+    }
+
+    .about-content p,
+    .about-detail p {
+        padding: 0 24px;
+    }
+
+    /* 선택하는 이유 - 2열 유지 */
+    .about-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        width: 100%;
+    }
+
+    .feature-item {
+        padding: 12px 6px;
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .feature-number {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .feature-title {
+        font-size: 13px;
+        margin-bottom: 4px;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    .feature-desc {
+        font-size: 10px;
+        line-height: 1.4;
+        word-break: keep-all;
+        overflow-wrap: break-word;
+    }
+
+    /* 통계 */
+    .section-stats {
+        padding: 30px 12px;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat-number {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+
+    /* 프로세스 */
+    .section-process {
+        padding: 30px 12px;
+    }
+
+    .process-container {
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .process-step {
+        flex: 0 0 85px;
+    }
+
+    .process-number {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .process-title {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .process-desc {
+        font-size: 10px;
+    }
+
+    .process-arrow {
+        font-size: 14px;
+    }
+
+    /* 지도 */
+    .section-location {
+        padding: 25px 0;
+    }
+
+    .location-map {
+        height: 250px;
+    }
+
+    .location-info {
+        padding: 18px 12px;
+    }
+
+    .info-group {
+        margin-bottom: 12px;
+    }
+
+    .info-title {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .info-text {
+        font-size: 12px;
+    }
+
+    /* 상담 폼 */
+    .contact-form-container {
+        gap: 20px;
+        padding: 0 12px;
+    }
+
+    .form-intro-desc {
+        font-size: 12px;
+        margin: 10px 0 12px;
+    }
+
+    .benefit-item {
+        font-size: 12px;
+    }
+
+    .contact-form-wrapper,
+    .news-wrapper {
+        padding: 25px 12px;
+    }
+
+    /* 푸터 */
+    #fixed-footer {
+        min-height: 45px;
+    }
+
+    .fixed-contact {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .fixed-contact strong {
+        font-size: 12px;
+    }
+
+    .to-top {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    /* 푸터 더 축소 */
+    footer {
+        padding: 15px 0 8px;
+    }
+
+    .footer-inner {
+        padding: 0 15px !important;
+    }
+
+    .footer-top {
+        gap: 12px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer-about p {
+        font-size: 10px !important;
+        line-height: 1.3 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .footer-contact-info {
+        display: none !important;
+    }
+
+    .footer-logo {
+        width: 100px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .footer-logo img {
+        height: 18px;
+    }
+
+    .footer-links h4 {
+        font-size: 12px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .footer-links ul {
+        flex-direction: row !important;
+        gap: 10px !important;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-links a {
+        font-size: 10px !important;
+        white-space: nowrap;
+    }
+
+    .footer-links:nth-child(3) {
+        display: none !important;
+    }
+
+    .footer-info {
+        padding: 0 0 10px 0 !important;
+    }
+
+    .footer-info address {
+        font-size: 9px !important;
+        line-height: 1.4 !important;
+    }
+
+    .footer-copy {
+        padding: 10px 0 !important;
+    }
+
+    .footer-copy p {
+        font-size: 9px !important;
+    }
+
+    .footer-sns {
+        gap: 6px !important;
+    }
+
+    .footer-sns a {
+        width: 26px !important;
+        height: 26px !important;
+    }
+
+    .footer-sns svg {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    /* CTA 섹션 */
+    .section-cta {
+        padding: 40px 15px;
+    }
+
+    .cta-title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .cta-desc {
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .cta-buttons {
+        gap: 12px;
+    }
+
+    /* CTA 섹션 폰트 더 축소 */
+    .cta-title {
+        font-size: 18px !important;
+        margin-bottom: 8px;
+    }
+
+    .cta-desc {
+        font-size: 12px !important;
+        margin-bottom: 15px;
+    }
+
+    .section-cta {
+        padding: 30px 15px !important;
+        margin-top: 25px !important;
+    }
+
+    /* 버튼 컴팩트하게 */
+    .slide-buttons,
+    .cta-buttons {
+        display: flex !important;
+        gap: 8px !important;
+        justify-content: center;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .slide-buttons a,
+    .cta-buttons a,
+    .slide-buttons .btn-primary,
+    .slide-buttons .btn-outline,
+    .cta-buttons .btn-primary,
+    .cta-buttons .btn-outline {
+        flex: 1;
+        padding: 13px 18px !important;
+        font-size: 13px !important;
+        justify-content: center;
+        white-space: nowrap;
+        min-height: 46px;
+    }
+
+    /* 모든 섹션 패딩 적절히 축소 */
+    .section {
+        padding: 30px 0 !important;
+    }
+
+    .section-intro,
+    .section-about-detail,
+    .section-vision,
+    .section-services-detail,
+    .section-cases-list,
+    .section-contact-methods,
+    .section-contact-form {
+        padding: 30px 0 !important;
+    }
+
+    /* 카드 섹션 아래 여백 추가 */
+    .section-services,
+    .section-services-detail,
+    .section-contact-methods,
+    .section-vision,
+    .section-cases,
+    .section-cases-list,
+    .section-about-detail {
+        margin-bottom: 25px !important;
+    }
+
+    /* 지도 섹션 - 양옆 마진 */
+    .section-location {
+        padding: 40px 0;
+    }
+
+    .location-container {
+        padding: 0 16px;
+    }
+
+    .location-map {
+        height: 280px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 16px;
+    }
+
+    .location-info {
+        padding: 18px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    /* 슬라이더 타이틀 더 축소 */
+    .slide-content .title {
+        font-size: 20px !important;
+    }
+
+    .slide-content .subtitle {
+        font-size: 11px !important;
+    }
+
+    .slide-content .desc {
+        font-size: 12px !important;
+    }
+
+    /* 페이지 타이틀들 더 축소 */
+    .intro-title,
+    .section-title {
+        font-size: 18px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .section-subtitle {
+        font-size: 10px !important;
+    }
+
+    .section-desc {
+        font-size: 12px !important;
+    }
+
+    .section-header {
+        margin-bottom: 20px !important;
+    }
+
+    /* 카드 내용 축약 (480px도 동일하게 2줄 제한) */
+    .card-desc,
+    .service-detail-desc,
+    .vision-desc,
+    .case-item-desc {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .service-detail-list {
+        display: none;
     }
 }
 
@@ -2736,6 +4255,19 @@ input:focus, textarea:focus, select:focus {
 .section-services-preview .service-card:hover .card-icon {
     transform: scale(1.1) rotate(5deg);
     box-shadow: 0 15px 40px rgba(4, 31, 47, 0.25);
+}
+
+/* 홈 페이지 카드 텍스트 색상 (흰 배경용) */
+.section-services-preview .card-header h3 {
+    color: var(--primary);
+}
+
+.section-services-preview .card-subtitle {
+    color: var(--text-light);
+}
+
+.section-services-preview .card-desc {
+    color: var(--text-dark);
 }
 
 /* CTA 섹션 리디자인 */
