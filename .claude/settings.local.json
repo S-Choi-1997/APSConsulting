@@ -8,7 +8,8 @@
       "Bash(python update_info.py:*)",
       "Bash(git add:*)",
       "Bash(git ls-tree:*)",
-      "Bash(timeout 2 curl:*)"
+      "Bash(timeout 2 curl:*)",
+      "Bash(python:*)"
     ],
     "deny": [],
     "ask": []
