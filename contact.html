@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>상담신청 | 행정사법인 APS컨설팅</title>
     <link rel="icon" href="./images/logo.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./css/main-split.css">
 </head>
 <body>
     <div id="wrapper">
@@ -37,7 +37,6 @@
                         <p class="method-desc">평일 09:00 ~ 18:00</p>
                         <a href="tel:05071386167" class="method-link">0507-1386-1673</a>
                     </div>
-
                     <div class="contact-method-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="method-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -49,7 +48,6 @@
                         <p class="method-desc">24시간 접수</p>
                         <a href="mailto:apsconsulting00@gmail.com" class="method-link">apsconsulting00@gmail.com</a>
                     </div>
-
                     <div class="contact-method-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="method-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -108,7 +106,6 @@
                                     <input type="tel" id="phone" name="phone" required maxlength="13" placeholder="010-0000-0000">
                                 </div>
                             </div>
-
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="email">이메일</label>
@@ -118,24 +115,51 @@
                                     <label for="category">상담 분야 *</label>
                                     <select id="category" name="category" required>
                                         <option value="">선택하세요</option>
-                                        <option value="비자변경">비자 변경/연장</option>
-                                        <option value="영주권">영주권/귀화</option>
-                                        <option value="체류관리">외국인 체류관리</option>
-                                        <option value="이의신청">출입국 민원/이의신청</option>
+                                        <option value="출입국">출입국 VISA</option>
+                                        <option value="비영리">비영리단체 설립/변경</option>
+                                        <option value="기업인증">기업인증 · 인허가</option>
+                                        <option value="민원행정">민원행정대행 · 행정심판</option>
                                         <option value="기타">기타</option>
                                     </select>
                                 </div>
                             </div>
-
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nationality">국적 *</label>
+                                    <select id="nationality" name="nationality" required>
+                                        <option value="">국적을 선택하세요</option>
+                                        <option value="KOR">대한민국 / Republic of Korea</option>
+                                        <option value="OTHER">기타 / Other</option>
+                                    </select>
+                                    <small class="input-note">국가 리스트는 자동 로딩되며, 기타를 선택하면 메모에 직접 입력해주세요.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">상호/기관명</label>
+                                    <input type="text" id="company" name="company" placeholder="소속 또는 회사명을 입력하세요">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="attachments">첨부파일 (사진 포함)</label>
+                                    <input type="file" id="attachments" name="attachments" accept="image/*,.pdf,.doc,.docx" multiple>
+                                    <small class="input-note">최대 5개, 파일당 20MB 이하 (이미지/문서)</small>
+                                </div>
+                            </div>
                             <div class="form-group full">
                                 <label for="message">상담내용 *</label>
                                 <textarea id="message" name="message" rows="6" required placeholder="상담하실 내용을 자세히 작성해주세요"></textarea>
                             </div>
-
+                            <div class="form-group full terms-group">
+                                <div class="terms-header">
+                                    <label for="serviceTerms">서비스 기본약관</label>
+                                    <a href="서비스 기본약관.txt" download class="terms-download">약관 파일 다운로드</a>
+                                </div>
+                                <pre id="serviceTerms" class="terms-box" aria-label="서비스 기본약관 내용 로딩 중">약관을 불러오는 중입니다...</pre>
+                            </div>
                             <div class="form-footer">
-                                <label class="privacy-check">
-                                    <input type="checkbox" required>
-                                    <span>개인정보 수집 및 이용에 동의합니다</span>
+                                <label class="privacy-check consent-single">
+                                    <input type="checkbox" id="agreeAll" required>
+                                    <span>서비스 기본약관 및 개인정보 수집·이용에 모두 동의합니다</span>
                                 </label>
                                 <button type="submit" class="submit-btn">상담 신청하기</button>
                             </div>
@@ -151,12 +175,10 @@
                     <h2 class="section-title">오시는 길</h2>
                     <p class="section-desc">편리한 교통으로 쉽게 방문하실 수 있습니다</p>
                 </div>
-
                 <div class="location-container" data-aos="fade-up">
                     <div class="location-map">
                         <div id="map" style="width:100%;height:100%;"></div>
                     </div>
-
                     <div class="location-info">
                         <div class="info-group">
                             <h3 class="info-title">주소</h3>
@@ -186,7 +208,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
 
         <!-- 푸터 (footer.html에서 로드) -->
@@ -204,7 +225,6 @@
             zoom: 17
         };
         var map = new naver.maps.Map('map', mapOptions);
-
         // 마커 추가
         var marker = new naver.maps.Marker({
             position: new naver.maps.LatLng(37.385034, 127.120439),

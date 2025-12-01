@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 메인 JavaScript - 통합 및 최적화
  */
 
@@ -83,7 +83,7 @@
     function initSliders() {
         // 메인 비주얼 슬라이더
         if ($('#main-visual').length) {
-            new Swiper('#main-visual .visual-slider', {
+                        new Swiper('#main-visual .visual-slider', {
                 loop: true,
                 effect: 'fade',
                 speed: 800,
@@ -97,32 +97,9 @@
                 pagination: {
                     el: '#main-visual .swiper-pagination',
                     clickable: true,
-                },
-            });
-        }
-
-        // 성공사례 슬라이더
-        if ($('.cases-slider').length) {
-            new Swiper('.cases-slider', {
-                loop: true,
-                speed: 800,
-                slidesPerView: 1,
-                spaceBetween: 20,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    nextEl: '.cases-slider-wrapper .slider-next',
-                    prevEl: '.cases-slider-wrapper .slider-prev',
-                },
-                breakpoints: {
-                    768: {
-                        slidesPerView: 2,
-                    },
-                    1024: {
-                        slidesPerView: 3,
-                    },
+                    renderBullet: function(index, className) {
+                        return '<span class="' + className + '" aria-label="Go to slide ' + (index + 1) + '\"></span>';
+                    }
                 },
             });
         }
@@ -190,25 +167,146 @@
             $(this).val(value);
         });
 
+        if (!$('#contactForm').length) {
+            return;
+        }
+
+        // 국적 리스트 로드
+        function loadNationalityOptions() {
+            const $select = $('#nationality');
+            if (!$select.length) return;
+
+            fetch('country.json')
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('국가 목록을 불러올 수 없습니다.');
+                    }
+                    return response.json();
+                })
+                .then(function(list) {
+                    if (!Array.isArray(list)) return;
+
+                    // 기존 placeholder 외 옵션 제거 후 재구성
+                    const $placeholder = $select.find('option[value=""]').first();
+                    $select.empty().append($placeholder);
+
+                    // 최상단 대한민국 고정
+                    $select.append(new Option('대한민국 / Republic of Korea', 'KOR'));
+
+                    const clean = function(str) {
+                        return (str || '').replace(/\s*\(en\)\s*$/i, '').trim();
+                    };
+
+                    list
+                        .map(function(country) {
+                            const code = country['alpha-2'] || country['alpha-3'] || country.name;
+                            const nativeName = clean(country.nativeName || country.name);
+                            const englishName = clean(country.name);
+                            const label = nativeName === englishName
+                                ? englishName
+                                : nativeName + ' / ' + englishName;
+                            return { code, label, englishName };
+                        })
+                        .filter(function(item) {
+                            return item.code && item.code.toUpperCase() !== 'KOR';
+                        })
+                        .sort(function(a, b) {
+                            return a.englishName.localeCompare(b.englishName);
+                        })
+                        .forEach(function(item) {
+                            $select.append(new Option(item.label, item.code));
+                        });
+
+                    // 기타 옵션 유지
+                    $select.append(new Option('기타 / Other', 'OTHER'));
+                })
+                .catch(function() {
+                    console.warn('국가 목록을 불러오지 못했습니다. 기본 옵션을 사용합니다.');
+                });
+        }
+
+        // 약관 파일 불러오기
+        function loadServiceTerms() {
+            const $termsBox = $('#serviceTerms');
+
+            if (!$termsBox.length) return;
+
+            fetch('서비스 기본약관.txt')
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('약관 파일을 불러오지 못했습니다.');
+                    }
+                    return response.text();
+                })
+                .then(function(text) {
+                    const content = text.trim();
+                    $termsBox.text(content || '약관 파일 내용이 비어 있습니다.');
+                })
+                .catch(function() {
+                    $termsBox.text('약관을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.');
+                });
+        }
+
+        const $submitBtn = $('#contactForm .submit-btn');
+        function toggleSubmitState() {
+            const ready = $('#agreeAll').is(':checked');
+            $submitBtn.prop('disabled', !ready);
+            $submitBtn.toggleClass('disabled', !ready);
+        }
+
+        loadNationalityOptions();
+        loadServiceTerms();
+        $('#agreeAll').on('change', toggleSubmitState);
+        toggleSubmitState();
+
         // 상담 폼 제출
         $('#contactForm').on('submit', function(e) {
             e.preventDefault();
             
             const formData = {
-                name: $('#name').val(),
-                phone: $('#phone').val(),
-                message: $('#message').val()
+                name: $('#name').val().trim(),
+                phone: $('#phone').val().trim(),
+                email: $('#email').val().trim(),
+                category: $('#category').val(),
+                nationality: $('#nationality').val(),
+                company: $('#company').val().trim(),
+                message: $('#message').val().trim(),
+                attachments: $('#attachments')[0] ? Array.from($('#attachments')[0].files).map(function(file) { return file.name; }) : [],
+                agreeAll: $('#agreeAll').is(':checked')
             };
 
             // 유효성 검사
-            if (!formData.name || !formData.phone || !formData.message) {
-                alert('모든 항목을 입력해주세요.');
+            if (!formData.name || !formData.phone || !formData.category || !formData.nationality || !formData.message) {
+                alert('필수 항목을 모두 입력해주세요.');
                 return;
             }
 
-            // 개인정보 동의 확인
-            if (!$('.privacy-check input').is(':checked')) {
-                alert('개인정보 수집 및 이용에 동의해주세요.');
+            if (formData.email && !isValidEmail(formData.email)) {
+                alert('올바른 이메일 주소를 입력해주세요.');
+                return;
+            }
+
+            const maxFileSize = 20 * 1024 * 1024; // 20MB
+            const maxFileCount = 5;
+            const attachmentsInput = $('#attachments')[0];
+            if (attachmentsInput && attachmentsInput.files.length) {
+                if (attachmentsInput.files.length > maxFileCount) {
+                    alert('첨부파일은 최대 5개까지 업로드 가능합니다.');
+                    return;
+                }
+
+                const invalidFile = Array.from(attachmentsInput.files).find(function(file) {
+                    return file.size > maxFileSize;
+                });
+
+                if (invalidFile) {
+                    alert('첨부파일은 파일당 20MB 이하만 업로드 가능합니다. 용량을 줄여 다시 시도해주세요.');
+                    return;
+                }
+            }
+
+            if (!formData.agreeAll) {
+                alert('서비스 기본약관 및 개인정보 처리에 동의해주세요.');
                 return;
             }
 
@@ -232,6 +330,7 @@
             console.log('Form submitted:', formData);
             alert('상담 신청이 완료되었습니다.\n빠른 시일 내에 연락드리겠습니다.');
             this.reset();
+            toggleSubmitState();
         });
     }
 
@@ -389,3 +488,5 @@
     };
 
 })(jQuery);
+
+
