@@ -1,0 +1,14 @@
+﻿@charset "UTF-8";
+/* Split bundle generated from main.css
+   - base.css: tokens, reset, globals
+   - header.css: header-only styles
+   - footer.css: footer & fixed bar
+   - layout.css: page layouts & components
+   - placeholders.css: temporary image fallbacks
+   - responsive.css: media queries */
+@import url('./base.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./layout.css');
+@import url('./placeholders.css');
+@import url('./responsive.css');

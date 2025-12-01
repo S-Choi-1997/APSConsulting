@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* ============================================
+   임시 이미지 Placeholder (이미지 없을 때)
+   ============================================ */
+
+/* 로고 placeholder */
+.logo img {
+    min-width: 250px;
+    min-height: 100px;
+    background: none;
+    border-radius: 0;
+    display: inline-block;
+}
+
+/* 메인 슬라이더 배경 placeholder (블루 바리에이션) */
+/* 실제 이미지가 있으므로 주석 처리 */
+/*
+.slide-bg.bg01 {
+    background-color: #023163;
+    background-image: linear-gradient(135deg, #011f3d 0%, #023163 50%, #02407d 100%);
+}
+
+.slide-bg.bg02 {
+    background-color: #034a8f;
+    background-image: linear-gradient(135deg, #02407d 0%, #034a8f 50%, #0563b8 100%);
+}
+
+.slide-bg.bg03 {
+    background-color: #02407d;
+    background-image: linear-gradient(135deg, #023163 0%, #02407d 50%, #034a8f 100%);
+}
+*/
+
+/* 팀 사진 placeholder */
+.team-photo {
+    background: linear-gradient(135deg, #9d856d 0%, #7a6551 100%);
+    min-height: 500px;
+    border-radius: 12px;
+    display: block;
+}
+
+/* 푸터 로고 placeholder */
+.footer-logo {
+    min-height: 50px;
+    background: none;
+    border-radius: 0;
+    display: inline-block;
+}
