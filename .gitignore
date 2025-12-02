@@ -8,6 +8,7 @@
 # 필수 파일 허용
 !index.html
 !about.html
+!team.html
 !services.html
 !cases.html
 !contact.html
