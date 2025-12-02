@@ -48,8 +48,13 @@
 }
 
 /* 활성 슬라이드의 배경 이미지 이동 애니메이션 */
+.slide-bg-inner {
+    animation: slideMove 8s linear infinite;
+    animation-play-state: paused;
+}
+
 .swiper-slide-active .slide-bg-inner {
-    animation: slideMove 5s linear forwards;
+    animation-play-state: running;
 }
 
 @keyframes slideMove {
