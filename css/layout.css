@@ -652,13 +652,11 @@
 
 /* 성공사례 카드 */
 .case-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(250, 245, 240, 0.85) 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.15);
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
     transition: all 0.3s;
 }
 
@@ -1224,12 +1222,10 @@
 
 .feature-item {
     padding: 30px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(250, 245, 240, 0.85) 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.15);
     border-radius: 12px;
-    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
     transition: all 0.4s;
 }
 
@@ -1279,9 +1275,7 @@
 }
 
 .vision-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 248, 250, 0.85) 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: linear-gradient(135deg, #ffffff 0%, #f5f8fa 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.12);
     padding: 50px 30px;
     border-radius: 12px;
@@ -1346,11 +1340,9 @@
     grid-template-columns: 350px 1fr;
     gap: 50px;
     align-items: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(250, 245, 240, 0.85) 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
     padding: 50px;
     border-radius: 16px;
     max-width: 1000px;
@@ -1482,13 +1474,11 @@
 }
 
 .service-detail-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(250, 245, 240, 0.85) 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.15);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
     transition: all 0.3s;
 }
 
@@ -1728,14 +1718,12 @@
 }
 
 .contact-method-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 248, 250, 0.85) 100%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, #ffffff 0%, #f5f8fa 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.12);
     padding: 50px 30px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
     transition: all 0.3s;
 }
 
@@ -1818,9 +1806,7 @@
 }
 
 .form-wrapper {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(250, 245, 240, 0.88) 100%);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.15);
     padding: 50px 45px;
     border-radius: 12px;
