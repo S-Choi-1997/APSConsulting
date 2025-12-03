@@ -1343,15 +1343,15 @@
 
 .team-profile {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 50px;
+    grid-template-columns: 420px 1fr;
+    gap: 70px;
     align-items: center;
     background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
     border: 1.5px solid rgba(4, 31, 47, 0.15);
     box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
-    padding: 50px;
+    padding: 70px;
     border-radius: 16px;
-    max-width: 1100px;
+    max-width: 1450px;
     width: 100%;
     margin: 0 auto;
     transition: all 0.3s;
