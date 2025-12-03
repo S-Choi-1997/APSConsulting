@@ -21,6 +21,9 @@
 !서비스 기본약관.txt
 !sitemap.xml
 
+#인증파일
+!naver2f94bb15ad95e85d77d65808103168bc.html
+
 # css 폴더 허용
 !css/
 !css/**
