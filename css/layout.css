@@ -1187,6 +1187,28 @@
     margin-bottom: 20px;
 }
 
+.about-description strong {
+    font-size: 1.3em;
+    font-weight: 800;
+    color: var(--second);
+    background: linear-gradient(135deg, var(--primary), var(--second));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-description .aps-highlight {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 25px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(157, 133, 109, 0.1), rgba(4, 31, 47, 0.05));
+    border-left: 4px solid var(--second);
+    border-radius: 8px;
+}
+
 .about-features {
     display: flex;
     flex-direction: column;
