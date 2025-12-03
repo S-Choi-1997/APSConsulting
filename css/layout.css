@@ -652,16 +652,23 @@
 
 /* 성공사례 카드 */
 .case-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
     transition: all 0.3s;
 }
 
 .case-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(157, 133, 109, 0.4);
+    box-shadow: 0 12px 40px rgba(4, 31, 47, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .case-tag {
@@ -1217,9 +1224,12 @@
 
 .feature-item {
     padding: 30px;
-    background: var(--bg-lighter);
-    border: 2px solid transparent;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 12px;
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
     transition: all 0.4s;
 }
 
@@ -1227,8 +1237,10 @@
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     color: #fff;
     transform: translateX(10px);
-    border-color: var(--primary-lighter);
-    box-shadow: 0 10px 30px rgba(2, 49, 99, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 12px 40px rgba(2, 49, 99, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .feature-item:hover .feature-number {
@@ -1267,17 +1279,24 @@
 }
 
 .vision-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 50px 30px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
     transition: all 0.3s;
 }
 
 .vision-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(157, 133, 109, 0.3);
+    box-shadow: 0 12px 40px rgba(4, 31, 47, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .vision-icon {
@@ -1327,11 +1346,16 @@
     grid-template-columns: 350px 1fr;
     gap: 50px;
     align-items: center;
-    background: var(--bg-lighter);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
     padding: 50px;
     border-radius: 16px;
     max-width: 1000px;
     margin: 0 auto;
+    transition: all 0.3s;
 }
 
 .profile-image {
@@ -1458,16 +1482,23 @@
 }
 
 .service-detail-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
     transition: all 0.3s;
 }
 
 .service-detail-card:hover {
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(157, 133, 109, 0.4);
+    box-shadow: 0 12px 40px rgba(4, 31, 47, 0.18);
     transform: translateY(-5px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .service-detail-icon {
@@ -1697,17 +1728,24 @@
 }
 
 .contact-method-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 50px 30px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.1);
     transition: all 0.3s;
 }
 
 .contact-method-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(157, 133, 109, 0.4);
+    box-shadow: 0 12px 40px rgba(4, 31, 47, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .method-icon {
@@ -1780,10 +1818,13 @@
 }
 
 .form-wrapper {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
     padding: 50px 45px;
     border-radius: 12px;
-    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 32px 0 rgba(4, 31, 47, 0.12);
 }
 
 .contact-form {
