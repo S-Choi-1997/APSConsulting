@@ -1335,6 +1335,12 @@
     overflow: hidden;
 }
 
+.team-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
 .team-profile {
     display: grid;
     grid-template-columns: 350px 1fr;
