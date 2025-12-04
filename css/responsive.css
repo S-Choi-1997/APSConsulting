@@ -131,8 +131,13 @@
     }
 
     .logo {
-        width: 160px;
-        height: 64px;
+        width: 180px;
+        height: 72px;
+    }
+
+    .logo img {
+        width: 70% !important;
+        height: 70% !important;
     }
 
     .main-nav {
@@ -272,7 +277,7 @@
         cursor: default !important;
     }
 
-    /* 모바일에서 모든 카드 hover/active/focus 효과 완전 제거 */
+    /* 모바일에서 모든 카드 hover/active/focus/터치 효과 완전 제거 */
     .service-card,
     .service-card:hover,
     .service-card:active,
@@ -315,9 +320,29 @@
         box-shadow: none !important;
         animation: none !important;
         -webkit-tap-highlight-color: transparent !important;
+        -webkit-touch-callout: none !important;
         outline: none !important;
         user-select: none !important;
         -webkit-user-select: none !important;
+        pointer-events: auto !important;
+        touch-action: pan-y !important;
+    }
+
+    /* 가상 요소도 모션 제거 */
+    .service-card *:hover,
+    .service-card *:active,
+    .service-detail-card *:hover,
+    .service-detail-card *:active,
+    .contact-method-card *:hover,
+    .contact-method-card *:active,
+    .vision-card *:hover,
+    .vision-card *:active,
+    .case-item *:hover,
+    .case-item *:active,
+    .why-card *:hover,
+    .why-card *:active {
+        transform: none !important;
+        transition: none !important;
     }
 
     /* 카드 내부 요소들도 모션 제거 */
@@ -1336,8 +1361,13 @@
     }
 
     .logo {
-        width: 140px;
-        height: 56px;
+        width: 150px;
+        height: 60px;
+    }
+
+    .logo img {
+        width: 65% !important;
+        height: 65% !important;
     }
     /* 모바일 메뉴 더 작게 */
     .mobile-menu {

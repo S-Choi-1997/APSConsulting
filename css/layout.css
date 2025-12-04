@@ -199,18 +199,20 @@
 
 .slide-content .btn-secondary {
     padding: 18px 40px;
-    background: transparent;
-    color: var(--primary);
+    background: rgba(157, 133, 109, 0.9);
+    color: #fff;
     font-size: 17px;
     font-weight: 600;
-    border: 2px solid var(--primary);
+    border: none;
     border-radius: 8px;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(157, 133, 109, 0.3);
 }
 
 .slide-content .btn-secondary:hover {
-    background: var(--primary);
-    color: #fff;
+    background: var(--second);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(157, 133, 109, 0.4);
 }
 
 /* Swiper 페이지네이션 커스텀 */
