@@ -95,12 +95,28 @@
             $('body').removeClass('menu-open');
         });
 
-        // 스크롤 시 헤더 배경
+        // 스크롤 시 헤더 배경 (하이스테리시스 적용)
+        var isScrolled = false;
+        var ticking = false;
+
         $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 100) {
-                $('#header').addClass('scrolled');
-            } else {
-                $('#header').removeClass('scrolled');
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    var scrollTop = $(window).scrollTop();
+
+                    // 하이스테리시스: 내려갈 때 120px, 올라갈 때 80px
+                    if (!isScrolled && scrollTop > 120) {
+                        $('#header').addClass('scrolled');
+                        isScrolled = true;
+                    } else if (isScrolled && scrollTop < 80) {
+                        $('#header').removeClass('scrolled');
+                        isScrolled = false;
+                    }
+
+                    ticking = false;
+                });
+
+                ticking = true;
             }
         });
     }
