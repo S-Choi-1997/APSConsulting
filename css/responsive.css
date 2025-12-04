@@ -130,21 +130,19 @@
         padding: 6px 0;
     }
 
-    /* 로고 강제 축소 */
+    /* 로고 컨테이너 크기 */
     #header .logo,
     .header-inner .logo {
         width: 150px !important;
         height: 60px !important;
-        max-width: 150px !important;
-        max-height: 60px !important;
     }
 
+    /* 모바일에서 작은 로고로 교체 */
     #header .logo img,
     .header-inner .logo img {
-        max-width: 100% !important;
-        max-height: 100% !important;
-        width: auto !important;
-        height: auto !important;
+        content: url('../images/logo-mobile.png') !important;
+        width: 100% !important;
+        height: 100% !important;
         object-fit: contain !important;
     }
 
@@ -1395,21 +1393,18 @@
         padding: 4px 0;
     }
 
-    /* 로고 더 작게 */
+    /* 480px에서 로고 더 작게 */
     #header .logo,
     .header-inner .logo {
         width: 120px !important;
         height: 48px !important;
-        max-width: 120px !important;
-        max-height: 48px !important;
     }
 
     #header .logo img,
     .header-inner .logo img {
-        max-width: 100% !important;
-        max-height: 100% !important;
-        width: auto !important;
-        height: auto !important;
+        content: url('../images/logo-mobile-small.png') !important;
+        width: 100% !important;
+        height: 100% !important;
         object-fit: contain !important;
     }
     /* 모바일 메뉴 더 작게 */
