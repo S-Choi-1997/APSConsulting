@@ -102,15 +102,19 @@
 
 .mobile-menu-btn span {
     display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
     width: 100%;
     height: 2px;
     background: var(--primary);
-    transition: all 0.3s;
+    transition: transform 0.3s, opacity 0.3s, top 0.3s;
     transform-origin: center;
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
-    transform: rotate(45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .mobile-menu-btn.active span:nth-child(2) {
@@ -118,7 +122,20 @@
 }
 
 .mobile-menu-btn.active span:nth-child(3) {
-    transform: rotate(-45deg);
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.mobile-menu-btn span:nth-child(1) {
+    transform: translate(-50%, -8px);
+}
+
+.mobile-menu-btn span:nth-child(2) {
+    transform: translate(-50%, -50%);
+}
+
+.mobile-menu-btn span:nth-child(3) {
+    transform: translate(-50%, 8px);
 }
 
 /* 모바일 메뉴 */
