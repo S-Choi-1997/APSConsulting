@@ -131,13 +131,8 @@
     }
 
     .logo {
-        width: 180px;
-        height: 72px;
-    }
-
-    .logo img {
-        width: 70% !important;
-        height: 70% !important;
+        width: 150px !important;
+        height: 60px !important;
     }
 
     .main-nav {
@@ -1388,13 +1383,8 @@
     }
 
     .logo {
-        width: 150px;
-        height: 60px;
-    }
-
-    .logo img {
-        width: 65% !important;
-        height: 65% !important;
+        width: 120px !important;
+        height: 48px !important;
     }
     /* 모바일 메뉴 더 작게 */
     .mobile-menu {
