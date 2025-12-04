@@ -97,6 +97,7 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .mobile-menu-btn span {
