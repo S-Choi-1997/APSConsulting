@@ -108,8 +108,8 @@
     width: 18px;
     height: 2px;
     background: var(--primary);
-    transition: transform 0.3s, opacity 0.3s;
-    transform-origin: center;
+    transform: translate(-50%, -50%);
+    transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
