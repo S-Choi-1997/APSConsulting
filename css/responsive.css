@@ -283,7 +283,7 @@
     .feature-item,
     .why-card,
     .team-card {
-        padding: 20px 16px !important;
+        padding: 18px 14px !important;
         min-height: auto !important;
         min-width: 0 !important;
         width: 100%;
@@ -2376,8 +2376,20 @@
         padding: 40px 25px;
     }
 
+    .section-why-us {
+        padding: 60px 20px !important;
+    }
+
+    .why-us-header {
+        margin-bottom: 40px !important;
+    }
+
+    .why-us-grid {
+        gap: 18px !important;
+    }
+
     .why-card {
-        padding: 40px 30px;
+        padding: 18px 14px !important;
     }
 
     .stats-header .section-title {

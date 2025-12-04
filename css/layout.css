@@ -2215,8 +2215,8 @@
 }
 
 .why-card {
-    background: linear-gradient(135deg, #ffffff 0%, #faf5f0 100%);
-    border: 1.5px solid rgba(4, 31, 47, 0.15);
+    background: linear-gradient(135deg, #f5fbff 0%, #e3f2ff 100%);
+    border: 1.5px solid rgba(4, 31, 47, 0.12);
     border-radius: 20px;
     padding: 50px 40px;
     position: relative;
