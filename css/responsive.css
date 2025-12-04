@@ -840,6 +840,11 @@
         position: static;
     }
 
+    .team-card-list {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
     /* Swiper 완전 비활성화 */
     .team-slider {
         overflow: visible !important;
@@ -2365,7 +2370,7 @@
 
     .why-us-grid {
         grid-template-columns: 1fr;
-        padding: 0 24px !important;
+        padding: 0 10px !important;
         width: calc(100% - 48px) !important;
         box-sizing: border-box;
         margin: 0 auto;
