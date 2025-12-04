@@ -507,12 +507,14 @@
             }
         });
 
-        // 업무분야 카드 호버 효과
-        $('.service-card').on('mouseenter', function() {
-            $(this).addClass('active');
-        }).on('mouseleave', function() {
-            $(this).removeClass('active');
-        });
+        // 업무분야 카드 호버 효과 (모바일 제외)
+        if ($(window).width() > 768) {
+            $('.service-card').on('mouseenter', function() {
+                $(this).addClass('active');
+            }).on('mouseleave', function() {
+                $(this).removeClass('active');
+            });
+        }
 
         // 모바일 전화 버튼 표시/숨김
         $(window).on('scroll', function() {
