@@ -466,6 +466,9 @@
 
     #fixed-footer {
         padding: 8px 12px;
+        display: block !important;
+        position: sticky !important;
+        z-index: 9999 !important;
     }
 
     .fixed-footer-inner {
@@ -1120,12 +1123,84 @@
         padding: 0 30px;
     }
 
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text .section-subtitle,
+    .about-text .section-title {
+        text-align: center;
+    }
+
     .about-text,
     .about-description {
         font-size: 15px;
         line-height: 1.7;
         margin-bottom: 15px;
         padding: 0 30px;
+    }
+
+    /* APS 약자 소개 - 모바일 창의적 디자인 */
+    .about-aps-block {
+        margin: 35px 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    .about-aps-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+        opacity: 0.8;
+    }
+
+    .about-aps-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 30px 0 30px;
+        align-items: center;
+    }
+
+    .about-aps-list span {
+        display: block;
+        text-align: left;
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--text-dark);
+        line-height: 1.4;
+        position: relative;
+        padding-left: 0;
+        width: auto;
+    }
+
+    .about-aps-list span strong {
+        display: inline-block;
+        font-size: 52px;
+        font-weight: 900;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--second) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-right: 8px;
+        line-height: 1;
+        vertical-align: baseline;
+        position: relative;
+        letter-spacing: -2px;
+    }
+
+    .about-aps-list span strong::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 110%;
+        height: 4px;
+        background: linear-gradient(90deg, var(--second) 0%, rgba(157, 133, 109, 0.3) 70%, transparent 100%);
+        opacity: 0.7;
+        border-radius: 2px;
     }
 
     .about-content h3,
@@ -1141,37 +1216,77 @@
 
     /* 선택하는 이유 - 2열 */
     .about-features {
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 10px;
-        padding: 0 24px !important;
-        width: calc(100% - 48px) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px;
+        padding: 0 30px !important;
+        width: calc(100% - 60px) !important;
         box-sizing: border-box;
         margin: 0 auto;
     }
 
     .feature-item {
-        padding: 15px 10px !important;
+        padding: 16px 0 16px 20px !important;
         min-width: 0 !important;
         width: 100%;
         box-sizing: border-box;
+        background: transparent !important;
+        border: none !important;
+        border-left: 4px solid transparent !important;
+        border-image: linear-gradient(to bottom, var(--primary), var(--second)) 1 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .feature-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(4, 31, 47, 0.04) 0%, rgba(4, 31, 47, 0.02) 30%, transparent 60%);
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    .feature-item:hover {
+        background: transparent !important;
+        border-image: linear-gradient(to bottom, var(--second), var(--primary)) 1 !important;
+        transform: translateX(8px) !important;
+        color: inherit !important;
+    }
+
+    .feature-item:hover::before {
+        background: linear-gradient(to right, rgba(4, 31, 47, 0.06) 0%, rgba(4, 31, 47, 0.03) 40%, transparent 70%);
     }
 
     .feature-number {
-        font-size: 24px;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--second);
+        margin-bottom: 6px;
+        opacity: 0.6;
+        letter-spacing: 2px;
         margin-bottom: 5px;
     }
 
     .feature-title {
-        font-size: 14px;
-        margin-bottom: 5px;
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--primary);
         word-break: keep-all;
         overflow-wrap: break-word;
     }
 
     .feature-desc {
-        font-size: 11px;
-        line-height: 1.4;
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--text-dark);
+        opacity: 0.85;
         word-break: keep-all;
         overflow-wrap: break-word;
     }
@@ -1505,7 +1620,7 @@
     /* 서비스 카드 (2열 유지) */
     .services-grid {
         grid-template-columns: repeat(2, 1fr) !important;
-        gap: 10px;
+        gap: 16px;
         padding: 0 20px !important;
         width: calc(100% - 40px) !important;
         max-width: 100%;
@@ -1514,17 +1629,43 @@
     }
 
     .service-card {
-        padding: 18px 14px !important;
+        padding: 24px 20px 24px 28px !important;
         min-width: 0 !important;
         min-height: auto !important;
         width: 100%;
         max-width: none !important;
         box-sizing: border-box;
-        border-radius: 10px;
+        border-radius: 16px;
         pointer-events: auto !important;
         cursor: default !important;
         transform: none !important;
         transition: none !important;
+        background: linear-gradient(to right, rgba(5, 99, 184, 0.04) 0%, rgba(255, 255, 255, 0.98) 20%, #fff 40%) !important;
+        box-shadow: 0 4px 16px rgba(2, 49, 99, 0.08), 0 1px 4px rgba(2, 49, 99, 0.04) !important;
+        border: 1px solid rgba(2, 49, 99, 0.08);
+        border-left: 4px solid transparent;
+        border-image: linear-gradient(to bottom, var(--primary-lighter), var(--second)) 1;
+        border-image-slice: 1;
+        border-left-width: 4px;
+        position: relative;
+        overflow: visible;
+    }
+
+    /* 각 카드마다 다른 좌측 바 색상 */
+    .service-card:nth-child(1) {
+        border-image: linear-gradient(to bottom, #0563b8, #034a8f) 1;
+    }
+
+    .service-card:nth-child(2) {
+        border-image: linear-gradient(to bottom, #034a8f, var(--second)) 1;
+    }
+
+    .service-card:nth-child(3) {
+        border-image: linear-gradient(to bottom, var(--second), #c9a96e) 1;
+    }
+
+    .service-card:nth-child(4) {
+        border-image: linear-gradient(to bottom, #0563b8, #02407d) 1;
     }
 
     .section-services-preview .service-card {
@@ -1534,25 +1675,38 @@
     }
 
     .card-icon {
-        width: 44px;
-        height: 44px;
-        margin-bottom: 10px;
+        width: 52px !important;
+        height: 52px !important;
+        margin-bottom: 14px !important;
+        color: var(--primary-lighter) !important;
+        filter: drop-shadow(0 2px 4px rgba(5, 99, 184, 0.1));
+    }
+
+    .card-icon svg {
+        width: 100%;
+        height: 100%;
     }
 
     .section-services-preview .card-icon {
-        width: 44px;
-        height: 44px;
-        margin-bottom: 10px;
+        width: 52px !important;
+        height: 52px !important;
+        margin-bottom: 14px !important;
     }
 
     .card-header h3 {
-        font-size: 15px;
-        margin-bottom: 5px;
-        line-height: 1.3;
+        font-size: 17px !important;
+        margin-bottom: 6px !important;
+        line-height: 1.4 !important;
+        font-weight: 700 !important;
+        color: var(--primary) !important;
+        letter-spacing: -0.3px;
     }
 
     .card-subtitle {
-        font-size: 10px;
+        font-size: 13px !important;
+        color: var(--text-light) !important;
+        line-height: 1.5 !important;
+        font-weight: 400 !important;
     }
 
     .card-body {
@@ -1825,12 +1979,84 @@
         padding: 0 24px;
     }
 
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text .section-subtitle,
+    .about-text .section-title {
+        text-align: center;
+    }
+
     .about-text,
     .about-description {
         font-size: 14px;
         line-height: 1.7;
         margin-bottom: 12px;
         padding: 0 24px;
+    }
+
+    /* APS 약자 소개 - 모바일 작은 화면 */
+    .about-aps-block {
+        margin: 30px 0;
+        padding: 0;
+        background: transparent;
+    }
+
+    .about-aps-title {
+        font-size: 17px;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 22px;
+        letter-spacing: 0.5px;
+        opacity: 0.8;
+    }
+
+    .about-aps-list {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 24px 0 24px;
+        align-items: center;
+    }
+
+    .about-aps-list span {
+        display: block;
+        text-align: left;
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--text-dark);
+        line-height: 1.4;
+        position: relative;
+        padding-left: 0;
+        width: auto;
+    }
+
+    .about-aps-list span strong {
+        display: inline-block;
+        font-size: 46px;
+        font-weight: 900;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--second) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-right: 6px;
+        line-height: 1;
+        vertical-align: baseline;
+        position: relative;
+        letter-spacing: -2px;
+    }
+
+    .about-aps-list span strong::after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        width: 110%;
+        height: 3.5px;
+        background: linear-gradient(90deg, var(--second) 0%, rgba(157, 133, 109, 0.3) 70%, transparent 100%);
+        opacity: 0.7;
+        border-radius: 2px;
     }
 
     .about-content h3,
@@ -1846,37 +2072,77 @@
 
     /* 선택하는 이유 - 2열 유지 */
     .about-features {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-        padding: 0 20px !important;
-        width: calc(100% - 40px) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 14px;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
         box-sizing: border-box;
         margin: 0 auto;
     }
 
     .feature-item {
-        padding: 12px 6px;
+        padding: 14px 0 14px 16px !important;
         min-width: 0;
         width: 100%;
         box-sizing: border-box;
+        background: transparent !important;
+        border: none !important;
+        border-left: 3.5px solid transparent !important;
+        border-image: linear-gradient(to bottom, var(--primary), var(--second)) 1 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    .feature-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, rgba(4, 31, 47, 0.04) 0%, rgba(4, 31, 47, 0.02) 30%, transparent 60%);
+        z-index: -1;
+        transition: all 0.3s ease;
+    }
+
+    .feature-item:hover {
+        background: transparent !important;
+        border-image: linear-gradient(to bottom, var(--second), var(--primary)) 1 !important;
+        transform: translateX(6px) !important;
+        color: inherit !important;
+    }
+
+    .feature-item:hover::before {
+        background: linear-gradient(to right, rgba(4, 31, 47, 0.06) 0%, rgba(4, 31, 47, 0.03) 40%, transparent 70%);
     }
 
     .feature-number {
-        font-size: 22px;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--second);
+        margin-bottom: 5px;
+        opacity: 0.6;
+        letter-spacing: 2px;
         margin-bottom: 4px;
     }
 
     .feature-title {
-        font-size: 13px;
-        margin-bottom: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: var(--primary);
         word-break: keep-all;
         overflow-wrap: break-word;
     }
 
     .feature-desc {
-        font-size: 10px;
-        line-height: 1.4;
+        font-size: 13px;
+        line-height: 1.6;
+        color: var(--text-dark);
+        opacity: 0.85;
         word-break: keep-all;
         overflow-wrap: break-word;
     }
@@ -2002,6 +2268,9 @@
     #fixed-footer {
         min-height: 45px;
         padding: 6px 10px;
+        display: block !important;
+        position: sticky !important;
+        z-index: 9999 !important;
     }
 
     .fixed-footer-inner {
@@ -2343,10 +2612,6 @@
 
 /* 가로 스크롤 방지 */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden !important;
-    }
-
     .section-contact-form {
         overflow-x: hidden !important;
     }
