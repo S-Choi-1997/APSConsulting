@@ -259,10 +259,11 @@
     .services-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 12px;
-        padding: 0 20px;
-        width: 100%;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
         max-width: 100%;
         box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .service-card,
@@ -669,8 +670,10 @@
     .contact-methods-grid {
         grid-template-columns: 1fr !important;
         gap: 12px;
-        padding: 0 20px;
-        width: 100%;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .contact-method-card {
@@ -777,8 +780,10 @@
     .vision-container {
         grid-template-columns: 1fr !important;
         gap: 12px;
-        padding: 0 20px;
-        width: 100%;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .vision-card {
@@ -939,8 +944,10 @@
     .cases-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 12px;
-        padding: 0 20px;
-        width: 100%;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .case-item {
@@ -1120,7 +1127,10 @@
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 10px;
-        width: 100%;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .feature-item {
@@ -1483,9 +1493,11 @@
     .services-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 10px;
-        padding: 0 16px;
-        width: 100%;
+        padding: 0 20px !important;
+        width: calc(100% - 40px) !important;
         max-width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .service-card {
@@ -1664,16 +1676,20 @@
     .cases-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        padding: 0 16px;
-        width: 100%;
+        padding: 0 20px !important;
+        width: calc(100% - 40px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .contact-methods-grid,
     .vision-container {
         grid-template-columns: 1fr !important;
         gap: 10px;
-        padding: 0 16px;
-        width: 100%;
+        padding: 0 20px !important;
+        width: calc(100% - 40px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .service-detail-card,
@@ -1820,7 +1836,10 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
-        width: 100%;
+        padding: 0 20px !important;
+        width: calc(100% - 40px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 
     .feature-item {
@@ -2328,6 +2347,10 @@
 
     .why-us-grid {
         grid-template-columns: 1fr;
+        padding: 0 24px !important;
+        width: calc(100% - 48px) !important;
+        box-sizing: border-box;
+        margin: 0 auto;
     }
 }
 
