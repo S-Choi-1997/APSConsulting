@@ -137,10 +137,9 @@
         height: 60px !important;
     }
 
-    /* 모바일에서 작은 로고로 교체 */
+    /* 로고 이미지는 JavaScript에서 동적으로 변경 */
     #header .logo img,
     .header-inner .logo img {
-        content: url('../images/logo-mobile.png') !important;
         width: 100% !important;
         height: 100% !important;
         object-fit: contain !important;
@@ -1400,9 +1399,9 @@
         height: 48px !important;
     }
 
+    /* 로고 이미지는 JavaScript에서 동적으로 변경 */
     #header .logo img,
     .header-inner .logo img {
-        content: url('../images/logo-mobile-small.png') !important;
         width: 100% !important;
         height: 100% !important;
         object-fit: contain !important;

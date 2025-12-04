@@ -61,6 +61,26 @@
     // 2. 헤더 (모바일 메뉴)
     // ============================================
     function initHeader() {
+        // 반응형 로고 변경
+        function updateLogo() {
+            var width = $(window).width();
+            var $logoImg = $('.logo img');
+
+            if (width <= 480) {
+                $logoImg.attr('src', './images/logo-mobile-small.png');
+            } else if (width <= 768) {
+                $logoImg.attr('src', './images/logo-mobile.png');
+            } else {
+                $logoImg.attr('src', './images/logo.png');
+            }
+        }
+
+        // 초기 로고 설정
+        updateLogo();
+
+        // 화면 크기 변경 시 로고 업데이트
+        $(window).on('resize', updateLogo);
+
         // 모바일 메뉴 토글
         $('.mobile-menu-btn').on('click', function() {
             $(this).toggleClass('active');
