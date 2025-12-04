@@ -516,6 +516,11 @@
             });
         }
 
+        // 모바일에서 모든 카드 클릭/터치 이벤트 제거
+        if ($(window).width() <= 768) {
+            $('.service-card, .service-detail-card, .contact-method-card, .vision-card, .case-item, .case-card, .feature-item, .why-card, .team-card').off('click touchstart touchend mouseenter mouseleave');
+        }
+
         // 모바일 전화 버튼 표시/숨김
         $(window).on('scroll', function() {
             if ($(window).scrollTop() > 300) {

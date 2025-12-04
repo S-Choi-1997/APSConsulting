@@ -131,8 +131,8 @@
     }
 
     .logo {
-        width: 200px;
-        height: 80px;
+        width: 160px;
+        height: 64px;
     }
 
     .main-nav {
@@ -257,6 +257,7 @@
         padding: 0 20px;
         width: 100%;
         max-width: 100%;
+        box-sizing: border-box;
     }
 
     .service-card {
@@ -267,38 +268,86 @@
         max-width: none !important;
         box-sizing: border-box;
         border-radius: 12px;
+        pointer-events: auto !important;
+        cursor: default !important;
     }
 
-    /* 모바일에서 모든 카드 hover/active 효과 제거 */
+    /* 모바일에서 모든 카드 hover/active/focus 효과 완전 제거 */
+    .service-card,
     .service-card:hover,
     .service-card:active,
+    .service-card:focus,
     .service-card.active,
+    .service-detail-card,
     .service-detail-card:hover,
     .service-detail-card:active,
+    .service-detail-card:focus,
+    .contact-method-card,
     .contact-method-card:hover,
     .contact-method-card:active,
+    .contact-method-card:focus,
+    .vision-card,
     .vision-card:hover,
     .vision-card:active,
+    .vision-card:focus,
+    .case-item,
     .case-item:hover,
     .case-item:active,
+    .case-item:focus,
+    .case-card,
     .case-card:hover,
     .case-card:active,
+    .case-card:focus,
+    .feature-item,
     .feature-item:hover,
     .feature-item:active,
+    .feature-item:focus,
+    .why-card,
     .why-card:hover,
-    .why-card:active {
+    .why-card:active,
+    .why-card:focus,
+    .team-card,
+    .team-card:hover,
+    .team-card:active,
+    .team-card:focus {
         transform: none !important;
-        padding: 20px 16px !important;
+        transition: none !important;
         box-shadow: none !important;
+        animation: none !important;
+        -webkit-tap-highlight-color: transparent !important;
+        outline: none !important;
+        user-select: none !important;
+        -webkit-user-select: none !important;
     }
 
+    /* 카드 내부 요소들도 모션 제거 */
+    .service-card *,
+    .service-detail-card *,
+    .contact-method-card *,
+    .vision-card *,
+    .case-item *,
+    .case-card *,
+    .feature-item *,
+    .why-card *,
+    .team-card * {
+        transform: none !important;
+        transition: none !important;
+    }
+
+    .service-card::before,
+    .service-card::after,
     .service-card:hover::before,
     .service-card:hover::after,
+    .service-detail-card::before,
+    .service-detail-card::after,
     .service-detail-card:hover::before,
     .service-detail-card:hover::after,
+    .why-card::before,
+    .why-card::after,
     .why-card:hover::before,
     .why-card:hover::after {
         opacity: 0 !important;
+        display: none !important;
     }
 
     .card-icon {
@@ -574,9 +623,9 @@
         font-size: 12px;
     }
 
-    /* 상담 방법 카드 - 3개 중 2개는 위, 1개는 아래 */
+    /* 상담 방법 카드 - 모바일에서 세로 1열 */
     .contact-methods-grid {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: 1fr !important;
         gap: 12px;
         padding: 0 20px;
         width: 100%;
@@ -588,10 +637,6 @@
         width: 100%;
         box-sizing: border-box;
         border-radius: 12px;
-    }
-
-    .contact-method-card:last-child {
-        grid-column: 1 / -1;
     }
 
     .method-icon {
@@ -644,6 +689,11 @@
         font-size: 13px;
     }
 
+    /* 빠른 온라인 문의 체크박스 모바일에서 숨기기 */
+    .form-benefits {
+        display: none !important;
+    }
+
     .section-contact-form .form-wrapper,
     .section-contact-form .form-wrapper.aos-init,
     .section-contact-form .form-wrapper.aos-animate {
@@ -681,9 +731,9 @@
         box-shadow: none !important;
     }
 
-    /* 비전 카드 - 2열 (3개 중 2개 위, 1개 아래) */
+    /* 비전 카드 - 모바일에서 세로 1열 */
     .vision-container {
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: 1fr !important;
         gap: 12px;
         padding: 0 20px;
         width: 100%;
@@ -695,10 +745,6 @@
         width: 100%;
         box-sizing: border-box;
         border-radius: 12px;
-    }
-
-    .vision-card:last-child {
-        grid-column: 1 / -1;
     }
 
     .vision-icon {
@@ -1290,8 +1336,8 @@
     }
 
     .logo {
-        width: 170px;
-        height: 68px;
+        width: 140px;
+        height: 56px;
     }
     /* 모바일 메뉴 더 작게 */
     .mobile-menu {
@@ -1403,6 +1449,10 @@
         max-width: none !important;
         box-sizing: border-box;
         border-radius: 10px;
+        pointer-events: auto !important;
+        cursor: default !important;
+        transform: none !important;
+        transition: none !important;
     }
 
     .section-services-preview .service-card {
@@ -1573,15 +1623,10 @@
 
     .contact-methods-grid,
     .vision-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr !important;
         gap: 10px;
         padding: 0 16px;
         width: 100%;
-    }
-
-    .contact-method-card:last-child,
-    .vision-card:last-child {
-        grid-column: 1 / -1;
     }
 
     .service-detail-card,
@@ -2212,17 +2257,13 @@
         grid-template-columns: 1fr;
     }
 }
-/* reCAPTCHA 아이콘 위치 조정 (모바일 가로 스크롤 방지) */
-@media (max-width: 768px) {
-    .grecaptcha-badge {
-        transform: scale(0.85);
-        transform-origin: right bottom;
-        right: 0 !important;
-        bottom: 0 !important;
-        z-index: 999;
-    }
+/* reCAPTCHA 배지 숨기기 (약관에 고지됨) */
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
 
-    /* 상담 페이지에서 reCAPTCHA로 인한 overflow 방지 */
+/* 가로 스크롤 방지 */
+@media (max-width: 768px) {
     body {
         overflow-x: hidden !important;
     }

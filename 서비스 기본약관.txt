@@ -147,3 +147,5 @@
 【부칙】
 
 제 1 조 (시행일) 이 약관은 2025년 12월 01일부터 시행합니다.
+
+제 2 조 (스팸 방지 및 보안) 본 사이트는 스팸 및 악의적인 접근을 방지하기 위해 Google reCAPTCHA로 보호되고 있으며, Google 개인정보처리방침(https://policies.google.com/privacy) 및 서비스 약관(https://policies.google.com/terms)이 적용됩니다.
