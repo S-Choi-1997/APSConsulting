@@ -796,6 +796,9 @@
         // 현재 언어 표시
         $('#currentLang').text(lang.toUpperCase());
 
+        // body에 언어 클래스 추가 (CSS에서 언어별 스타일 적용 가능)
+        $('body').removeClass('lang-ko lang-en lang-zh').addClass(`lang-${lang}`);
+
         // 모바일 버튼 활성화 상태
         $('.mobile-lang-btn').removeClass('active');
         $(`.mobile-lang-btn[data-lang="${lang}"]`).addClass('active');

@@ -1100,6 +1100,35 @@
         right: 5%;
     }
 
+    /* 영어 타블릿 조정 */
+    body.lang-en .typo-scatter {
+        font-size: 38px;
+    }
+
+    body.lang-en .typo-1 {
+        font-size: 46px;
+        top: 5%;
+        left: 3%;
+    }
+
+    body.lang-en .typo-2 {
+        font-size: 35px;
+        top: 32%;
+        right: 3%;
+    }
+
+    body.lang-en .typo-3 {
+        font-size: 48px;
+        top: 62%;
+        left: 8%;
+    }
+
+    body.lang-en .typo-4 {
+        font-size: 32px;
+        bottom: 3%;
+        right: 3%;
+    }
+
     .intro-right {
         min-height: auto;
     }
@@ -1846,6 +1875,40 @@
         font-size: 28px;
         bottom: 5%;
         right: 5%;
+    }
+
+    /* 영어 모바일 조정 */
+    body.lang-en .intro-left {
+        height: 250px;
+    }
+
+    body.lang-en .typo-scatter {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+    }
+
+    body.lang-en .typo-1 {
+        font-size: 34px;
+        top: 5%;
+        left: 3%;
+    }
+
+    body.lang-en .typo-2 {
+        font-size: 26px;
+        top: 32%;
+        right: 3%;
+    }
+
+    body.lang-en .typo-3 {
+        font-size: 38px;
+        top: 60%;
+        left: 5%;
+    }
+
+    body.lang-en .typo-4 {
+        font-size: 24px;
+        bottom: 3%;
+        right: 3%;
     }
 
     .intro-right {
