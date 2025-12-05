@@ -33,6 +33,10 @@
 !images/
 !images/**
 
+# i18n 다국어 폴더 허용
+!i18n/
+!i18n/**
+
 # docs 및 마크다운 허용
 !docs/
 !docs/**

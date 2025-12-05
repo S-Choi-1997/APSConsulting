@@ -1,0 +1,382 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Our Team",
+    "contact": "Contact"
+  },
+  "lang": {
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文"
+  },
+  "index": {
+    "slide1": {
+      "subtitle": "Visa & Immigration Expert",
+      "title": "Visa & Immigration<br/>Expert Services<br/><strong>APS Consulting</strong>",
+      "desc": "From complex visa procedures to residency management and naturalization,<br/>our expert administrative scriveners handle everything quickly and accurately.",
+      "btn1": "Free Consultation",
+      "btn2": "View Services"
+    },
+    "slide2": {
+      "subtitle": "Professional Service",
+      "title": "All-in-One<br/>Residency Management<br/><strong>One-Stop Service</strong>",
+      "desc": "Visa changes, extensions, permanent residency, naturalization, and more—<br/>all immigration services in one place.",
+      "btn1": "Free Consultation",
+      "btn2": "Meet Our Team"
+    },
+    "slide3": {
+      "subtitle": "Trusted Partner",
+      "title": "Systematic Preparation<br/>and Expertise<br/><strong>Together with You</strong>",
+      "desc": "Through systematic preparation and meticulous document review,<br/>we do our best for successful visa approval.",
+      "btn1": "Free Consultation",
+      "btn2": "About Us"
+    },
+    "intro": {
+      "subtitle": "ABOUT US",
+      "value1": "Expertise",
+      "value2": "Systematic",
+      "value3": "Trust",
+      "value4": "Transparency",
+      "text1": "APS Consulting is your <strong>reliable partner</strong> in various administrative services including immigration, non-profit organization establishment, and corporate certification.",
+      "text2": "We apply systematic processes to all tasks, managing progress <strong>transparently and meticulously</strong> from start to finish.",
+      "text3": "Whatever your goals, we will create <strong>trustworthy results</strong> through our sincerity and expertise.",
+      "btn": "Learn More About Us"
+    },
+    "services": {
+      "subtitle": "OUR SERVICES",
+      "title": "Main Service Areas",
+      "desc": "We provide the best services based on expertise and experience",
+      "viewall": "View All Services"
+    },
+    "service1": {
+      "title": "Immigration & VISA Services",
+      "subtitle": "Immigration & Visa Services",
+      "desc": "Status of residence changes/extensions, professional/unskilled visas, family invitation/accompanying family visas, permanent residence/naturalization applications, etc."
+    },
+    "service2": {
+      "title": "Non-Profit Organization Setup",
+      "subtitle": "Non-Profit Organization Setup",
+      "desc": "Non-profit corporation establishment approval, articles of association amendment, operation reporting, executive changes, various filing agency services, etc."
+    },
+    "service3": {
+      "title": "Business Certification & Permits",
+      "subtitle": "Business Certification & Permits",
+      "desc": "Corporate certifications, business licenses/registrations, factory registrations, development permits, land-related permits, etc."
+    },
+    "service4": {
+      "title": "Civil Affairs & Admin Support",
+      "subtitle": "Civil Affairs & Administrative Support",
+      "desc": "Complaint/petition writing, administrative appeals, fine/disposition explanations, contract writing, etc."
+    },
+    "why": {
+      "subtitle": "WHY CHOOSE US",
+      "title": "Why Choose APS Consulting",
+      "desc": "Ensuring visa approval through differentiated expertise and service"
+    },
+    "why1": {
+      "number": "01",
+      "title": "Multiple Expert Administrative Scriveners",
+      "desc": "As a corporation, we have expert administrative scriveners in each field who handle complex administrative tasks systematically and professionally."
+    },
+    "why2": {
+      "number": "02",
+      "title": "Collaborative Expert Network",
+      "desc": "We provide integrated and high-quality services by establishing close cooperation with related experts such as lawyers, accountants, and tax accountants."
+    },
+    "why3": {
+      "number": "03",
+      "title": "Continuous Follow-up Consulting",
+      "desc": "We support stable administrative work by providing continuous follow-up management and consulting as a long-term partner, not just one-time service."
+    },
+    "why4": {
+      "number": "04",
+      "title": "Transparent Progress Sharing",
+      "desc": "We share all progress in real-time, building trust and relieving client anxiety through clear cost guidance and schedule management."
+    },
+    "cta": {
+      "title": "Consult with an Expert",
+      "desc": "Complex administrative procedures can be solved easily and quickly with an expert.<br/>Apply for a free consultation now.",
+      "btn1": "Online Consultation"
+    }
+  },
+  "about": {
+    "pageHeader": {
+      "subtitle": "ABOUT US",
+      "title": "About Us",
+      "desc": "Supporting your life in Korea with expertise and trust"
+    },
+    "detail": {
+      "subtitle": "INTRODUCTION",
+      "title": "APS Consulting is<br/>an Administrative Professional Service Corporation",
+      "apsTitle": "APS stands for ...",
+      "apsA": "<strong>A</strong>dministrative",
+      "apsP": "<strong>P</strong>rofessional",
+      "apsS": "<strong>S</strong>ervice",
+      "desc1": "We provide accurate solutions to administrative difficulties<br/>through administrative consulting for various organizations and individuals in daily life.",
+      "desc2": "We will become a partner that creates successful results together<br/>with our best support for your important administrative matters."
+    },
+    "features": {
+      "feature1": {
+        "number": "01",
+        "title": "Expertise",
+        "desc": "Providing the best service with professional knowledge in various administrative fields"
+      },
+      "feature2": {
+        "number": "02",
+        "title": "Reliability",
+        "desc": "Securing customer trust through transparent and honest work processing"
+      },
+      "feature3": {
+        "number": "03",
+        "title": "Speed",
+        "desc": "Saving time and costs through fast and accurate work processing"
+      }
+    },
+    "vision": {
+      "visionTitle": "VISION",
+      "visionDesc": "Contributing to the realization of a harmonious society where 2 million foreigners coexist in Korea,<br/>and improving the smoothness of national administration and the quality of life for civil petitioners",
+      "missionTitle": "MISSION",
+      "missionDesc": "Supporting the legal life of foreigners in Korea<br/>and providing efficient work performance to civil petitioners<br/>through speed and accuracy",
+      "valueTitle": "VALUE",
+      "valueDesc": "Providing the best administrative services<br/>with customer-centered, expertise, reliability, speed, and transparency<br/>as our core values"
+    },
+    "cta": {
+      "title": "Consult with an Expert",
+      "desc": "Complex administrative procedures can be solved easily and quickly with an expert"
+    }
+  },
+  "services_page": {
+    "pageHeader": {
+      "subtitle": "OUR SERVICES",
+      "title": "Our Services",
+      "desc": "Providing the best results with professional administrative services"
+    },
+    "detail1": {
+      "title": "Immigration & VISA Services",
+      "subtitle": "Immigration & Visa Services",
+      "desc": "Professional handling of all immigration-related tasks including status of residence changes, permanent residence, and naturalization applications.",
+      "list1": "Status of residence changes/extensions",
+      "list2": "Professional/unskilled visas",
+      "list3": "Family invitation/accompanying family visas",
+      "list4": "Permanent residence/naturalization applications",
+      "list5": "Invitation letters/reason statements",
+      "list6": "Residence/employment change notifications",
+      "list7": "Judicial review response",
+      "link": "Apply for Consultation →"
+    },
+    "detail2": {
+      "title": "Non-Profit Organization Setup",
+      "subtitle": "Non-Profit Organization Setup",
+      "desc": "Systematic support from non-profit corporation establishment to articles of association amendments and executive changes.",
+      "list1": "Non-profit corporation establishment approval (associations, foundations, non-profit private organizations, voluntary organizations, social enterprises, cooperatives, etc.)",
+      "list2": "Articles of association amendment work",
+      "list3": "Operation reporting work",
+      "list4": "Executive change work",
+      "list5": "Various filing agency services after establishment",
+      "list6": "Corporation operation consultation",
+      "link": "Apply for Consultation →"
+    },
+    "detail3": {
+      "title": "Business Certification & Permits",
+      "subtitle": "Business Certification & Permits",
+      "desc": "One-stop processing from corporate certifications to business licenses and land-related permits.",
+      "list1": "Various corporate certification work",
+      "list2": "Industry-specific business licenses/registrations",
+      "list3": "Factory registration and facility standard review",
+      "list4": "Development permits (land form changes, etc.)",
+      "list5": "Various land-related permit work",
+      "link": "Apply for Consultation →"
+    },
+    "detail4": {
+      "title": "Civil Affairs & Support",
+      "subtitle": "Civil Affairs & Administrative Support",
+      "desc": "Supporting various civil affairs from complaint/petition writing to administrative appeals and contract writing.",
+      "list1": "Writing various complaints/petitions (school violence, etc.)",
+      "list2": "Administrative appeal relief request support",
+      "list3": "Fine/disposition explanation material support",
+      "list4": "Premium, contract/consent/confirmation writing",
+      "list5": "Other various administrative application agency services",
+      "link": "Apply for Consultation →"
+    },
+    "process": {
+      "subtitle": "PROCESS",
+      "title": "Work Process",
+      "desc": "We proceed with systematic and transparent procedures",
+      "step1": {
+        "number": "01",
+        "title": "Apply for Consultation",
+        "desc": "Online/phone consultation application"
+      },
+      "step2": {
+        "number": "02",
+        "title": "Consultation & Analysis",
+        "desc": "Expert consultation and required document guidance"
+      },
+      "step3": {
+        "number": "03",
+        "title": "Contract Agreement",
+        "desc": "Quote confirmation and contract execution"
+      },
+      "step4": {
+        "number": "04",
+        "title": "Work Execution",
+        "desc": "Document preparation and application agency"
+      },
+      "step5": {
+        "number": "05",
+        "title": "Completion",
+        "desc": "Result confirmation and document delivery"
+      }
+    },
+    "cta": {
+      "title": "What Visa Services Do You Need?",
+      "desc": "Our expert administrative scriveners will handle everything from consultation to completion"
+    }
+  },
+  "team": {
+    "pageHeader": {
+      "subtitle": "OUR TEAM",
+      "title": "Our Team",
+      "desc": "Meet the APS administrative scriveners responsible for various administrative tasks."
+    },
+    "section": {
+      "subtitle": "TEAM PROFILE",
+      "title": "Expert Administrative Scrivener Profiles",
+      "desc": "We transparently disclose the careers and expertise of our field-specific administrative scriveners."
+    },
+    "member1": {
+      "name": "Choi Jae-hyung",
+      "position": "General Director",
+      "career1": "33 years of service as a senior national government official",
+      "career2": "CNS Visiting Scholars Program Participation Certificate from Middlebury Institute of International Studies at Monterey (MIIS), USA",
+      "career3": "Recipient of the Republic of Korea's Order of National Security Merit",
+      "career4": "Recipient of the Republic of Korea's Order of Civil Merit, Red Stripes"
+    },
+    "member2": {
+      "name": "Lee Chung-min",
+      "position": "Chief Immigration Scrivener",
+      "career1": "33 years of service as a senior national government official",
+      "career2": "Recipient of the Republic of Korea's Order of Civil Merit, Red Stripes"
+    },
+    "member3": {
+      "name": "Cho Young-sang",
+      "position": "Chief Corporate Establishment Scrivener",
+      "career1": "33 years of service as a senior national government official"
+    },
+    "member4": {
+      "name": "Lee Chang-ho",
+      "position": "Chief Civil Affairs Scrivener",
+      "career1": "33 years of service as a senior national government official",
+      "career2": "Served as Counselor at the Embassy in Washington, USA"
+    },
+    "cta": {
+      "title": "Consult with an Expert",
+      "desc": "A designated administrative scrivener will directly connect to review your case. Please inquire quickly via phone or online consultation.",
+      "btn1": "Apply for Consultation"
+    }
+  },
+  "contact": {
+    "pageHeader": {
+      "subtitle": "CONTACT US",
+      "title": "Contact Us",
+      "desc": "Our expert administrative scriveners will respond promptly"
+    },
+    "methods": {
+      "phone": {
+        "title": "Phone Consultation",
+        "desc": "Weekdays 09:00 ~ 18:00",
+        "link": "0507-1386-1673"
+      },
+      "email": {
+        "title": "Email Consultation",
+        "desc": "24-hour reception",
+        "link": "apsconsulting00@gmail.com"
+      },
+      "visit": {
+        "title": "Visit Consultation",
+        "desc": "Appointment required",
+        "link": "401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do"
+      }
+    },
+    "form": {
+      "subtitle": "ONLINE CONSULTATION",
+      "title": "Quick Online Inquiry",
+      "intro": "If you need consultation regarding administrative work, please feel free to contact us anytime.<br/>We will review your submission and contact you promptly.",
+      "benefit1": "Free consultation",
+      "benefit2": "Quick response (within 24 hours)",
+      "benefit3": "Expert customized consultation",
+      "name": "Name *",
+      "namePlaceholder": "Enter your name",
+      "phone": "Phone Number *",
+      "phonePlaceholder": "010-0000-0000",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "category": "Consultation Field *",
+      "categoryPlaceholder": "Select",
+      "categoryVisa": "Immigration VISA",
+      "categoryNonprofit": "Non-Profit Organization Setup/Change",
+      "categoryCorporate": "Business Certification · Permits",
+      "categoryCivil": "Civil Affairs Agency · Administrative Appeals",
+      "categoryOther": "Other",
+      "nationality": "Nationality *",
+      "nationalityPlaceholder": "Select nationality",
+      "nationalityKOR": "Republic of Korea",
+      "nationalityOther": "Other",
+      "nationalityNote": "The country list is automatically loaded. If you select Other, please enter directly in the memo.",
+      "company": "Business/Organization Name",
+      "companyPlaceholder": "Enter your affiliation or company name",
+      "attachments": "Attachments (including photos)",
+      "attachmentsNote": "Maximum 5 files, 20MB or less per file (images/documents)",
+      "message": "Consultation Details *",
+      "messagePlaceholder": "Please write your consultation details in detail",
+      "termsTitle": "Basic Service Terms",
+      "termsDownload": "Download Terms File",
+      "agreeAll": "I agree to the Basic Service Terms and the collection and use of personal information",
+      "submit": "Submit Consultation"
+    },
+    "location": {
+      "subtitle": "LOCATION",
+      "title": "Directions",
+      "desc": "You can easily visit us with convenient transportation",
+      "addressTitle": "Address",
+      "address": "401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)",
+      "transportTitle": "Public Transportation",
+      "transport": "<strong>Subway</strong> 3-minute walk from Exit 4 of Seohyeon Station",
+      "parkingTitle": "Parking",
+      "parking": "Building parking available",
+      "hoursTitle": "Business Hours",
+      "hours": "Weekdays 09:00 ~ 18:00<br/>Closed on Saturdays, Sundays, and public holidays"
+    }
+  },
+  "footer": {
+    "fixed": {
+      "label": "Quick Menu",
+      "about": "About",
+      "services": "Services",
+      "cases": "Success Stories",
+      "contact": "Contact",
+      "phone": "0507-1386-1673",
+      "cta": "Contact Us",
+      "top": "TOP"
+    },
+    "main": {
+      "description": "We think from the customer's perspective and prioritize customer rights above all.<br/>We provide reliable administrative services based on expertise and passion.",
+      "phone": "0507-1386-1673",
+      "email": "apsconsulting00@gmail.com",
+      "quickLinksTitle": "Quick Links",
+      "quickLink1": "About",
+      "quickLink2": "Services",
+      "quickLink3": "Success Stories",
+      "quickLink4": "Contact",
+      "servicesTitle": "Main Services",
+      "service1": "Visa Change/Extension",
+      "service2": "Permanent Residence/Naturalization",
+      "service3": "Foreigner Residency Management",
+      "service4": "Immigration Civil Affairs",
+      "address": "Main Office: 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)  |  CEO: Choi Jae-hyung  |  Business Registration No.: 551-86-03815<br/>Phone: 0507-1386-1673  |  Email: apsconsulting00@gmail.com",
+      "copyright": "© 2025 APS Consulting Corporation. All rights reserved."
+    }
+  }
+}

@@ -24,6 +24,7 @@
             initAnimations();
             initForms();
             initScrollEffects();
+            initI18n();
         });
     });
 
@@ -270,12 +271,48 @@
         }
 
         // 약관 파일 불러오기
-        function loadServiceTerms() {
+        function loadServiceTerms(lang) {
             const $termsBox = $('#serviceTerms');
+            const $termsDownload = $('.terms-download');
 
             if (!$termsBox.length) return;
 
-            fetch('서비스 기본약관.txt')
+            // 언어별 약관 파일 이름 설정
+            let termsFileName;
+            if (lang === 'en') {
+                termsFileName = '서비스 기본약관_en.txt';
+            } else if (lang === 'zh') {
+                termsFileName = '服务基本条款_zh.txt';
+            } else {
+                termsFileName = '서비스 기본약관.txt';
+            }
+
+            // 다운로드 링크 업데이트
+            if ($termsDownload.length) {
+                $termsDownload.attr('href', termsFileName);
+            }
+
+            // 로딩 메시지
+            const loadingMessages = {
+                ko: '약관을 불러오는 중입니다...',
+                en: 'Loading terms...',
+                zh: '正在加载条款...'
+            };
+            const emptyMessages = {
+                ko: '약관 파일 내용이 비어 있습니다.',
+                en: 'Terms file is empty.',
+                zh: '条款文件为空。'
+            };
+            const errorMessages = {
+                ko: '약관을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.',
+                en: 'Failed to load terms. Please refresh and try again.',
+                zh: '无法加载条款。请刷新后重试。'
+            };
+
+            $termsBox.text(loadingMessages[lang] || loadingMessages.ko);
+
+            // 약관 파일 불러오기
+            fetch(termsFileName)
                 .then(function(response) {
                     if (!response.ok) {
                         throw new Error('약관 파일을 불러오지 못했습니다.');
@@ -284,12 +321,15 @@
                 })
                 .then(function(text) {
                     const content = text.trim();
-                    $termsBox.text(content || '약관 파일 내용이 비어 있습니다.');
+                    $termsBox.text(content || emptyMessages[lang] || emptyMessages.ko);
                 })
                 .catch(function() {
-                    $termsBox.text('약관을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.');
+                    $termsBox.text(errorMessages[lang] || errorMessages.ko);
                 });
         }
+
+        // 전역에서 접근 가능하도록 설정
+        window.loadServiceTerms = loadServiceTerms;
 
         const $submitBtn = $('#contactForm .submit-btn');
         function toggleSubmitState() {
@@ -407,7 +447,7 @@
         }
 
         loadNationalityOptions();
-        loadServiceTerms();
+        loadServiceTerms(currentLanguage || 'ko'); // 초기 로드
         $('#agreeAll').on('change', toggleSubmitState);
         toggleSubmitState();
 
@@ -660,6 +700,110 @@
             }
         }, 250);
     });
+
+    // ============================================
+    // 9. 다국어 지원 (i18n)
+    // ============================================
+    let currentLanguage = 'ko';
+    let translations = {};
+
+    function initI18n() {
+        // 저장된 언어 불러오기
+        const savedLang = localStorage.getItem('language') || 'ko';
+        loadLanguage(savedLang);
+
+        // PC 언어 선택 버튼 이벤트
+        $('#langBtn').on('click', function(e) {
+            e.stopPropagation();
+            $('#langDropdown').toggleClass('active');
+        });
+
+        // 드롭다운 외부 클릭 시 닫기
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.language-selector').length) {
+                $('#langDropdown').removeClass('active');
+            }
+        });
+
+        // 언어 선택
+        $('.lang-dropdown button, .mobile-lang-btn').on('click', function() {
+            const lang = $(this).data('lang');
+            loadLanguage(lang);
+            $('#langDropdown').removeClass('active');
+        });
+    }
+
+    function loadLanguage(lang) {
+        $.getJSON(`./i18n/${lang}.json`)
+            .done(function(data) {
+                translations = data;
+                currentLanguage = lang;
+                applyTranslations();
+                updateLanguageUI(lang);
+                localStorage.setItem('language', lang);
+
+                // 약관 파일도 언어에 맞게 업데이트
+                if (typeof window.loadServiceTerms === 'function') {
+                    window.loadServiceTerms(lang);
+                }
+            })
+            .fail(function(jqXHR, textStatus, errorThrown) {
+                console.error(`언어 파일 로드 실패: ${lang}.json`, textStatus, errorThrown);
+            });
+    }
+
+    function applyTranslations() {
+        // 중첩된 객체에서 값을 가져오는 헬퍼 함수
+        function getNestedValue(obj, path) {
+            return path.split('.').reduce((acc, part) => acc && acc[part], obj);
+        }
+
+        // 일반 텍스트 번역 (data-i18n)
+        $('[data-i18n]').each(function() {
+            const key = $(this).data('i18n');
+            const value = getNestedValue(translations, key);
+
+            if (value) {
+                // HTML 태그가 포함된 경우 html() 사용
+                if (value.includes('<')) {
+                    $(this).html(value);
+                } else {
+                    $(this).text(value);
+                }
+            }
+        });
+
+        // HTML 포함 번역 (data-i18n-html)
+        $('[data-i18n-html]').each(function() {
+            const key = $(this).data('i18n-html');
+            const value = getNestedValue(translations, key);
+            if (value) {
+                $(this).html(value);
+            }
+        });
+
+        // placeholder 속성 번역 (data-i18n-attr="placeholder")
+        $('[data-i18n-attr="placeholder"]').each(function() {
+            const key = $(this).data('i18n');
+            const value = getNestedValue(translations, key);
+            if (value) {
+                $(this).attr('placeholder', value);
+            }
+        });
+    }
+
+    function updateLanguageUI(lang) {
+        // 현재 언어 표시
+        $('#currentLang').text(lang.toUpperCase());
+
+        // 모바일 버튼 활성화 상태
+        $('.mobile-lang-btn').removeClass('active');
+        $(`.mobile-lang-btn[data-lang="${lang}"]`).addClass('active');
+
+        // 드롭다운 버튼 활성화 상태
+        $('.lang-dropdown button').removeClass('active');
+        $(`.lang-dropdown button[data-lang="${lang}"]`).addClass('active');
+    }
 
     // ============================================
     // 10. 유틸리티 함수

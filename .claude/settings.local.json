@@ -18,7 +18,9 @@
       "Bash(gcloud run services logs read:*)",
       "Bash(gcloud recaptcha keys describe:*)",
       "Bash(ls:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(node -e:*)",
+      "Bash(wc:*)"
     ],
     "deny": [],
     "ask": []

@@ -13,32 +13,50 @@
 				<nav aria-label="주 메뉴" class="main-nav">
 					<ul>
 						<li>
-							<a href="index.html">
+							<a href="index.html" data-i18n="nav.home">
 								홈
 							</a>
 						</li>
 						<li>
-							<a href="about.html">
+							<a href="about.html" data-i18n="nav.about">
 								회사소개
 							</a>
 						</li>
 						<li>
-							<a href="team.html">
+							<a href="team.html" data-i18n="nav.team">
 								행정사 소개
 							</a>
 						</li>
 						<li>
-							<a href="services.html">
+							<a href="services.html" data-i18n="nav.services">
 								업무분야
 							</a>
 						</li>
 						<li>
-							<a href="contact.html">
+							<a href="contact.html" data-i18n="nav.contact">
 								상담신청
 							</a>
 						</li>
 					</ul>
 				</nav>
+				<!-- 언어 선택 -->
+				<div class="language-selector">
+					<button class="lang-btn" id="langBtn">
+						<svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<circle cx="12" cy="12" r="10"></circle>
+							<path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+						</svg>
+						<span id="currentLang">KO</span>
+						<svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<polyline points="6 9 12 15 18 9"></polyline>
+						</svg>
+					</button>
+					<ul class="lang-dropdown" id="langDropdown">
+						<li><button data-lang="ko" data-i18n="lang.ko">한국어</button></li>
+						<li><button data-lang="en" data-i18n="lang.en">English</button></li>
+						<li><button data-lang="zh" data-i18n="lang.zh">中文</button></li>
+					</ul>
+				</div>
 				<!-- 모바일 메뉴 버튼 -->
                 <button aria-label="메뉴 열기" class="mobile-menu-btn">
                     <svg aria-hidden="true" class="menu-icon" viewBox="0 0 24 24">
@@ -52,29 +70,37 @@
 				<nav aria-label="모바일 메뉴">
 					<ul>
 						<li>
-							<a href="index.html">
+							<a href="index.html" data-i18n="nav.home">
 								홈
 							</a>
 						</li>
 						<li>
-							<a href="about.html">
+							<a href="about.html" data-i18n="nav.about">
 								회사소개
 							</a>
 						</li>
 						<li>
-							<a href="team.html">
+							<a href="team.html" data-i18n="nav.team">
 								행정사 소개
 							</a>
 						</li>
 						<li>
-							<a href="services.html">
+							<a href="services.html" data-i18n="nav.services">
 								업무분야
 							</a>
 						</li>
 						<li>
-							<a href="contact.html">
+							<a href="contact.html" data-i18n="nav.contact">
 								상담신청
 							</a>
+						</li>
+						<li class="mobile-lang-section">
+							<span class="mobile-lang-title">Language</span>
+							<div class="mobile-lang-buttons">
+								<button class="mobile-lang-btn" data-lang="ko">한국어</button>
+								<button class="mobile-lang-btn" data-lang="en">English</button>
+								<button class="mobile-lang-btn" data-lang="zh">中文</button>
+							</div>
 						</li>
 					</ul>
 				</nav>

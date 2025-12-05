@@ -162,3 +162,145 @@
     padding: 12px 0;
     border-bottom: 1px solid var(--border-color);
 }
+
+/* ============================================ */
+/* 언어 선택 UI */
+/* ============================================ */
+
+/* PC 언어 선택 */
+.language-selector {
+    position: relative;
+    margin-left: 30px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.lang-btn svg:first-child {
+    flex-shrink: 0;
+}
+
+.lang-btn svg:last-child {
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.lang-dropdown.active + .lang-btn svg:last-child {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: #fff;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    min-width: 140px;
+    z-index: 1001;
+}
+
+.lang-dropdown.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.lang-dropdown li {
+    list-style: none;
+}
+
+.lang-dropdown button {
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.lang-dropdown li:last-child button {
+    border-bottom: none;
+}
+
+.lang-dropdown button:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.lang-dropdown button.active {
+    background: var(--primary-lighter);
+    color: #fff;
+    font-weight: 700;
+}
+
+/* 모바일 언어 선택 */
+.mobile-lang-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--primary);
+}
+
+.mobile-lang-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.mobile-lang-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.mobile-lang-btn {
+    flex: 1;
+    min-width: 80px;
+    padding: 10px 16px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mobile-lang-btn:hover,
+.mobile-lang-btn.active {
+    background: var(--primary);
+    color: #fff;
+}
