@@ -510,7 +510,7 @@
 
     .fixed-footer-actions {
         width: 100%;
-        justify-content: space-between;
+        justify-content: center;
         gap: 8px;
     }
 
@@ -2577,12 +2577,16 @@
 
     .fixed-footer-actions {
         gap: 6px;
+        width: 100%;
+        justify-content: center;
     }
 
     .fixed-footer-phone {
         padding: 8px 10px;
         font-size: 10px;
         white-space: nowrap;
+        justify-content: center;
+
     }
 
     .fixed-footer-cta {
