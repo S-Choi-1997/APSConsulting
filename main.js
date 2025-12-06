@@ -283,11 +283,11 @@
             // 언어별 약관 파일 이름 설정
             let termsFileName;
             if (lang === 'en') {
-                termsFileName = '서비스 기본약관_en.txt';
+                termsFileName = 'terms/terms_en.txt';
             } else if (lang === 'zh') {
-                termsFileName = '服务基本条款_zh.txt';
+                termsFileName = 'terms/terms_zh.txt';
             } else {
-                termsFileName = '서비스 기본약관.txt';
+                termsFileName = 'terms/terms_ko.txt';
             }
 
             // 다운로드 링크 업데이트
