@@ -1470,7 +1470,7 @@ body.lang-en .typo-4 {
     box-shadow: 0 6px 24px rgba(2, 49, 99, 0.08);
     padding: 0;
     border-radius: 24px;
-    max-width: 1450px;
+    max-width: 1100px;
     width: 100%;
     margin: 0 auto;
     position: relative;
@@ -1491,18 +1491,23 @@ body.lang-en .typo-4 {
 
 .profile-image {
     flex-shrink: 0;
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height: 100%;
     border-radius: 0;
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--primary-lighter) 0%, var(--primary-light) 100%);
+    overflow: visible;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
 }
 
 .profile-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
     object-position: center;
+    border-radius: 12px;
 }
 
 .profile-content {
@@ -1510,13 +1515,14 @@ body.lang-en .typo-4 {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 36px 40px;
+    padding: 36px 30px;
     justify-content: center;
 }
 
 .profile-header {
     border-bottom: 2px solid var(--primary);
     padding-bottom: 16px;
+    padding-left: 20px;
 }
 
 .profile-name {
