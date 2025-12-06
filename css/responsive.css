@@ -298,7 +298,7 @@
         cursor: default !important;
     }
 
-    /* 모바일에서 모든 카드 클릭/터치 완전 차단 */
+    /* 모바일에서 모든 카드 애니메이션 제거 (스크롤은 정상 작동) */
     .service-card,
     .service-card:hover,
     .service-card:active,
@@ -355,7 +355,7 @@
         -moz-user-select: none !important;
         -ms-user-select: none !important;
         pointer-events: none !important;
-        touch-action: none !important;
+        /* touch-action 제거 - 스크롤 허용 */
     }
 
     /* 가상 요소도 모션 제거 */
