@@ -592,24 +592,14 @@
             });
         }
 
-        // 모바일에서 모든 카드 이벤트 완전 차단
+        // 모바일에서 카드 클릭/터치 효과만 차단 (스크롤은 허용)
         if ($(window).width() <= 768) {
             var cardSelectors = '.service-card, .service-detail-card, .contact-method-card, .vision-card, .case-item, .case-card, .feature-item, .why-card, .team-card';
 
-            // 모든 이벤트 제거
-            $(cardSelectors).off();
-
-            // 새로운 이벤트 리스너로 차단
-            $(cardSelectors).on('click touchstart touchend touchmove mousedown mouseup mousemove', function(e) {
+            // 클릭만 차단 (터치 이동은 허용)
+            $(cardSelectors).on('click', function(e) {
                 e.preventDefault();
-                e.stopPropagation();
-                e.stopImmediatePropagation();
                 return false;
-            });
-
-            // 카드 내부 요소도 차단
-            $(cardSelectors + ' *').on('click touchstart touchend touchmove', function(e) {
-                e.stopPropagation();
             });
         }
 
