@@ -156,7 +156,7 @@
     }
 
     /* 모바일 메뉴 최적화 */
-    .mobile-menu {
+    .mobile-menu nav {
         width: 240px;
         padding: 60px 20px;
     }
@@ -1571,7 +1571,7 @@
         object-fit: contain !important;
     }
     /* 모바일 메뉴 더 작게 */
-    .mobile-menu {
+    .mobile-menu nav {
         width: 220px;
         padding: 50px 15px;
     }

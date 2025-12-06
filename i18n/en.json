@@ -16,21 +16,21 @@
       "subtitle": "Visa & Immigration Expert",
       "title": "Visa & Immigration<br/>Expert Services<br/><strong>APS Consulting</strong>",
       "desc": "From complex visa procedures to residency management and naturalization,<br/>our expert administrative scriveners handle everything quickly and accurately.",
-      "btn1": "Free Consultation",
+      "btn1": "Request Consultation",
       "btn2": "View Services"
     },
     "slide2": {
       "subtitle": "Professional Service",
       "title": "All-in-One<br/>Residency Management<br/><strong>One-Stop Service</strong>",
       "desc": "Visa changes, extensions, permanent residency, naturalization, and more—<br/>all immigration services in one place.",
-      "btn1": "Free Consultation",
+      "btn1": "Request Consultation",
       "btn2": "Meet Our Team"
     },
     "slide3": {
       "subtitle": "Trusted Partner",
       "title": "Systematic Preparation<br/>and Expertise<br/><strong>Together with You</strong>",
       "desc": "Through systematic preparation and meticulous document review,<br/>we do our best for successful visa approval.",
-      "btn1": "Free Consultation",
+      "btn1": "Request Consultation",
       "btn2": "About Us"
     },
     "intro": {
@@ -97,7 +97,7 @@
     },
     "cta": {
       "title": "Consult with an Expert",
-      "desc": "Complex administrative procedures can be solved easily and quickly with an expert.<br/>Apply for a free consultation now.",
+      "desc": "Complex administrative procedures can be solved easily and quickly with an expert.<br/>Apply for a consultation now.",
       "btn1": "Online Consultation"
     }
   },
@@ -291,7 +291,7 @@
       },
       "email": {
         "title": "Email Consultation",
-        "desc": "24-hour reception",
+        "desc": "Available anytime",
         "link": "apsconsulting00@gmail.com"
       },
       "visit": {
@@ -304,8 +304,8 @@
       "subtitle": "ONLINE CONSULTATION",
       "title": "Quick Online Inquiry",
       "intro": "If you need consultation regarding administrative work, please feel free to contact us anytime.<br/>We will review your submission and contact you promptly.",
-      "benefit1": "Free consultation",
-      "benefit2": "Quick response (within 24 hours)",
+      "benefit1": "Professional consultation",
+      "benefit2": "Quick response",
       "benefit3": "Expert customized consultation",
       "name": "Name *",
       "namePlaceholder": "Enter your name",

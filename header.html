@@ -95,11 +95,28 @@
 							</a>
 						</li>
 						<li class="mobile-lang-section">
-							<span class="mobile-lang-title">Language</span>
-							<div class="mobile-lang-buttons">
-								<button class="mobile-lang-btn" data-lang="ko">한국어</button>
-								<button class="mobile-lang-btn" data-lang="en">English</button>
-								<button class="mobile-lang-btn" data-lang="zh">中文</button>
+							<div class="mobile-lang-dropdown">
+								<button class="mobile-lang-current" id="mobileLangBtn">
+									<span class="flag-icon">🌐</span>
+									<span id="mobileLangText">한국어</span>
+									<svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+										<polyline points="6 9 12 15 18 9"></polyline>
+									</svg>
+								</button>
+								<div class="mobile-lang-options" id="mobileLangOptions">
+									<button class="mobile-lang-option" data-lang="ko">
+										<span class="flag-icon">🇰🇷</span>
+										<span>한국어</span>
+									</button>
+									<button class="mobile-lang-option" data-lang="en">
+										<span class="flag-icon">🇺🇸</span>
+										<span>English</span>
+									</button>
+									<button class="mobile-lang-option" data-lang="zh">
+										<span class="flag-icon">🇨🇳</span>
+										<span>中文</span>
+									</button>
+								</div>
 							</div>
 						</li>
 					</ul>

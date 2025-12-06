@@ -16,21 +16,21 @@
       "subtitle": "Visa & Immigration Expert",
       "title": "签证 · 出入境<br/>专业行政士<br/><strong>APS咨询</strong>",
       "desc": "从复杂的签证程序到居留管理、归化，<br/>专业行政士快速准确地为您处理。",
-      "btn1": "免费咨询申请",
+      "btn1": "咨询申请",
       "btn2": "查看服务领域"
     },
     "slide2": {
       "subtitle": "Professional Service",
       "title": "外国人居留<br/>管理的一切<br/><strong>一站式服务</strong>",
       "desc": "签证变更、延期、永久居留、归化等<br/>一站式支持所有出入境业务。",
-      "btn1": "免费咨询申请",
+      "btn1": "咨询申请",
       "btn2": "查看行政士"
     },
     "slide3": {
       "subtitle": "Trusted Partner",
       "title": "系统化准备<br/>专业服务<br/><strong>与您同行</strong>",
       "desc": "通过系统化准备和细致的文件审查，<br/>为成功获得签证批准尽最大努力。",
-      "btn1": "免费咨询申请",
+      "btn1": "咨询申请",
       "btn2": "公司介绍"
     },
     "intro": {
@@ -97,7 +97,7 @@
     },
     "cta": {
       "title": "与专业行政士咨询",
-      "desc": "复杂的行政程序，与专家一起可以轻松快速地解决。<br/>现在就申请免费咨询。",
+      "desc": "复杂的行政程序，与专家一起可以轻松快速地解决。<br/>现在就申请咨询。",
       "btn1": "在线咨询申请"
     }
   },
@@ -291,7 +291,7 @@
       },
       "email": {
         "title": "邮件咨询",
-        "desc": "24小时接收",
+        "desc": "随时可接收",
         "link": "apsconsulting00@gmail.com"
       },
       "visit": {
@@ -304,8 +304,8 @@
       "subtitle": "ONLINE CONSULTATION",
       "title": "快速在线咨询",
       "intro": "如需行政业务相关咨询，请随时联系我们。<br/>确认您填写的内容后将迅速与您联系。",
-      "benefit1": "免费咨询",
-      "benefit2": "快速回复（24小时内）",
+      "benefit1": "专业咨询",
+      "benefit2": "快速回复",
       "benefit3": "专家定制咨询",
       "name": "姓名 *",
       "namePlaceholder": "请输入姓名",

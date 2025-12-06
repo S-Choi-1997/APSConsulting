@@ -83,7 +83,8 @@
         $(window).on('resize', updateLogo);
 
         // 모바일 메뉴 토글
-        $('.mobile-menu-btn').on('click', function() {
+        $('.mobile-menu-btn').on('click', function(e) {
+            e.stopPropagation();
             $(this).toggleClass('active');
             $('.mobile-menu').toggleClass('active');
             $('body').toggleClass('menu-open');
@@ -94,6 +95,15 @@
             $('.mobile-menu-btn').removeClass('active');
             $('.mobile-menu').removeClass('active');
             $('body').removeClass('menu-open');
+        });
+
+        // 모바일 메뉴 외부 클릭 시 닫기
+        $('.mobile-menu').on('click', function(e) {
+            if (e.target === this) {
+                $('.mobile-menu-btn').removeClass('active');
+                $('.mobile-menu').removeClass('active');
+                $('body').removeClass('menu-open');
+            }
         });
 
         // 스크롤 시 헤더 배경 (하이스테리시스 적용)
@@ -716,10 +726,24 @@
         });
 
         // 언어 선택
-        $('.lang-dropdown button, .mobile-lang-btn').on('click', function() {
+        $('.lang-dropdown button, .mobile-lang-option').on('click', function() {
             const lang = $(this).data('lang');
             loadLanguage(lang);
             $('#langDropdown').removeClass('active');
+            $('#mobileLangOptions').removeClass('active');
+        });
+
+        // 모바일 언어 드롭다운 토글
+        $('#mobileLangBtn').on('click', function(e) {
+            e.stopPropagation();
+            $('#mobileLangOptions').toggleClass('active');
+        });
+
+        // 모바일 언어 드롭다운 외부 클릭 시 닫기
+        $(document).on('click', function(e) {
+            if (!$(e.target).closest('.mobile-lang-dropdown').length) {
+                $('#mobileLangOptions').removeClass('active');
+            }
         });
     }
 
@@ -789,9 +813,13 @@
         // body에 언어 클래스 추가 (CSS에서 언어별 스타일 적용 가능)
         $('body').removeClass('lang-ko lang-en lang-zh').addClass(`lang-${lang}`);
 
-        // 모바일 버튼 활성화 상태
-        $('.mobile-lang-btn').removeClass('active');
-        $(`.mobile-lang-btn[data-lang="${lang}"]`).addClass('active');
+        // 모바일 언어 드롭다운 텍스트 업데이트
+        const langNames = { ko: '한국어', en: 'English', zh: '中文' };
+        $('#mobileLangText').text(langNames[lang] || '한국어');
+
+        // 모바일 옵션 활성화 상태
+        $('.mobile-lang-option').removeClass('active');
+        $(`.mobile-lang-option[data-lang="${lang}"]`).addClass('active');
 
         // 드롭다운 버튼 활성화 상태
         $('.lang-dropdown button').removeClass('active');
