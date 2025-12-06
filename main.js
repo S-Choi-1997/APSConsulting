@@ -64,22 +64,15 @@
     function initHeader() {
         // 반응형 로고 변경
         function updateLogo() {
-            var width = $(window).width();
             var $logoImg = $('.logo img');
-
-            if (width <= 480) {
-                $logoImg.attr('src', './images/logo-mobile-small.png');
-            } else if (width <= 768) {
-                $logoImg.attr('src', './images/logo-mobile.png');
-            } else {
-                $logoImg.attr('src', './images/logo.png');
-            }
+            // 모든 화면 크기에서 동일한 로고 사용
+            $logoImg.attr('src', './images/logo.png');
         }
 
         // 초기 로고 설정
         updateLogo();
 
-        // 화면 크기 변경 시 로고 업데이트
+        // 화면 크기 변경 시 로고 업데이트 (필요시를 위해 유지)
         $(window).on('resize', updateLogo);
 
         // 모바일 메뉴 토글

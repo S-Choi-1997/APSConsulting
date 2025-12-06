@@ -149,6 +149,12 @@
         /* Reset placeholder minimums so logos can shrink on mobile */
         min-width: 0 !important;
         min-height: 0 !important;
+        /* 선명도 향상 */
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0);
     }
 
     .main-nav {
@@ -1545,6 +1551,12 @@
         width: 100% !important;
         height: 100% !important;
         object-fit: contain !important;
+        /* 선명도 향상 */
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateZ(0);
     }
     /* 모바일 메뉴 더 작게 */
     .mobile-menu nav {
