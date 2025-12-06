@@ -333,8 +333,17 @@
       "messagePlaceholder": "请详细填写您的咨询内容",
       "termsTitle": "服务基本条款",
       "termsDownload": "下载条款文件",
-      "agreeAll": "同意服务基本条款及个人信息收集·使用",
+      "agreeAllBtn": "同意以上所有必填项",
+      "agreeTerms": "[必填] 同意服务基本条款",
+      "viewTerms": "查看详情",
+      "agreePrivacy": "[必填] 同意收集和使用必填个人信息",
+      "viewPrivacy": "查看详情",
+      "agreeTransfer": "[必填] 同意个人信息跨境传输",
+      "viewTransfer": "查看详情",
       "submit": "提交咨询申请"
+    },
+    "modal": {
+      "close": "关闭"
     },
     "location": {
       "subtitle": "LOCATION",

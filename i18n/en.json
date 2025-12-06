@@ -333,8 +333,17 @@
       "messagePlaceholder": "Please write your consultation details in detail",
       "termsTitle": "Basic Service Terms",
       "termsDownload": "Download Terms File",
-      "agreeAll": "I agree to the Basic Service Terms and the collection and use of personal information",
+      "agreeAllBtn": "I agree to all required items above",
+      "agreeTerms": "[Required] I agree to the Basic Service Terms",
+      "viewTerms": "View Details",
+      "agreePrivacy": "[Required] I agree to the collection and use of required personal information",
+      "viewPrivacy": "View Details",
+      "agreeTransfer": "[Required] I agree to the international transfer of personal information",
+      "viewTransfer": "View Details",
       "submit": "Submit Consultation"
+    },
+    "modal": {
+      "close": "Close"
     },
     "location": {
       "subtitle": "LOCATION",

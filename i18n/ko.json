@@ -333,8 +333,17 @@
       "messagePlaceholder": "상담하실 내용을 자세히 작성해주세요",
       "termsTitle": "서비스 기본약관",
       "termsDownload": "약관 파일 다운로드",
-      "agreeAll": "서비스 기본약관 및 개인정보 수집·이용에 모두 동의합니다",
+      "agreeAllBtn": "위 모든 필수 사항에 동의합니다",
+      "agreeTerms": "[필수] 서비스 기본약관에 동의합니다",
+      "viewTerms": "전문 보기",
+      "agreePrivacy": "[필수] 개인정보 필수 항목 수집 및 이용에 동의합니다",
+      "viewPrivacy": "상세 내용 보기",
+      "agreeTransfer": "[필수] 개인정보의 국외 이전에 동의합니다",
+      "viewTransfer": "상세 내용 보기",
       "submit": "상담 신청하기"
+    },
+    "modal": {
+      "close": "닫기"
     },
     "location": {
       "subtitle": "LOCATION",

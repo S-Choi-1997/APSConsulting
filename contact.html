@@ -239,24 +239,52 @@
 									</label>
 									<textarea id="message" name="message" data-i18n="contact.form.messagePlaceholder" data-i18n-attr="placeholder" placeholder="상담하실 내용을 자세히 작성해주세요" required="" rows="6"></textarea>
 								</div>
-								<div class="form-group full terms-group">
-									<div class="terms-header">
-										<label for="serviceTerms" data-i18n="contact.form.termsTitle">
-											서비스 기본약관
-										</label>
-										<a class="terms-download" download="" href="서비스 기본약관.txt" data-i18n="contact.form.termsDownload">
-											약관 파일 다운로드
-										</a>
+								<div class="form-group full consent-section">
+									<div class="consent-all-wrapper">
+										<button type="button" class="consent-all-btn" id="agreeAllBtn">
+											<span class="consent-all-icon">✓</span>
+											<span data-i18n="contact.form.agreeAllBtn">위 모든 필수 사항에 동의합니다</span>
+										</button>
 									</div>
-									<pre class="terms-box" id="serviceTerms">약관을 불러오는 중입니다...</pre>
+
+									<div class="consent-item">
+										<label class="consent-check">
+											<input id="agreeTerms" required="" type="checkbox"/>
+											<span data-i18n="contact.form.agreeTerms">
+												[필수] 서비스 기본약관에 동의합니다
+											</span>
+										</label>
+										<button type="button" class="consent-view-btn" data-modal="terms" data-i18n="contact.form.viewTerms">
+											전문 보기
+										</button>
+									</div>
+
+									<div class="consent-item">
+										<label class="consent-check">
+											<input id="agreePrivacy" required="" type="checkbox"/>
+											<span data-i18n="contact.form.agreePrivacy">
+												[필수] 개인정보 필수 항목 수집 및 이용에 동의합니다
+											</span>
+										</label>
+										<button type="button" class="consent-view-btn" data-modal="privacy" data-i18n="contact.form.viewPrivacy">
+											상세 내용 보기
+										</button>
+									</div>
+
+									<div class="consent-item">
+										<label class="consent-check">
+											<input id="agreeTransfer" required="" type="checkbox"/>
+											<span data-i18n="contact.form.agreeTransfer">
+												[필수] 개인정보의 국외 이전에 동의합니다
+											</span>
+										</label>
+										<button type="button" class="consent-view-btn" data-modal="transfer" data-i18n="contact.form.viewTransfer">
+											상세 내용 보기
+										</button>
+									</div>
 								</div>
+
 								<div class="form-footer">
-									<label class="privacy-check consent-single">
-										<input id="agreeAll" required="" type="checkbox"/>
-										<span data-i18n="contact.form.agreeAll">
-											서비스 기본약관 및 개인정보 수집&middot;이용에 모두 동의합니다
-										</span>
-									</label>
 									<button class="submit-btn" type="submit" data-i18n="contact.form.submit">
 										상담 신청하기
 									</button>
@@ -327,6 +355,30 @@
 			</main>
 			<!-- 푸터 (footer.html에서 로드) -->
 			<div id="footer-placeholder">
+			</div>
+		</div>
+
+		<!-- 약관/개인정보처리방침 모달 -->
+		<div class="consent-modal" id="consentModal">
+			<div class="consent-modal-overlay"></div>
+			<div class="consent-modal-content">
+				<div class="consent-modal-header">
+					<h3 id="consentModalTitle">문서 제목</h3>
+					<button class="consent-modal-close" id="closeConsentModal">
+						<svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<line x1="18" x2="6" y1="6" y2="18"></line>
+							<line x1="6" x2="18" y1="6" y2="18"></line>
+						</svg>
+					</button>
+				</div>
+				<div class="consent-modal-body">
+					<pre id="consentModalContent">내용을 불러오는 중입니다...</pre>
+				</div>
+				<div class="consent-modal-footer">
+					<button class="consent-modal-btn-close" id="consentModalBtnClose" data-i18n="contact.modal.close">
+						닫기
+					</button>
+				</div>
 			</div>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js">

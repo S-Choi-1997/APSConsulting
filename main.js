@@ -334,12 +334,121 @@
         // 전역에서 접근 가능하도록 설정
         window.loadServiceTerms = loadServiceTerms;
 
+        // 동의 모달 관련 함수
+        function openConsentModal(type, lang) {
+            const $modal = $('#consentModal');
+            const $title = $('#consentModalTitle');
+            const $content = $('#consentModalContent');
+
+            const titles = {
+                terms: {
+                    ko: '서비스 기본약관',
+                    en: 'Terms of Service',
+                    zh: '服务基本条款'
+                },
+                privacy: {
+                    ko: '개인정보 필수 항목 수집 및 이용',
+                    en: 'Personal Information Collection and Use',
+                    zh: '个人信息收集和使用'
+                },
+                transfer: {
+                    ko: '개인정보의 국외 이전',
+                    en: 'International Transfer of Personal Information',
+                    zh: '个人信息的跨境传输'
+                }
+            };
+
+            const files = {
+                terms: {
+                    ko: 'terms/terms_ko.txt',
+                    en: 'terms/terms_en.txt',
+                    zh: 'terms/terms_zh.txt'
+                },
+                privacy: {
+                    ko: 'terms/privacy_ko.txt',
+                    en: 'terms/privacy_en.txt',
+                    zh: 'terms/privacy_zh.txt'
+                },
+                transfer: {
+                    ko: 'terms/transfer_ko.txt',
+                    en: 'terms/transfer_en.txt',
+                    zh: 'terms/transfer_zh.txt'
+                }
+            };
+
+            $title.text(titles[type][lang] || titles[type].ko);
+            $content.text('내용을 불러오는 중입니다...');
+
+            const fileName = files[type][lang] || files[type].ko;
+
+            fetch(fileName)
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('파일을 불러올 수 없습니다.');
+                    }
+                    return response.text();
+                })
+                .then(function(text) {
+                    $content.text(text.trim() || '내용이 비어 있습니다.');
+                })
+                .catch(function() {
+                    $content.text('파일을 불러오지 못했습니다.');
+                });
+
+            $modal.addClass('active');
+            $('body').css('overflow', 'hidden');
+        }
+
+        function closeConsentModal() {
+            const $modal = $('#consentModal');
+            $modal.removeClass('active');
+            $('body').css('overflow', '');
+        }
+
+        // 모달 닫기 이벤트
+        $('#closeConsentModal, #consentModalBtnClose').on('click', closeConsentModal);
+        $('.consent-modal-overlay').on('click', closeConsentModal);
+
+        // 전문 보기 버튼 클릭 이벤트
+        $('.consent-view-btn').on('click', function() {
+            const type = $(this).data('modal');
+            const lang = $('html').attr('lang') || 'ko';
+            openConsentModal(type, lang);
+        });
+
+        // 모두 동의 버튼
+        $('#agreeAllBtn').on('click', function() {
+            const $checkboxes = $('#agreeTerms, #agreePrivacy, #agreeTransfer');
+            const allChecked = $checkboxes.length === $checkboxes.filter(':checked').length;
+
+            if (allChecked) {
+                $checkboxes.prop('checked', false);
+                $(this).removeClass('active');
+            } else {
+                $checkboxes.prop('checked', true);
+                $(this).addClass('active');
+            }
+        });
+
+        // 개별 체크박스 변경 시 모두 동의 버튼 상태 업데이트
+        $('#agreeTerms, #agreePrivacy, #agreeTransfer').on('change', function() {
+            const $checkboxes = $('#agreeTerms, #agreePrivacy, #agreeTransfer');
+            const allChecked = $checkboxes.length === $checkboxes.filter(':checked').length;
+            $('#agreeAllBtn').toggleClass('active', allChecked);
+        });
+
         const $submitBtn = $('#contactForm .submit-btn');
         function toggleSubmitState() {
-            const ready = $('#agreeAll').is(':checked');
-            $submitBtn.prop('disabled', !ready);
-            $submitBtn.toggleClass('disabled', !ready);
+            // 기존 agreeAll 체크 대신 3개 모두 체크되었는지 확인
+            const allConsentsChecked = $('#agreeTerms').is(':checked') &&
+                                      $('#agreePrivacy').is(':checked') &&
+                                      $('#agreeTransfer').is(':checked');
+            $submitBtn.prop('disabled', !allConsentsChecked);
+            $submitBtn.toggleClass('disabled', !allConsentsChecked);
         }
+
+        // 체크박스 변경 시 제출 버튼 상태 업데이트
+        $('#agreeTerms, #agreePrivacy, #agreeTransfer').on('change', toggleSubmitState);
 
         function setSubmitting(isSubmitting) {
             if (!$submitBtn.length) return;
@@ -451,7 +560,6 @@
 
         loadNationalityOptions();
         loadServiceTerms(currentLanguage || 'ko'); // 초기 로드
-        $('#agreeAll').on('change', toggleSubmitState);
         toggleSubmitState();
 
         // 에러 메시지 표시 함수
@@ -496,7 +604,9 @@
                 company: $('#company').val().trim(),
                 message: $('#message').val().trim(),
                 attachments: $('#attachments')[0] ? Array.from($('#attachments')[0].files).map(function(file) { return file.name; }) : [],
-                agreeAll: $('#agreeAll').is(':checked')
+                agreeTerms: $('#agreeTerms').is(':checked'),
+                agreePrivacy: $('#agreePrivacy').is(':checked'),
+                agreeTransfer: $('#agreeTransfer').is(':checked')
             };
 
             const safeCategory = normalizeCategory(formData.category);
@@ -563,8 +673,8 @@
                 }
             }
 
-            if (!formData.agreeAll) {
-                alert('서비스 기본약관 및 개인정보 처리에 동의해주세요.');
+            if (!formData.agreeTerms || !formData.agreePrivacy || !formData.agreeTransfer) {
+                alert('서비스 기본약관, 개인정보 수집·이용, 개인정보 국외 이전에 모두 동의해주세요.');
                 return;
             }
             const payload = {
