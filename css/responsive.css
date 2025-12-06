@@ -472,7 +472,7 @@
     }
 
     .fixed-footer-inner {
-        padding: 12px 14px;
+        padding: 4px 14px;
         flex-direction: column;
     }
 
@@ -481,31 +481,7 @@
     }
 
     .fixed-footer-left {
-        width: 100%;
-        justify-content: center;
-        align-items: stretch;
-        gap: 10px;
-    }
-
-    .fixed-footer-left {
-        width: 100%;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .fixed-label {
-        font-size: 12px;
-    }
-
-    .fixed-footer-links {
-        flex: 1;
-        justify-content: space-between;
-        gap: 12px;
-    }
-
-    .fixed-footer-links a {
-        font-size: 13px;
-        padding: 10px 0;
+        display: none !important;
     }
 
     .fixed-footer-actions {
@@ -517,12 +493,12 @@
     .fixed-footer-phone,
     .fixed-footer-cta {
         flex: 1;
-        padding: 12px;
+        padding: 8px 12px;
         font-size: 14px;
     }
 
     .to-top {
-        padding: 10px 12px;
+        padding: 8px 10px;
         font-size: 12px;
         flex: 0 0 auto;
     }
@@ -2571,8 +2547,7 @@
     }
 
     .fixed-footer-left {
-        width: 100%;
-        justify-content: center;
+        display: none !important;
     }
 
     .fixed-footer-actions {
