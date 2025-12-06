@@ -2047,6 +2047,7 @@ body.lang-en .typo-4 {
 .form-group {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .form-group label {
@@ -2069,6 +2070,32 @@ body.lang-en .typo-4 {
     background: #fff;
     width: 100%;
     box-sizing: border-box;
+}
+
+/* 에러 상태 */
+.form-group input.error,
+.form-group select.error,
+.form-group textarea.error,
+.form-row input.error,
+.form-row select.error,
+.form-textarea textarea.error {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.field-error {
+    color: #dc3545;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.field-error::before {
+    content: '⚠';
+    font-size: 14px;
 }
 
 .form-group input {

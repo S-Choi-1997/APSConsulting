@@ -461,10 +461,39 @@
         $('#agreeAll').on('change', toggleSubmitState);
         toggleSubmitState();
 
+        // 에러 메시지 표시 함수
+        function showFieldError(fieldId, message) {
+            const $field = $('#' + fieldId);
+            const $formGroup = $field.closest('.form-group, .form-row, .form-textarea');
+
+            // 기존 에러 메시지 제거
+            $formGroup.find('.field-error').remove();
+            $field.removeClass('error');
+
+            if (message) {
+                // 에러 스타일 추가
+                $field.addClass('error');
+
+                // 에러 메시지 추가
+                const $error = $('<div class="field-error"></div>').text(message);
+                $formGroup.append($error);
+
+                // 필드로 스크롤
+                $field[0].scrollIntoView({ behavior: 'smooth', block: 'center' });
+                $field.focus();
+            }
+        }
+
+        function clearAllErrors() {
+            $('.field-error').remove();
+            $('input, select, textarea').removeClass('error');
+        }
+
         // 상담 폼 제출
         $('#contactForm').on('submit', async function(e) {
             e.preventDefault();
-            
+            clearAllErrors();
+
             const formData = {
                 name: $('#name').val().trim(),
                 phone: $('#phone').val().trim(),
@@ -483,23 +512,43 @@
             const files = attachmentsInput && attachmentsInput.files ? Array.from(attachmentsInput.files).slice(0, MAX_ATTACHMENTS) : [];
 
             // 유효성 검사
-            if (!formData.name || !formData.phone || !safeCategory || !nationality || !formData.message) {
-                alert('필수 항목을 모두 입력해주세요.');
+            if (!formData.name) {
+                showFieldError('name', '이름을 입력해주세요.');
+                return;
+            }
+
+            if (!formData.phone) {
+                showFieldError('phone', '연락처를 입력해주세요.');
+                return;
+            }
+
+            if (!safeCategory) {
+                showFieldError('category', '상담 분야를 선택해주세요.');
+                return;
+            }
+
+            if (!nationality) {
+                showFieldError('nationality', '국적을 선택해주세요.');
+                return;
+            }
+
+            if (!formData.message) {
+                showFieldError('message', '문의내용을 입력해주세요.');
                 return;
             }
 
             if (formData.message.length < 10) {
-                alert('문의내용은 최소 10자 이상 입력해주세요.');
+                showFieldError('message', '문의내용은 최소 10자 이상 입력해주세요.');
                 return;
             }
 
             if (formData.message.length > 2000) {
-                alert('문의내용은 최대 2000자까지 입력 가능합니다.');
+                showFieldError('message', '문의내용은 최대 2000자까지 입력 가능합니다.');
                 return;
             }
 
             if (formData.email && !isValidEmail(formData.email)) {
-                alert('올바른 이메일 주소를 입력해주세요.');
+                showFieldError('email', '올바른 이메일 주소를 입력해주세요.');
                 return;
             }
 
