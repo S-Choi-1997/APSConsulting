@@ -1,0 +1,51 @@
+Consent to International Transfer of Personal Information
+
+APS Consulting Administrative Law Firm (hereinafter referred to as "the Company") transfers personal information abroad as follows to provide consultation services.
+
+1. Personal Information Items to be Transferred
+   - Required Items: Name, Contact Information (Phone Number), Email, Nationality, Consultation Category, Consultation Details
+   - Optional Items: Company/Organization Name, Attachments (Images, Documents, etc.)
+   * All information entered during consultation requests is subject to transfer.
+
+2. Countries to which Information is Transferred
+   - United States and other countries where Google Cloud Platform (GCP) data centers are located
+
+3. Date and Method of Transfer
+   - Transfer via network transmission at the time of consultation request
+   - Encryption applied during transmission (SSL/TLS)
+
+4. Name and Contact Information of the Transferee (Trustee)
+   - Name: Google LLC
+   - Address: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+   - Contact: https://support.google.com/
+
+5. Purpose of Use of Personal Information by the Transferee
+   - Data storage and management through the following services of Google Cloud Platform (GCP):
+     * Cloud Firestore: Storage of consultation request data
+     * Cloud Storage: Storage of attachments
+   - Provision of technical infrastructure for the Company to provide consultation services
+   - The transferee only performs the role of storing and managing personal information on behalf of the Company,
+     and does not independently use personal information.
+
+6. Retention and Use Period of Personal Information by the Transferee
+   - Until the consultation purpose is achieved or until the data subject requests deletion
+   - When necessary to preserve according to relevant laws, retention for the period specified by such laws
+   - Immediate destruction or return upon termination of the outsourcing contract
+
+7. Rights of Data Subjects Regarding International Transfer
+   - You have the right to refuse consent to the international transfer of personal information.
+   - However, if you do not consent, the use of online consultation request services will be restricted.
+   - Even after consent, you can withdraw consent and request deletion of personal information at any time.
+
+8. Security Measures
+   - Encryption during transmission (SSL/TLS)
+   - Compliance with Google Cloud Platform's international security certifications (ISO 27001, SOC 2, etc.)
+   - Access authority management and retention of access records (minimum 6 months)
+   - Regular security inspections and vulnerability management
+
+9. Personal Information Protection Officer
+   - Name: Choi Jae-hyung
+   - Contact: 0507-1386-1673
+   - Email: apsconsulting00@gmail.com
+
+I have fully reviewed the above contents regarding the international transfer of personal information and agree to them.

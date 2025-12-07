@@ -1,0 +1,151 @@
+『BASIC TERMS OF SERVICE』
+
+【CHAPTER 1 GENERAL PROVISIONS】
+
+Article 1 (Purpose) These Terms and Conditions are intended to stipulate the terms and procedures for using Internet services provided by APS Consulting Corporation (hereinafter referred to as "the Company") in accordance with the Telecommunications Business Act and its Enforcement Decree.
+
+Article 2 (Notification and Amendment of Terms)
+
+These Terms and Conditions shall become effective by being posted on the service screen provided by the Company or by notifying users or members through electronic mail (E-mail) or other methods.
+
+The Company may change these Terms and Conditions as necessary, and the amended Terms and Conditions shall become effective by being notified in the same manner as in paragraph 1 of Article 2. Article 3 (Rules other than Terms) Matters not specified in these Terms and Conditions shall be governed by the provisions of the Framework Act on Telecommunications, the Telecommunications Business Act, and other relevant laws and regulations. Article 4 (Definition of Terms) The definitions of terms used in these Terms and Conditions are as follows:
+
+Member: A person who has entered into a service use agreement with the Company.
+
+ID (Member Number): A combination of letters and numbers registered with the Company that is selected by the member and approved by the Company for member identification and service use.
+
+Password: A combination of letters and numbers set by the member for identity verification and confidentiality protection.
+
+Administrator: A person selected by the Company for the overall management and smooth operation of the service.
+
+Service: All content and information provided through this website.
+
+Termination: The termination of the service use agreement by the Company or the member after service activation.
+
+【CHAPTER 2 SERVICE USE AGREEMENT】
+
+Article 5 (Establishment of Use Agreement)
+
+The use agreement is established when the Company approves the application for service use by the applicant.
+
+When applying for the Company's service, if the member clicks the "Agree" button, it is deemed that the member agrees to these Terms and Conditions.
+
+Article 6 (Application for Use) The applicant must apply online by completing the Company's prescribed registration form truthfully. Article 7 (Approval of Application for Use)
+
+The Company shall approve the application for use when a member applies according to Article 6, except in the cases of paragraphs 2 and 3.
+
+The Company may restrict or reserve approval for applications for use that fall under any of the following: ① When there is insufficient capacity in service-related facilities ② When there are technical obstacles to service provision ③ When the Company deems it necessary for other reasons
+
+The Company may not approve applications for use that fall under any of the following: ① When not applied for in the applicant's real name ② When applied for using another person's name ③ When the application contains false information ④ When applied for the purpose of disrupting social order or public morals ⑤ When the application does not meet the Company's requirements for service use
+
+Article 8 (Changes to Contract Details)
+
+Members must immediately update online if any information provided during the application changes.
+
+In case of paragraph 1, the member shall bear all damages caused by the failure to update information, and the Company shall not be held responsible.
+
+【CHAPTER 3 SERVICE OBLIGATIONS】
+
+Article 9 (Management of ID and Password)
+
+Members are responsible for all consequences arising from negligent management and unauthorized use of their assigned IDs and passwords.
+
+If a member's ID is used fraudulently, the member must notify the Company of this fact.
+
+Article 10 (Member's Posts) The Company may delete without prior notice any content posted or registered by members that is deemed to fall under any of the following:
+
+When it is deemed to harm public order and public morals
+
+When it defames or damages the reputation of other members or third parties
+
+When it is deemed to be related to criminal activities
+
+When it infringes on the Company's copyright, third-party copyrights, or other rights
+
+When it exceeds the posting period specified by the Company
+
+When it is deemed to violate other relevant laws and regulations
+
+Article 11 (Service Fees)
+
+Basic services provided by the Company are free of charge upon membership registration. (However, for specific information and services designated by the Company, they are operated as paid services and are subject to the Company's paid service policy.)
+
+Service fees already paid for paid services are non-refundable.
+
+Article 12 (Service Hours)
+
+The service is available 24 hours a day, 365 days a year, unless there are business or technical obstacles or other special circumstances. However, the Company may exceptionally restrict all or part of the service use due to equipment inspection or other necessary cases, equipment failure, service congestion, or other force majeure events.
+
+The Company may separately determine service hours for some of the services provided, in which case the service hours will be notified or announced to members in advance.
+
+Article 13 (Service Use Responsibility) Members may not use the service for any commercial purpose, and in particular, may not engage in hacking, money-making advertisements, commercial activities through adult sites, illegal distribution of commercial software, etc. The Company is not responsible for the results and losses of business activities arising from violations, or legal actions such as arrest by relevant authorities.
+
+Article 14 (Suspension of Service Provision) The Company may suspend service provision in the following cases:
+
+The Company may temporarily suspend the provision of services in case of maintenance, inspection, replacement and failure of information and communication facilities such as computers, or disruption of communications. In case of such service suspension, the Company shall notify the "business operator" through the Internet and other methods.
+
+In case of other force majeure circumstances
+
+The Company shall not compensate members and third parties for damages incurred due to service suspension.
+
+【CHAPTER 4 RIGHTS AND OBLIGATIONS OF CONTRACT HOLDERS】
+
+Article 15 (Obligations of the Company)
+
+The Company shall maintain and repair service-related facilities in a state where they can always be operated, and shall make every effort to repair and restore them without delay in case of failure.
+
+The Company shall process opinions raised by members through the prescribed procedures through appropriate procedures, and if it takes a certain period of time, the Company shall inform the member of the reason and processing schedule.
+
+If email information or services provided to members are lost due to the Company's circumstances or the service must be suspended, the Company shall not bear separate responsibility.
+
+Article 16 (Obligations of Members)
+
+Members must comply with relevant laws and regulations, the provisions of these Terms and Conditions, usage guides and precautions, and other matters notified by the Company, and must not engage in acts that interfere with the Company's business.
+
+Members may not use, copy, reproduce, modify, translate, publish, broadcast, or otherwise use information obtained through the service without the Company's prior consent, or provide it to others.
+
+Members must notify the Company of any changes in the information provided in the application through the service.
+
+Members shall not engage in any of the following acts in relation to the use of the service: ① Using another member's ID fraudulently ② Acts intended for criminal purposes or related to criminal activities ③ Acts that harm good morals or social order ④ Acts that defame or insult others ⑤ Acts that infringe on others' intellectual property rights and other rights ⑥ Hacking or distributing computer viruses ⑦ Continuously sending certain content such as advertising information against the will of others ⑧ Any act that interferes with or may interfere with the stable operation of the service ⑨ Other acts that violate relevant laws and regulations
+
+Members agree to receive emails sent as part of the service
+
+Members may not transfer or give their service use rights, information (posts), and membership status to others.
+
+【CHAPTER 5 OTHER】
+
+Article 17 (Posting of Advertisements) The Company may post advertisements on service screens, emails, etc. in relation to service operation.
+
+Article 18 (Contract Termination and Use Restrictions)
+
+When a member wishes to terminate the use agreement, the member must apply for termination to the Company through the service or email. When applying for termination, please provide your name, resident registration number, ID, phone number, and reason for termination that can verify your identity, and we will terminate your membership after confirming that it matches the registration record.
+
+The Company may terminate the use agreement or suspend service use for a certain period without prior notice if a member violates Article 16 and other provisions of these Terms and Conditions.
+
+Article 19 (Compensation for Damages)
+
+The Company shall not be liable for any damages incurred by members for free services. However, in the case of paid services, for damages incurred by members due to the Company's attributable reasons excluding the items in Article 14, the principle is to extend the usage period by the same multiple.
+
+If the Company suffers damages due to a member's violation of obligations under these Terms and Conditions, or if a member causes damages to the Company in using the service, the member shall compensate the Company for such damages
+
+Article 20 (Disclaimer)
+
+The Company shall be exempted from responsibility for service provision if it is unable to provide services due to natural disasters or equivalent force majeure circumstances.
+
+The Company shall not be responsible for service use disruptions due to member's fault.
+
+The Company does not bear any responsibility for the accuracy, reliability, or other content of information, data, and facts posted by members on the service, and members use the service at their own risk. Members are solely responsible for all damages incurred or any disadvantages related to the selection of materials or other service use in relation to materials posted or transmitted using the service.
+
+The Company has no obligation to intervene in disputes between members or between members and third parties, and is not responsible for compensating damages arising therefrom.
+
+Article 21 (Dispute Resolution)
+
+The Company and members shall make all necessary efforts to amicably resolve disputes arising in relation to the service.
+
+Notwithstanding the provisions of paragraph 1, if a lawsuit is filed due to such dispute, the lawsuit shall be under the jurisdiction of the court having jurisdiction over the location of the Company's headquarters
+
+【SUPPLEMENTARY PROVISIONS】
+
+Article 1 (Effective Date) These Terms and Conditions shall take effect from December 01, 2025.
+
+Article 2 (Anti-Spam and Security) This site is protected by Google reCAPTCHA to prevent spam and malicious access, and Google's Privacy Policy (https://policies.google.com/privacy) and Terms of Service (https://policies.google.com/terms) apply.

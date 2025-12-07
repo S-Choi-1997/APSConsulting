@@ -45,3 +45,6 @@
 # .gitignore 포함
 !.gitignore
 
+#약관
+!terms/
+!terms/**
