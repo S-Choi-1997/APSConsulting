@@ -381,9 +381,11 @@
 
             const fileName = files[type][lang] || files[type].ko;
 
-            // 모달 먼저 열기 (로딩 상태 표시)
-            $modal.addClass('active');
+            // 배경 스크롤 완전히 막기
             $('body').css('overflow', 'hidden');
+
+            // 모달 열기
+            $modal.addClass('active');
 
             fetch(fileName)
                 .then(function(response) {
@@ -408,6 +410,24 @@
             $modal.removeClass('active');
             $('body').css('overflow', '');
         }
+
+        // 모달 내부 스크롤 제한 (배경 스크롤 방지)
+        $('.consent-modal-body').on('wheel touchmove', function(e) {
+            const $this = $(this);
+            const scrollTop = $this.scrollTop();
+            const scrollHeight = $this[0].scrollHeight;
+            const height = $this.outerHeight();
+            const delta = e.originalEvent.deltaY || -e.originalEvent.detail;
+
+            // 위로 스크롤 시도 && 이미 최상단
+            if (delta < 0 && scrollTop <= 0) {
+                e.preventDefault();
+            }
+            // 아래로 스크롤 시도 && 이미 최하단
+            else if (delta > 0 && scrollTop + height >= scrollHeight) {
+                e.preventDefault();
+            }
+        });
 
         // 모달 닫기 이벤트
         $('#closeConsentModal, #consentModalBtnClose').on('click', closeConsentModal);

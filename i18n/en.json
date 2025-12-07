@@ -350,7 +350,7 @@
       "title": "Directions",
       "desc": "You can easily visit us with convenient transportation",
       "addressTitle": "Address",
-      "address": "401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)",
+      "address": "401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do<br/><span style=\"font-size: 0.9em; color: #666;\">경기 성남시 분당구 황새울로 315 401호 (서현동 273-2)</span>",
       "transportTitle": "Public Transportation",
       "transport": "<strong>Subway</strong> 3-minute walk from Exit 4 of Seohyeon Station",
       "parkingTitle": "Parking",
