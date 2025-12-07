@@ -381,7 +381,7 @@
 
             const fileName = files[type][lang] || files[type].ko;
 
-            // 배경 스크롤 완전히 막기
+            // 배경 스크롤 막기 (overflow만 사용)
             $('body').css('overflow', 'hidden');
 
             // 모달 열기
@@ -408,8 +408,15 @@
         function closeConsentModal() {
             const $modal = $('#consentModal');
             $modal.removeClass('active');
+
+            // overflow만 복원 (스크롤 위치 유지됨)
             $('body').css('overflow', '');
         }
+
+        // 모달 overlay 터치 막기 (iOS Safari 대응)
+        $('.consent-modal-overlay').on('touchmove', function(e) {
+            e.preventDefault();
+        });
 
         // 모달 내부 스크롤 제한 (배경 스크롤 방지)
         $('.consent-modal-body').on('wheel touchmove', function(e) {
