@@ -381,6 +381,10 @@
 
             const fileName = files[type][lang] || files[type].ko;
 
+            // 모달 먼저 열기 (로딩 상태 표시)
+            $modal.addClass('active');
+            $('body').css('overflow', 'hidden');
+
             fetch(fileName)
                 .then(function(response) {
                     if (!response.ok) {
@@ -389,14 +393,14 @@
                     return response.text();
                 })
                 .then(function(text) {
-                    $content.text(text.trim() || '내용이 비어 있습니다.');
+                    // requestAnimationFrame으로 렌더링 최적화
+                    requestAnimationFrame(function() {
+                        $content.text(text.trim() || '내용이 비어 있습니다.');
+                    });
                 })
                 .catch(function() {
                     $content.text('파일을 불러오지 못했습니다.');
                 });
-
-            $modal.addClass('active');
-            $('body').css('overflow', 'hidden');
         }
 
         function closeConsentModal() {
@@ -961,6 +965,9 @@
     function updateLanguageUI(lang) {
         // 현재 언어 표시
         $('#currentLang').text(lang.toUpperCase());
+
+        // HTML lang 속성 업데이트 (모달 등에서 현재 언어 감지용)
+        $('html').attr('lang', lang);
 
         // body에 언어 클래스 추가 (CSS에서 언어별 스타일 적용 가능)
         $('body').removeClass('lang-ko lang-en lang-zh').addClass(`lang-${lang}`);

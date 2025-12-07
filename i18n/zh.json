@@ -3,8 +3,8 @@
     "home": "首页",
     "about": "关于我们",
     "services": "服务领域",
-    "team": "行政士介绍",
-    "contact": "咨询申请"
+    "team": "行政士团队介绍",
+    "contact": "联系我们"
   },
   "lang": {
     "ko": "한국어",
@@ -16,21 +16,21 @@
       "subtitle": "Administrative Services Expert",
       "title": "行政业务的<br/>专业合作伙伴<br/><strong>APS咨询</strong>",
       "desc": "从出入境到法人设立、各类许可，<br/>专业行政士快速准确地为您处理。",
-      "btn1": "咨询申请",
+      "btn1": "立即咨询 →",
       "btn2": "查看服务领域"
     },
     "slide2": {
       "subtitle": "Professional Service",
       "title": "从法人设立<br/>到许可办理<br/><strong>一站式服务</strong>",
-      "desc": "法人设立、各类许可、出入境业务等<br/>一站式支持所有行政业务。",
-      "btn1": "咨询申请",
+      "desc": "法人设立、各类许可、出入境业务等，一站式为您办理所有行政事务。",
+      "btn1": "立即咨询 →",
       "btn2": "查看行政士"
     },
     "slide3": {
       "subtitle": "Trusted Partner",
       "title": "系统化准备<br/>专业服务<br/><strong>与您同行</strong>",
       "desc": "通过系统化准备和细致的文件审查，<br/>为成功处理行政业务尽最大努力。",
-      "btn1": "咨询申请",
+      "btn1": "立即咨询 →",
       "btn2": "公司介绍"
     },
     "intro": {
@@ -39,19 +39,19 @@
       "value2": "系统性",
       "value3": "信赖",
       "value4": "透明性",
-      "text1": "行政士法人APS咨询在出入境、非营利组织设立、企业认证等多个行政业务及咨询领域，是您的<strong>可靠助手</strong>。",
+      "text1": "行政士法人APS咨询在出入境、非营利组织设立、企业认证等多个行政业务及咨询领域，是您在韩国行政事务上的<strong>可靠伙伴</strong>。",
       "text2": "我们对所有业务应用系统化流程，从始至终<strong>透明细致</strong>地管理进度。",
-      "text3": "无论您的目标是什么，我们都将通过诚实和专业性创造<strong>可信赖的结果</strong>。",
+      "text3": "无论您的目标是什么，我们都将凭借诚信与专业，为您创造<strong>值得信赖的结果</strong>。",
       "btn": "详细了解公司"
     },
     "services": {
       "subtitle": "OUR SERVICES",
       "title": "主要业务领域",
-      "desc": "基于专业性和经验提供最优质的服务",
+      "desc": "凭借丰富经验与专业能力，为您提供最优质的服务",
       "viewall": "查看所有业务领域"
     },
     "service1": {
-      "title": "出入境VISA业务",
+      "title": "出入境签证业务",
       "subtitle": "Immigration & Visa Services",
       "desc": "居留资格变更·延期、专业人力·非熟练签证、家属邀请·随行家属签证、永久居留·归化申请等"
     },
@@ -66,14 +66,14 @@
       "desc": "企业认证、营业许可·申报、工厂登记、开发行为许可、土地相关许可等"
     },
     "service4": {
-      "title": "民事行政(其他)",
-      "subtitle": "Civil Affairs & Administrative Support",
-      "desc": "诉状·请愿书编写、行政审判救济请求、罚款·处分说明、合同编写等"
+      "title": "民愿及其他行政业务",
+      "subtitle": "Civil Petition & Administrative Support",
+      "desc": "陈情书、请愿书撰写，行政复议救济申请，罚款与处分说明资料准备，合同起草等"
     },
     "why": {
       "subtitle": "WHY CHOOSE US",
       "title": "选择行政士法人APS咨询的理由",
-      "desc": "以差异化的专业性和服务保证客户的签证批准"
+      "desc": "以差异化的专业服务，最大限度提升您的签证通过率"
     },
     "why1": {
       "number": "01",
@@ -83,39 +83,39 @@
     "why2": {
       "number": "02",
       "title": "相关专家协作体系",
-      "desc": "与律师、会计师、税务师等相关专家建立紧密合作体系，提供综合且高完成度的服务。"
+      "desc": "与律师、会计师、税务师等专业人士建立紧密合作网络，提供综合且高完成度的服务。"
     },
     "why3": {
       "number": "03",
       "title": "持续的后续管理咨询",
-      "desc": "不是一次性业务处理，而是作为长期合作伙伴提供持续的后续管理和咨询，支持稳定的行政业务。"
+      "desc": "我们不仅是一次性委托的处理方，更是您长期的合作伙伴，提供持续的后续管理与咨询服务。"
     },
     "why4": {
       "number": "04",
       "title": "透明的进度共享",
-      "desc": "实时共享所有进展过程，通过明确的费用指导和日程管理建立信任，消除客户的不安。"
+      "desc": "全程实时共享进展，明确费用与日程安排，建立信任并消除您的顾虑。"
     },
     "cta": {
       "title": "与专业行政士咨询",
       "desc": "复杂的行政程序，与专家一起可以轻松快速地解决。<br/>现在就申请咨询。",
-      "btn1": "在线咨询申请"
+      "btn1": "立即咨询 →"
     }
   },
   "about": {
     "pageHeader": {
       "subtitle": "ABOUT US",
       "title": "公司介绍",
-      "desc": "以专业性和信赖与您一起在韩国生活"
+      "desc": "以专业与信赖陪伴您在韩国的生活"
     },
     "detail": {
       "subtitle": "INTRODUCTION",
-      "title": "APS咨询是<br/>行政专业服务法人",
+      "title": "APS咨询是专业行政服务法人",
       "apsTitle": "APS是...",
       "apsA": "<strong>A</strong>dministrative",
       "apsP": "<strong>P</strong>rofessional",
       "apsS": "<strong>S</strong>ervice",
-      "desc1": "通过对日常生活中各种组织和个人的行政咨询，<br/>为民事行政困难提供准确解决方案的公司。",
-      "desc2": "以最大的努力支持客户重要的行政问题，<br/>成为共同创造成功结果的合作伙伴。"
+      "desc1": "为日常生活中的个人及各类组织提供行政咨询，精准解决民愿难题。",
+      "desc2": "我们全力支持客户的重要行政事务，与您共同创造成功结果的可靠伙伴。"
     },
     "features": {
       "feature1": {
@@ -136,11 +136,11 @@
     },
     "vision": {
       "visionTitle": "VISION",
-      "visionDesc": "为200万外国人在韩国共存的和谐社会实现贡献力量，<br/>促进国家行政的顺畅和民事申诉人生活质量的提高",
+      "visionDesc": "助力200万外国人在韩国共建和谐社会，提升国家行政效率与民愿人生活品质",
       "missionTitle": "MISSION",
-      "missionDesc": "支持外国人在韩国的合法生活，<br/>通过迅速和准确向民事申诉人<br/>提供高效的业务执行",
+      "missionDesc": "支持外国人在韩国合法生活，通过迅速、准确的服务为民愿人提供高效解决方案",
       "valueTitle": "VALUE",
-      "valueDesc": "以客户为中心、专业性、信赖性、迅速性、透明性<br/>作为核心价值，<br/>提供最优质的行政服务"
+      "valueDesc": "以客户为中心，专业、信赖、迅速、透明为核心价值，提供最优质的行政服务"
     },
     "cta": {
       "title": "与专业行政士咨询",
@@ -154,17 +154,17 @@
       "desc": "以专业行政服务提供最佳结果"
     },
     "detail1": {
-      "title": "出入境VISA业务",
+      "title": "出入境签证业务",
       "subtitle": "Immigration & Visa Services",
-      "desc": "专业处理包括居留资格变更、永久居留、归化申请等所有出入境相关业务。",
-      "list1": "居留资格变更·延期",
-      "list2": "专业人力·非熟练签证",
+      "desc": "专业办理居留资格变更·延期、永居·归化等全部出入境业务。",
+      "list1": "居留资格变更与延期",
+      "list2": "专业人才·非熟练工人签证",
       "list3": "家属邀请·随行家属签证",
       "list4": "永久居留·归化申请",
       "list5": "邀请函·理由书编写",
       "list6": "居留地·雇佣变动申报",
-      "list7": "司法审查应对",
-      "link": "申请咨询 →"
+      "list7": "出入境相关司法审查应对",
+      "link": "立即咨询 →"
     },
     "detail2": {
       "title": "非营利组织设立·变更",
@@ -176,7 +176,7 @@
       "list4": "董事变更业务",
       "list5": "设立后各种申报代办",
       "list6": "法人运营咨询",
-      "link": "申请咨询 →"
+      "link": "立即咨询 →"
     },
     "detail3": {
       "title": "企业认证及许可",
@@ -187,18 +187,18 @@
       "list3": "工厂登记及设施标准审查",
       "list4": "开发行为许可（土地形质变更等）",
       "list5": "各种土地相关许可业务",
-      "link": "申请咨询 →"
+      "link": "立即咨询 →"
     },
     "detail4": {
-      "title": "民事行政(其他)",
-      "subtitle": "Civil Affairs & Administrative Support",
-      "desc": "从各种诉状·请愿书编写到行政审判、合同编写等支持多样的民事业务。",
+      "title": "民愿及其他行政业务",
+      "subtitle": "Civil Petition & Administrative Support",
+      "desc": "从申诉·请愿书撰写到行政复议、合同起草等，全面支持各类民愿事务。",
       "list1": "校园暴力等各种诉状·请愿书·请求书编写",
       "list2": "行政审判救济请求支持",
       "list3": "罚款·处分说明资料支持",
       "list4": "权利金、合同·同意书·确认书编写",
       "list5": "其他各种行政申请代办",
-      "link": "申请咨询 →"
+      "link": "立即咨询 →"
     },
     "process": {
       "subtitle": "PROCESS",
@@ -212,34 +212,34 @@
       "step2": {
         "number": "02",
         "title": "咨询及分析",
-        "desc": "专家咨询及所需文件指导"
+        "desc": "专业咨询并指导所需材料"
       },
       "step3": {
         "number": "03",
         "title": "签订合同",
-        "desc": "确认报价及进行合同"
+        "desc": "确认报价并签订合同"
       },
       "step4": {
         "number": "04",
         "title": "业务进行",
-        "desc": "准备文件及申请代办"
+        "desc": "准备相关材料并代为提交申请"
       },
       "step5": {
         "number": "05",
         "title": "完成",
-        "desc": "确认结果及交付文件"
+        "desc": "确认结果并交付相关文件"
       }
     },
     "cta": {
       "title": "您需要什么签证业务？",
-      "desc": "专业行政士从咨询到完成负责进行"
+      "desc": "从咨询到完成，全程由专业行政士负责到底"
     }
   },
   "team": {
     "pageHeader": {
       "subtitle": "OUR TEAM",
       "title": "行政士介绍",
-      "desc": "认识负责多种行政业务的APS行政士。"
+      "desc": "认识负责各类行政业务的APS专业行政士团队"
     },
     "section": {
       "subtitle": "TEAM PROFILE",
@@ -249,39 +249,39 @@
     "member1": {
       "name": "崔在炯",
       "position": "总代表",
-      "career1": "国家公务员高级职位33年工作经历",
+      "career1": "在国家机关担任高级公务员33年",
       "career2": "美国蒙特雷国际研究学院(MIIS) CNS访问学者项目结业证书",
-      "career3": "大韩民国保国勋章授勋",
-      "career4": "大韩民国红条勤政勋章授勋"
+      "career3": "获大韩民国保国勋章",
+      "career4": "获大韩民国红条勤政勋章"
     },
     "member2": {
       "name": "李忠敏",
       "position": "出入境代表行政士",
-      "career1": "国家公务员高级职位33年工作经历",
-      "career2": "大韩民国红条勤政勋章授勋"
+      "career1": "在国家机关担任高级公务员33年",
+      "career2": "获大韩民国红条勤政勋章"
     },
     "member3": {
       "name": "赵永相",
       "position": "法人设立代表行政士",
-      "career1": "国家公务员高级职位33年工作经历"
+      "career1": "在国家机关担任高级公务员33年"
     },
     "member4": {
       "name": "李昌浩",
-      "position": "民事行政代表行政士",
-      "career1": "国家公务员高级职位33年工作经历",
-      "career2": "美国华盛顿大使馆参事工作经历"
+      "position": "民愿行政代表行政士",
+      "career1": "在国家机关担任高级公务员33年",
+      "career2": "曾任韩国驻美国华盛顿大使馆参事"
     },
     "cta": {
       "title": "与专业行政士咨询",
       "desc": "负责行政士直接联系为您检查案件。请通过电话或在线咨询快速联系。",
-      "btn1": "咨询申请"
+      "btn1": "立即咨询 →"
     }
   },
   "contact": {
     "pageHeader": {
       "subtitle": "CONTACT US",
       "title": "咨询申请",
-      "desc": "专业行政士将迅速回复"
+      "desc": "专业行政士将迅速为您答复"
     },
     "methods": {
       "phone": {
@@ -291,7 +291,7 @@
       },
       "email": {
         "title": "邮件咨询",
-        "desc": "随时可接收",
+        "desc": "随时接受咨询",
         "link": "apsconsulting00@gmail.com"
       },
       "visit": {
@@ -303,7 +303,7 @@
     "form": {
       "subtitle": "ONLINE CONSULTATION",
       "title": "快速在线咨询",
-      "intro": "如需行政业务相关咨询，请随时联系我们。<br/>确认您填写的内容后将迅速与您联系。",
+      "intro": "如需行政相关咨询，欢迎随时联系我们。<br/>我们会在确认内容后尽快与您联系。",
       "benefit1": "专业咨询",
       "benefit2": "快速回复",
       "benefit3": "专家定制咨询",
@@ -315,16 +315,16 @@
       "emailPlaceholder": "example@email.com",
       "category": "咨询领域 *",
       "categoryPlaceholder": "请选择",
-      "categoryVisa": "出入境VISA",
+      "categoryVisa": "出入境签证",
       "categoryNonprofit": "非营利组织设立/变更",
       "categoryCorporate": "企业认证·许可",
-      "categoryCivil": "民事行政代办·行政审判",
+      "categoryCivil": "民愿代办·行政复议",
       "categoryOther": "其他",
       "nationality": "国籍 *",
       "nationalityPlaceholder": "请选择国籍",
       "nationalityKOR": "大韩民国 / Republic of Korea",
       "nationalityOther": "其他 / Other",
-      "nationalityNote": "国家列表自动加载，选择其他时请在备注中直接输入。",
+      "nationalityNote": "国家列表自动加载，如选\"其他\"请在备注栏手动填写",
       "company": "公司/机构名称",
       "companyPlaceholder": "请输入所属或公司名称",
       "attachments": "附件（包括照片）",
@@ -347,7 +347,7 @@
     },
     "location": {
       "subtitle": "LOCATION",
-      "title": "地址",
+      "title": "来访路线",
       "desc": "交通便利，方便访问",
       "addressTitle": "地址",
       "address": "京畿道城南市盆唐区黄鹂路315号401室（书岘洞273-2）",
@@ -361,17 +361,17 @@
   },
   "footer": {
     "fixed": {
-      "label": "快速移动",
+      "label": "快速导航",
       "about": "公司介绍",
       "services": "服务领域",
       "cases": "成功案例",
       "contact": "咨询申请",
       "phone": "电话咨询",
-      "cta": "咨询申请",
+      "cta": "立即咨询 →",
       "top": "TOP"
     },
     "main": {
-      "description": "从客户的角度思考，将客户的权益放在首位。<br/>基于专业性和热情提供可信赖的行政服务。",
+      "description": "站在客户立场思考，将客户权益放在首位。<br/>以专业与热情为您提供值得信赖的行政服务。",
       "phone": "0507-1386-1673",
       "email": "apsconsulting00@gmail.com",
       "quickLinksTitle": "快速链接",
@@ -383,8 +383,8 @@
       "service1": "签证变更/延期",
       "service2": "永久居留/归化",
       "service3": "外国人居留管理",
-      "service4": "出入境民事",
-      "address": "本店：京畿道城南市盆唐区黄鹂路315号401室（书岘洞273-2）  |  代表：崔在炯  |  企业注册号：551-86-03815<br/>代表电话：0507-1386-1673  |  Email：apsconsulting00@gmail.com",
+      "service4": "出入境民愿",
+      "address": "总部：京畿道城南市盆唐区黄鹭路315号401室（书岘洞273-2）  |  代表：崔在炯  |  营业执照号：551-86-03815<br/>电话：0507-1386-1673  |  Email：apsconsulting00@gmail.com",
       "copyright": "© 2025 行政士法人APS咨询（APS咨询）All rights reserved."
     }
   }
