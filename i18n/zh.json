@@ -347,6 +347,10 @@
     "modal": {
       "close": "关闭"
     },
+    "success": {
+      "title": "咨询申请已提交",
+      "desc": "我们将尽快与您联系"
+    },
     "location": {
       "subtitle": "LOCATION",
       "title": "来访路线",

@@ -153,13 +153,13 @@
 										<label for="name" data-i18n="contact.form.name">
 											이름 *
 										</label>
-										<input id="name" name="name" data-i18n="contact.form.namePlaceholder" data-i18n-attr="placeholder" placeholder="이름을 입력하세요" required="" type="text"/>
+										<input id="name" name="name" data-i18n-placeholder="contact.form.namePlaceholder" data-i18n-attr="placeholder" required="" type="text"/>
 									</div>
 									<div class="form-group">
 										<label for="phone" data-i18n="contact.form.phone">
 											연락처 *
 										</label>
-										<input id="phone" maxlength="13" name="phone" data-i18n="contact.form.phonePlaceholder" data-i18n-attr="placeholder" placeholder="010-0000-0000" required="" type="tel"/>
+										<input id="phone" maxlength="13" name="phone" data-i18n-placeholder="contact.form.phonePlaceholder" data-i18n-attr="placeholder" required="" type="tel"/>
 									</div>
 								</div>
 								<div class="form-row">
@@ -167,7 +167,7 @@
 										<label for="email" data-i18n="contact.form.email">
 											이메일
 										</label>
-										<input id="email" name="email" data-i18n="contact.form.emailPlaceholder" data-i18n-attr="placeholder" placeholder="example@email.com" type="email"/>
+										<input id="email" name="email" data-i18n-placeholder="contact.form.emailPlaceholder" data-i18n-attr="placeholder" type="email"/>
 									</div>
 									<div class="form-group">
 										<label for="category" data-i18n="contact.form.category">
@@ -219,7 +219,7 @@
 										<label for="company" data-i18n="contact.form.company">
 											상호/기관명
 										</label>
-										<input id="company" name="company" data-i18n="contact.form.companyPlaceholder" data-i18n-attr="placeholder" placeholder="소속 또는 회사명을 입력하세요" type="text"/>
+										<input id="company" name="company" data-i18n-placeholder="contact.form.companyPlaceholder" data-i18n-attr="placeholder" type="text"/>
 									</div>
 								</div>
 								<div class="form-row">
@@ -237,7 +237,7 @@
 									<label for="message" data-i18n="contact.form.message">
 										상담내용 *
 									</label>
-									<textarea id="message" name="message" data-i18n="contact.form.messagePlaceholder" data-i18n-attr="placeholder" placeholder="상담하실 내용을 자세히 작성해주세요" required="" rows="6"></textarea>
+									<textarea id="message" name="message" data-i18n-placeholder="contact.form.messagePlaceholder" data-i18n-attr="placeholder" required="" rows="6"></textarea>
 								</div>
 								<div class="form-group full consent-section">
 									<div class="consent-all-wrapper">
@@ -355,6 +355,21 @@
 			</main>
 			<!-- 푸터 (footer.html에서 로드) -->
 			<div id="footer-placeholder">
+			</div>
+		</div>
+
+		<!-- 성공 모달 -->
+		<div class="success-modal" id="successModal">
+			<div class="success-modal-overlay"></div>
+			<div class="success-modal-content">
+				<div class="success-icon">
+					<svg fill="none" height="64" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="64" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="12" cy="12" r="10"></circle>
+						<polyline points="8 12 11 15 16 9"></polyline>
+					</svg>
+				</div>
+				<h3 class="success-title" data-i18n="contact.success.title">상담 신청이 접수되었습니다</h3>
+				<p class="success-desc" data-i18n="contact.success.desc">빠른 시일 내에 연락드리겠습니다</p>
 			</div>
 		</div>
 

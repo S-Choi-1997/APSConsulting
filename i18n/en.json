@@ -347,6 +347,10 @@
     "modal": {
       "close": "Close"
     },
+    "success": {
+      "title": "Consultation request has been submitted",
+      "desc": "We will contact you as soon as possible"
+    },
     "location": {
       "subtitle": "LOCATION",
       "title": "Directions",

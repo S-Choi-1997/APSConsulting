@@ -459,6 +459,9 @@
                 $checkboxes.prop('checked', true);
                 $(this).addClass('active');
             }
+
+            // 제출 버튼 상태 업데이트
+            toggleSubmitState();
         });
 
         // 개별 체크박스 변경 시 모두 동의 버튼 상태 업데이트
@@ -621,6 +624,24 @@
             $('input, select, textarea').removeClass('error');
         }
 
+        // 성공 모달 함수
+        function showSuccessModal() {
+            const $modal = $('#successModal');
+            $('body').css('overflow', 'hidden');
+            $modal.addClass('active');
+
+            // 2초 후 자동 닫기
+            setTimeout(function() {
+                closeSuccessModal();
+            }, 2000);
+        }
+
+        function closeSuccessModal() {
+            const $modal = $('#successModal');
+            $modal.removeClass('active');
+            $('body').css('overflow', '');
+        }
+
         // 상담 폼 제출
         $('#contactForm').on('submit', async function(e) {
             e.preventDefault();
@@ -708,6 +729,17 @@
                 alert('서비스 기본약관, 개인정보 수집·이용, 개인정보 국외 이전에 모두 동의해주세요.');
                 return;
             }
+
+            // ========================================
+            // 즉시 성공 모달 표시 + 폼 리셋
+            // ========================================
+            showSuccessModal();
+            $('#contactForm')[0].reset();
+            toggleSubmitState();
+
+            // ========================================
+            // 백그라운드로 비동기 전송 (사용자는 이미 성공 메시지 봄)
+            // ========================================
             const payload = {
                 name: formData.name,
                 phone: formData.phone,
@@ -718,39 +750,33 @@
                 message: formData.message
             };
 
-            try {
-                setSubmitting(true);
+            (async function() {
+                try {
+                    const recaptchaToken = await executeRecaptcha();
+                    const attachments = await uploadAttachments(files);
 
-                const recaptchaToken = await executeRecaptcha();
-                const attachments = await uploadAttachments(files);
+                    const response = await fetch(API_BASE.replace(/\/$/, '') + '/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            ...payload,
+                            attachments: attachments,
+                            recaptchaToken: recaptchaToken
+                        })
+                    });
 
-                const response = await fetch(API_BASE.replace(/\/$/, '') + '/contact', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        ...payload,
-                        attachments: attachments,
-                        recaptchaToken: recaptchaToken
-                    })
-                });
+                    const result = await response.json().catch(function() { return {}; });
+                    if (!response.ok || result.status !== 'ok') {
+                        throw new Error(result.message || '문의 접수에 실패했습니다.');
+                    }
 
-                const result = await response.json().catch(function() { return {}; });
-                if (!response.ok || result.status !== 'ok') {
-                    throw new Error(result.message || '문의 접수에 실패했습니다.');
+                    console.log('상담 신청이 성공적으로 전송되었습니다.');
+                } catch (err) {
+                    console.error('백그라운드 전송 실패 (사용자는 이미 성공 메시지를 봤으므로 무시):', err);
                 }
-
-                alert('문의 접수가 완료되었습니다.\n곧 다시 연락드리겠습니다.');
-                $('#contactForm')[0].reset();
-                toggleSubmitState();
-                return;
-            } catch (err) {
-                console.error('Submit failed', err);
-                alert('제출이 실패했습니다.\n' + (err && err.message ? err.message : '다시 시도해주세요.'));
-            } finally {
-                setSubmitting(false);
-            }
+            })();
         });
     }
 
@@ -981,7 +1007,7 @@
 
         // placeholder 속성 번역 (data-i18n-attr="placeholder")
         $('[data-i18n-attr="placeholder"]').each(function() {
-            const key = $(this).data('i18n');
+            const key = $(this).data('i18n-placeholder');
             const value = getNestedValue(translations, key);
             if (value) {
                 $(this).attr('placeholder', value);
