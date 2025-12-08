@@ -144,7 +144,8 @@
     },
     "cta": {
       "title": "Consult with an Expert",
-      "desc": "Complex administrative procedures can be solved easily and quickly with an expert"
+      "desc": "Complex administrative procedures can be solved easily and quickly with an expert",
+      "btn1": "Online Consultation"
     }
   },
   "services_page": {
@@ -232,7 +233,8 @@
     },
     "cta": {
       "title": "What Visa Services Do You Need?",
-      "desc": "Our expert administrative scriveners will handle everything from consultation to completion"
+      "desc": "Our expert administrative scriveners will handle everything from consultation to completion",
+      "btn1": "Online Consultation"
     }
   },
   "team": {
@@ -249,7 +251,7 @@
     "member1": {
       "name": "Choi Jae-hyung",
       "position": "General Director",
-      "career1": "30 years of service as a senior national government official",
+      "career1": "30 years of service as a senior-level national government official",
       "career2": "CNS Visiting Scholars Program Participation Certificate from Middlebury Institute of International Studies at Monterey (MIIS), USA",
       "career3": "Recipient of the Republic of Korea's Order of National Security Merit",
       "career4": "Recipient of the Republic of Korea's Order of Civil Merit, Red Stripes"
@@ -257,7 +259,7 @@
     "member2": {
       "name": "Lee Chung-min",
       "position": "Chief Immigration Scrivener",
-      "career1": "30 years of service as a senior national government official",
+      "career1": "30 years of service as a senior-level national government official",
       "career2": "Recipient of the Republic of Korea's Order of Civil Merit, Red Stripes"
     },
     "member3": {
@@ -268,7 +270,7 @@
     "member4": {
       "name": "Lee Chang-ho",
       "position": "Chief Civil Affairs Scrivener",
-      "career1": "30 years of service as a senior national government official",
+      "career1": "30 years of service as a senior-level national government official",
       "career2": "Served as Counselor at the Embassy in Washington, USA"
     },
     "cta": {
