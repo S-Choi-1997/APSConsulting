@@ -249,7 +249,7 @@
     "member1": {
       "name": "최재형",
       "position": "총괄대표",
-      "career1": "국가직 고위공무원 33년 근무",
+      "career1": "국가직 고위공무원 30년 근무",
       "career2": "미국 미들베리 국제대학원 몬터레이(MIIS) CNS Visiting Scholars Program Participation Certificate 수여",
       "career3": "대한민국 보국훈장 수훈",
       "career4": "대한민국 홍조근정훈장 수훈"
@@ -257,18 +257,18 @@
     "member2": {
       "name": "이충민",
       "position": "출입국 대표행정사",
-      "career1": "국가직 고위공무원 33년 근무",
+      "career1": "국가직 고위공무원 30년 근무",
       "career2": "대한민국 홍조근정훈장 수훈"
     },
     "member3": {
       "name": "조영상",
       "position": "법인설립 대표행정사",
-      "career1": "국가직 고위공무원 33년 근무"
+      "career1": "국가직 고위공무원 30년 근무"
     },
     "member4": {
       "name": "이창호",
       "position": "민원행정 대표행정사",
-      "career1": "국가직 고위공무원 33년 근무",
+      "career1": "국가직 고위공무원 30년 근무",
       "career2": "미 워싱턴주재 대사관 참사 근무"
     },
     "cta": {
@@ -364,7 +364,7 @@
       "label": "빠른 이동",
       "about": "회사소개",
       "services": "업무분야",
-      "cases": "성공사례",
+      "team": "행정사 소개",
       "contact": "상담신청",
       "phone": "전화상담",
       "cta": "상담신청",
@@ -377,13 +377,13 @@
       "quickLinksTitle": "빠른 링크",
       "quickLink1": "회사소개",
       "quickLink2": "업무분야",
-      "quickLink3": "성공사례",
+      "quickLink3": "행정사 소개",
       "quickLink4": "상담신청",
       "servicesTitle": "주요 업무",
-      "service1": "비자 변경/연장",
-      "service2": "영주권/귀화",
-      "service3": "외국인 체류관리",
-      "service4": "출입국 민원",
+      "service1": "출입국 VISA 업무",
+      "service2": "비영리단체 설립·변경",
+      "service3": "기업인증 및 인허가",
+      "service4": "민원행정(기타)",
       "address": "본점 : 경기 성남시 분당구 황새울로 315 401호 (서현동 273-2)  |  대표 : 최재형  |  사업자등록번호 : 551-86-03815<br/>대표전화 : 0507-1386-1673  |  Email : apsconsulting00@gmail.com",
       "copyright": "© 2025 행정사법인에이피에스컨설팅 (APS 컨설팅) All rights reserved."
     }

@@ -247,28 +247,28 @@
       "desc": "透明公开各领域负责行政士的经历和专业性。"
     },
     "member1": {
-      "name": "崔在炯",
+      "name": "Choi Jae-hyung",
       "position": "总代表",
-      "career1": "在国家机关担任高级公务员33年",
+      "career1": "在国家机关担任高级公务员30年",
       "career2": "美国蒙特雷国际研究学院(MIIS) CNS访问学者项目结业证书",
       "career3": "获大韩民国保国勋章",
       "career4": "获大韩民国红条勤政勋章"
     },
     "member2": {
-      "name": "李忠敏",
+      "name": "Lee Chung-min",
       "position": "出入境代表行政士",
-      "career1": "在国家机关担任高级公务员33年",
+      "career1": "在国家机关担任高级公务员30年",
       "career2": "获大韩民国红条勤政勋章"
     },
     "member3": {
-      "name": "赵永相",
+      "name": "Cho Young-sang",
       "position": "法人设立代表行政士",
-      "career1": "在国家机关担任高级公务员33年"
+      "career1": "在国家机关担任高级公务员30年"
     },
     "member4": {
-      "name": "李昌浩",
+      "name": "Lee Chang-ho",
       "position": "民愿行政代表行政士",
-      "career1": "在国家机关担任高级公务员33年",
+      "career1": "在国家机关担任高级公务员30年",
       "career2": "曾任韩国驻美国华盛顿大使馆参事"
     },
     "cta": {
@@ -364,7 +364,7 @@
       "label": "快速导航",
       "about": "公司介绍",
       "services": "服务领域",
-      "cases": "成功案例",
+      "team": "行政士介绍",
       "contact": "咨询申请",
       "phone": "电话咨询",
       "cta": "立即咨询 →",
@@ -377,13 +377,13 @@
       "quickLinksTitle": "快速链接",
       "quickLink1": "公司介绍",
       "quickLink2": "服务领域",
-      "quickLink3": "成功案例",
+      "quickLink3": "行政士介绍",
       "quickLink4": "咨询申请",
       "servicesTitle": "主要业务",
-      "service1": "签证变更/延期",
-      "service2": "永久居留/归化",
-      "service3": "外国人居留管理",
-      "service4": "出入境民愿",
+      "service1": "出入境VISA业务",
+      "service2": "非营利团体设立·变更",
+      "service3": "企业认证及许可",
+      "service4": "民愿行政（其他）",
       "address": "总部：京畿道城南市盆唐区黄鹭路315号401室（书岘洞273-2）  |  代表：崔在炯  |  营业执照号：551-86-03815<br/>电话：0507-1386-1673  |  Email：apsconsulting00@gmail.com",
       "copyright": "© 2025 行政士法人APS咨询（APS咨询）All rights reserved."
     }

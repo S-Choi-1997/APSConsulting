@@ -249,7 +249,7 @@
     "member1": {
       "name": "Choi Jae-hyung",
       "position": "General Director",
-      "career1": "33 years of service as a senior national government official",
+      "career1": "30 years of service as a senior national government official",
       "career2": "CNS Visiting Scholars Program Participation Certificate from Middlebury Institute of International Studies at Monterey (MIIS), USA",
       "career3": "Recipient of the Republic of Korea's Order of National Security Merit",
       "career4": "Recipient of the Republic of Korea's Order of Civil Merit, Red Stripes"
@@ -257,7 +257,7 @@
     "member2": {
       "name": "Lee Chung-min",
       "position": "Chief Immigration Scrivener",
-      "career1": "33 years of service as a senior national government official",
+      "career1": "30 years of service as a senior national government official",
       "career2": "Recipient of the Republic of Korea's Order of Civil Merit, Red Stripes"
     },
     "member3": {
@@ -268,7 +268,7 @@
     "member4": {
       "name": "Lee Chang-ho",
       "position": "Chief Civil Affairs Scrivener",
-      "career1": "33 years of service as a senior national government official",
+      "career1": "30 years of service as a senior national government official",
       "career2": "Served as Counselor at the Embassy in Washington, USA"
     },
     "cta": {
@@ -364,7 +364,7 @@
       "label": "Quick Menu",
       "about": "About",
       "services": "Services",
-      "cases": "Success Stories",
+      "team": "Our Team",
       "contact": "Contact",
       "phone": "Phone Consultation",
       "cta": "Contact Us",
@@ -377,13 +377,13 @@
       "quickLinksTitle": "Quick Links",
       "quickLink1": "About",
       "quickLink2": "Services",
-      "quickLink3": "Success Stories",
+      "quickLink3": "Our Team",
       "quickLink4": "Contact",
       "servicesTitle": "Main Services",
-      "service1": "Visa Change/Extension",
-      "service2": "Permanent Residence/Naturalization",
-      "service3": "Foreigner Residency Management",
-      "service4": "Immigration Civil Affairs",
+      "service1": "Immigration & VISA Services",
+      "service2": "Non-Profit Organization Setup",
+      "service3": "Business Certification & Permits",
+      "service4": "Civil Affairs & Administrative Support",
       "address": "Main Office: 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)  |  CEO: Choi Jae-hyung  |  Business Registration No.: 551-86-03815<br/>Phone: 0507-1386-1673  |  Email: apsconsulting00@gmail.com",
       "copyright": "© 2025 APS Consulting Corporation. All rights reserved."
     }
