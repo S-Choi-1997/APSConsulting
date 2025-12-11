@@ -22,7 +22,8 @@
       "Bash(node -e:*)",
       "Bash(wc:*)",
       "Bash(git checkout:*)",
-      "Bash(gcloud run services list:*)"
+      "Bash(gcloud run services list:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
