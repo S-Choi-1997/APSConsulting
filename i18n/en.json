@@ -105,7 +105,7 @@
     "pageHeader": {
       "subtitle": "ABOUT US",
       "title": "About Us",
-      "desc": "Supporting your life in Korea with expertise and trust"
+      "desc": "Providing excellent administrative services based on expertise and reliability"
     },
     "detail": {
       "subtitle": "INTRODUCTION",
@@ -114,8 +114,8 @@
       "apsA": "<strong>A</strong>dministrative",
       "apsP": "<strong>P</strong>rofessional",
       "apsS": "<strong>S</strong>ervice",
-      "desc1": "We provide accurate solutions to administrative difficulties<br/>through administrative consulting for various organizations and individuals in daily life.",
-      "desc2": "We will become a partner that creates successful results together<br/>with our best support for your important administrative matters."
+      "desc1": "APS provides accurate and prompt solutions to complex and difficult administrative challenges<br/>through professional consulting services.",
+      "desc2": "We strive to be your administrative service partner,<br/>resolving all your civil administrative matters with dedication."
     },
     "features": {
       "feature1": {
@@ -136,9 +136,9 @@
     },
     "vision": {
       "visionTitle": "VISION",
-      "visionDesc": "Contributing to the realization of a harmonious society where 2 million foreigners coexist in Korea,<br/>and improving the smoothness of national administration and the quality of life for civil petitioners",
+      "visionDesc": "Harmony and Coexistence, Social Contribution",
       "missionTitle": "MISSION",
-      "missionDesc": "Supporting the legal life of foreigners in Korea<br/>and providing efficient work performance to civil petitioners<br/>through speed and accuracy",
+      "missionDesc": "1. Legal Work Processing<br/>2. Accurate Work Execution<br/>3. Efficient Work Performance",
       "valueTitle": "VALUE",
       "valueDesc": "Providing the best administrative services<br/>with customer-centered, expertise, reliability, speed, and transparency<br/>as our core values"
     },
@@ -273,7 +273,7 @@
       "name": "Lee Chang-ho",
       "position": "Chief Civil Affairs Scrivener",
       "career1": "30 years of service as a senior-level national government official",
-      "career2": "Served as Counselor at the Embassy in Washington, USA"
+      "career2": "Served at Washington Embassy, First Secretary"
     },
     "cta": {
       "title": "Consult with an Expert",

@@ -105,7 +105,7 @@
     "pageHeader": {
       "subtitle": "ABOUT US",
       "title": "회사소개",
-      "desc": "전문성과 신뢰로 여러분의 대한민국 생활을 함께합니다"
+      "desc": "전문성과 신뢰성을 바탕으로 좋은 행정서비스를 제공합니다"
     },
     "detail": {
       "subtitle": "INTRODUCTION",
@@ -114,8 +114,8 @@
       "apsA": "<strong>A</strong>dministrative",
       "apsP": "<strong>P</strong>rofessional",
       "apsS": "<strong>S</strong>ervice",
-      "desc1": "일상에서의 각종 단체 및 개인에 대한 행정 컨설팅을 통해<br/>민원행정의 어려움에 정확한 솔루션을 제공하는 회사입니다.",
-      "desc2": "고객님의 중요한 행정 문제에 최선을 다하는 지원으로<br/>성공적인 결과를 함께 만들어가는 파트너가 되겠습니다."
+      "desc1": "APS는 복잡하고 어려운 각종 행정 어려움을 컨설팅을 통해<br/>정확하고 신속한 솔루션을 제공하는 회사입니다.",
+      "desc2": "고객님들의 각종 행정 민원사항을 최선을 다해<br/>해결해 나가는 행정서비스 파트너가 되겠습니다."
     },
     "features": {
       "feature1": {
@@ -136,9 +136,9 @@
     },
     "vision": {
       "visionTitle": "VISION",
-      "visionDesc": "200만 외국인이 대한민국에서 함께 공존하는<br/>화합적 사회 구현에 일조하며<br/>국가 행정의 원활함과 민원인의 삶의 질을 제고합니다",
+      "visionDesc": "화합과 공존, 사회 공헌",
       "missionTitle": "MISSION",
-      "missionDesc": "외국인들의 합법적인 한국 생활을 지원하고<br/>민원인들에게 신속함과 정확함을 통해<br/>효율적인 업무 수행을 제공합니다",
+      "missionDesc": "1. 합법적인 업무 처리<br/>2. 정확한 업무 추진<br/>3. 효율적인 업무 수행",
       "valueTitle": "VALUE",
       "valueDesc": "고객중심, 전문성, 신뢰성, 신속성, 투명성을<br/>핵심 가치로 삼아<br/>최상의 행정 서비스를 제공합니다"
     },
@@ -273,7 +273,7 @@
       "name": "이창호",
       "position": "민원행정 대표행정사",
       "career1": "국가 고위직 공무원 30년 근무",
-      "career2": "미 워싱턴주재 대사관 참사 근무"
+      "career2": "워싱턴 대사관 1서 근무"
     },
     "cta": {
       "title": "전문 행정사와 상담하세요",

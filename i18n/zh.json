@@ -105,7 +105,7 @@
     "pageHeader": {
       "subtitle": "ABOUT US",
       "title": "公司介绍",
-      "desc": "以专业与信赖陪伴您在韩国的生活"
+      "desc": "基于专业性和可靠性，提供优质的行政服务"
     },
     "detail": {
       "subtitle": "INTRODUCTION",
@@ -114,8 +114,8 @@
       "apsA": "<strong>A</strong>dministrative",
       "apsP": "<strong>P</strong>rofessional",
       "apsS": "<strong>S</strong>ervice",
-      "desc1": "为日常生活中的个人及各类组织提供行政咨询，精准解决民愿难题。",
-      "desc2": "我们全力支持客户的重要行政事务，与您共同创造成功结果的可靠伙伴。"
+      "desc1": "APS通过专业咨询服务，为复杂困难的各类行政问题<br/>提供准确迅速的解决方案。",
+      "desc2": "我们全力以赴解决客户的各类行政民愿事项，<br/>成为您可靠的行政服务合作伙伴。"
     },
     "features": {
       "feature1": {
@@ -136,9 +136,9 @@
     },
     "vision": {
       "visionTitle": "VISION",
-      "visionDesc": "助力200万外国人在韩国共建和谐社会，提升国家行政效率与民愿人生活品质",
+      "visionDesc": "和谐与共存，社会贡献",
       "missionTitle": "MISSION",
-      "missionDesc": "支持外国人在韩国合法生活，通过迅速、准确的服务为民愿人提供高效解决方案",
+      "missionDesc": "1. 合法业务处理<br/>2. 准确业务推进<br/>3. 高效业务执行",
       "valueTitle": "VALUE",
       "valueDesc": "以客户为中心，专业、信赖、迅速、透明为核心价值，提供最优质的行政服务"
     },
@@ -273,7 +273,7 @@
       "name": "Lee Chang-ho",
       "position": "民愿行政代表行政士",
       "career1": "国家高级职位公务员30年工作经历",
-      "career2": "曾任韩国驻美国华盛顿大使馆参事"
+      "career2": "华盛顿大使馆一等秘书任职"
     },
     "cta": {
       "title": "与专业行政士咨询",
