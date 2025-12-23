@@ -6,9 +6,9 @@
    ============================================ */
 #main-visual {
     padding: 0;
-    height: 75vh;
-    min-height: 650px;
-    max-height: 850px;
+    height: 70vh;
+    min-height: 450px;
+    max-height: 800px;
     position: relative;
     overflow: hidden;
 }
@@ -43,13 +43,14 @@
     left: -5%;
     width: 110%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
 }
 
 /* 활성 슬라이드의 배경 이미지 이동 애니메이션 */
 .slide-bg-inner {
-    animation: slideMove 8s linear infinite;
+    animation: slideMove 15s linear infinite;
     animation-play-state: paused;
 }
 
@@ -66,31 +67,6 @@
     }
 }
 
-.slide-bg::before,
-.slide-bg::after {
-    pointer-events: none;
-}
-
-/* 파도 레이어들 */
-.slide-bg::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background:
-        linear-gradient(90deg,
-            transparent 0%,
-            rgba(255, 255, 255, 0.2) 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.25) 75%,
-            transparent 100%
-        );
-    animation: wave1 8s ease-in-out infinite;
-    z-index: 1;
-}
-
 /* 어두운 오버레이 */
 .slide-bg::after {
     content: '';
@@ -102,15 +78,7 @@
     background:
         linear-gradient(135deg, rgba(4, 31, 47, 0.5) 0%, rgba(4, 31, 47, 0.2) 100%);
     z-index: 0;
-}
-
-@keyframes wave1 {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(50%);
-    }
+    pointer-events: none;
 }
 
 .slide-bg-inner.bg01 {

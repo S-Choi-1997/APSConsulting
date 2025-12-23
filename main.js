@@ -131,7 +131,7 @@
     function initSliders() {
         // 메인 비주얼 슬라이더
         if ($('#main-visual').length) {
-                        new Swiper('#main-visual .visual-slider', {
+            new Swiper('#main-visual .visual-slider', {
                 loop: true,
                 effect: 'fade',
                 speed: 800,
@@ -141,6 +141,8 @@
                 autoplay: {
                     delay: 5000,
                     disableOnInteraction: false,
+                    pauseOnMouseEnter: false,
+                    waitForTransition: true
                 },
                 pagination: {
                     el: '#main-visual .swiper-pagination',
@@ -149,6 +151,21 @@
                         return '<span class="' + className + '" aria-label="Go to slide ' + (index + 1) + '\"></span>';
                     }
                 },
+                watchSlidesProgress: true,
+                on: {
+                    slideChangeTransitionStart: function() {
+                        // 전환 시작 시 다음 슬라이드 애니메이션 리셋
+                        var activeSlide = this.slides[this.activeIndex];
+                        if (activeSlide) {
+                            var bgInner = activeSlide.querySelector('.slide-bg-inner');
+                            if (bgInner) {
+                                bgInner.style.animation = 'none';
+                                bgInner.offsetHeight; // 리플로우 강제
+                                bgInner.style.animation = '';
+                            }
+                        }
+                    }
+                }
             });
         }
 
