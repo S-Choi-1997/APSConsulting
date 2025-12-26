@@ -82,6 +82,16 @@
 
 /* 모바일 (768px 이하) */
 @media (max-width: 768px) {
+    body,
+    p,
+    h1, h2, h3, h4, h5, h6,
+    a,
+    span,
+    li {
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
     .section {
         padding: 50px 0;
         margin-bottom: 0;
@@ -1492,6 +1502,16 @@
 
 /* 모바일 (480px 이하) */
 @media (max-width: 480px) {
+    body,
+    p,
+    h1, h2, h3, h4, h5, h6,
+    a,
+    span,
+    li {
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+
     .section {
         padding: 40px 0;
         margin-bottom: 0;
