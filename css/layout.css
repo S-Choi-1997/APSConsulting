@@ -30,22 +30,36 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 55%;
+    width: 65%;
     height: 100%;
-    clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
     overflow: hidden;
+}
+
+/* 왼쪽 사선 커버 */
+.slide-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background: #ffffff;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* 내부 배경 이미지 컨테이너 */
 .slide-bg-inner {
     position: absolute;
     top: 0;
-    left: -5%;
-    width: 110%;
+    left: 0%;
+    width: 103%;
     height: 100%;
     background-size: 100% auto;
-    background-position: center top;
+    background-position: left top;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 
 /* 활성 슬라이드의 배경 이미지 이동 애니메이션 */
@@ -96,9 +110,9 @@
 .slide-content {
     position: relative;
     z-index: 10;
-    width: 50%;
-    max-width: 800px;
-    margin-left: 8%;
+    width: 40%;
+    max-width: 650px;
+    margin-left: 0;
     padding: 80px 60px;
     display: flex;
     flex-direction: column;
