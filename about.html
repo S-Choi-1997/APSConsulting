@@ -193,6 +193,65 @@
 						</div>
 					</div>
 				</section>
+				<!-- 오시는 길 -->
+				<section class="section section-location">
+					<div class="section-header" data-aos="fade-in">
+						<span class="section-subtitle" data-i18n="contact.location.subtitle">
+							LOCATION
+						</span>
+						<h2 class="section-title" data-i18n="contact.location.title">
+							오시는 길
+						</h2>
+						<p class="section-desc" data-i18n="contact.location.desc">
+							편리한 교통으로 쉽게 방문하실 수 있습니다
+						</p>
+					</div>
+					<div class="location-container" data-aos="fade-up">
+						<div class="location-map">
+							<div id="map" style="width:100%;height:100%;">
+							</div>
+						</div>
+						<div class="location-info">
+							<div class="info-group">
+								<h3 class="info-title" data-i18n="contact.location.addressTitle">
+									주소
+								</h3>
+								<p class="info-text" data-i18n-html="contact.location.address">
+									경기 성남시 분당구 황새울로 315 401호 (서현동 273-2)
+								</p>
+							</div>
+							<div class="info-group">
+								<h3 class="info-title" data-i18n="contact.location.transportTitle">
+									대중교통
+								</h3>
+								<p class="info-text" data-i18n-html="contact.location.transport">
+									<strong>
+										지하철
+									</strong>
+									서현역 4번출구 도보 3분
+								</p>
+							</div>
+							<div class="info-group">
+								<h3 class="info-title" data-i18n="contact.location.parkingTitle">
+									주차
+								</h3>
+								<p class="info-text" data-i18n="contact.location.parking">
+									건물 주차장 이용 가능
+								</p>
+							</div>
+							<div class="info-group">
+								<h3 class="info-title" data-i18n="contact.location.hoursTitle">
+									운영시간
+								</h3>
+								<p class="info-text" data-i18n-html="contact.location.hours">
+									평일 09:00 ~ 18:00
+									<br/>
+									토요일, 일요일, 공휴일 휴무
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 				<!-- CTA -->
 				<section class="section section-cta" data-aos="fade-up">
 					<div class="cta-container">
@@ -229,7 +288,22 @@
 		</script>
 		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js">
 		</script>
+		<script src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=swbbjut5yp" type="text/javascript">
+		</script>
 		<script src="./main.js">
+		</script>
+		<script>
+			// 네이버 지도 초기화
+			var mapOptions = {
+				center: new naver.maps.LatLng(37.385034, 127.120439),
+				zoom: 17
+			};
+			var map = new naver.maps.Map('map', mapOptions);
+			// 마커 추가
+			var marker = new naver.maps.Marker({
+				position: new naver.maps.LatLng(37.385034, 127.120439),
+				map: map
+			});
 		</script>
 	</body>
 </html>
