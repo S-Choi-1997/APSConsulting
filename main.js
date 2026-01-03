@@ -1040,10 +1040,10 @@
         $('html').attr('lang', lang);
 
         // body에 언어 클래스 추가 (CSS에서 언어별 스타일 적용 가능)
-        $('body').removeClass('lang-ko lang-en lang-zh').addClass(`lang-${lang}`);
+        $('body').removeClass('lang-ko lang-en lang-zh lang-ru').addClass(`lang-${lang}`);
 
         // 모바일 언어 드롭다운 텍스트 업데이트
-        const langNames = { ko: '한국어', en: 'English', zh: '中文' };
+        const langNames = { ko: '한국어', en: 'English', zh: '中文', ru: 'Русский' };
         $('#mobileLangText').text(langNames[lang] || '한국어');
 
         // 모바일 옵션 활성화 상태
