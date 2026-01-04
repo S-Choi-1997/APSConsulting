@@ -268,13 +268,16 @@
     "member3": {
       "name": "Cho Young-sang",
       "position": "法人设立代表行政士",
-      "career1": "在国家机关担任高级公务员30年"
+      "career1": "在国家机关担任高级公务员30年",
+      "career2": "大韩企业认证研究学会会长",
+      "career3": "法人设立中央行政士会正式会员"
     },
     "member4": {
       "name": "Lee Chang-ho",
       "position": "民愿行政代表行政士",
       "career1": "国家高级职位公务员30年工作经历",
-      "career2": "华盛顿大使馆一等秘书任职"
+      "career2": "华盛顿大使馆一等秘书任职",
+      "career3": "前韩国石油公社顾问"
     },
     "cta": {
       "title": "与专业行政士咨询",

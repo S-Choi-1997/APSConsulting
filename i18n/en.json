@@ -268,13 +268,16 @@
     "member3": {
       "name": "Cho Young-sang",
       "position": "Chief Corporate Establishment Scrivener",
-      "career1": "33 years of service as a senior national government official"
+      "career1": "33 years of service as a senior national government official",
+      "career2": "President of Korea Corporate Certification Research Association",
+      "career3": "Regular member of Central Administrative Scriveners Association for Corporate Establishment"
     },
     "member4": {
       "name": "Lee Chang-ho",
       "position": "Chief Civil Affairs Scrivener",
       "career1": "30 years of service as a senior-level national government official",
-      "career2": "Served at Washington Embassy, First Secretary"
+      "career2": "Served at Washington Embassy, First Secretary",
+      "career3": "Former Advisor to Korea National Oil Corporation"
     },
     "cta": {
       "title": "Consult with an Expert",
