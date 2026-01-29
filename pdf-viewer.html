@@ -246,7 +246,7 @@
 				// 렌더링
 				const renderContext = {
 					canvasContext: context,
-					viewport: scaledViewport
+					viewport: outputViewport
 				};
 
 				await page.render(renderContext).promise;
