@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "startDate": "2026-01-29",
+  "endDate": "2026-02-04",
+  "image": "./images/popup.jpg",
+  "link": "./files/선거컨설팅.pdf",
+  "openInNewTab": true,
+  "cookieDays": 1,
+  "delay": 500
+}

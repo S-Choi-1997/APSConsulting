@@ -462,6 +462,28 @@
 			<div id="footer-placeholder">
 			</div>
 		</div>
+		<!-- 팝업 -->
+		<div class="popup-overlay" id="popupOverlay">
+			<div class="popup-container">
+				<button class="popup-close" id="popupClose" aria-label="닫기">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+						<path d="M18 6L6 18M6 6l12 12"/>
+					</svg>
+				</button>
+				<div class="popup-content">
+					<div class="popup-image-wrapper">
+						<img src="./images/popup.jpg" alt="공지사항" class="popup-image" id="popupImage">
+					</div>
+				</div>
+				<div class="popup-footer">
+					<label class="popup-checkbox">
+						<input type="checkbox" id="popupNoShow">
+						<span>오늘 하루 보지 않기</span>
+					</label>
+					<button class="popup-btn-close" id="popupBtnClose">닫기</button>
+				</div>
+			</div>
+		</div>
 		<!-- JavaScript -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js">
 		</script>

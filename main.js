@@ -25,6 +25,7 @@
             initForms();
             initScrollEffects();
             initI18n();
+            initPopup();
         });
     });
 
@@ -1056,9 +1057,108 @@
     }
 
     // ============================================
+    // 9-1. 팝업
+    // ============================================
+
+    function initPopup() {
+        // 설정 파일 로드
+        $.getJSON('./popup-config.json')
+            .done(function(config) {
+                // 팝업 비활성화 시 종료
+                if (!config.enabled) {
+                    return;
+                }
+
+                // 날짜 범위 확인
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+
+                const startDate = new Date(config.startDate);
+                startDate.setHours(0, 0, 0, 0);
+
+                const endDate = new Date(config.endDate);
+                endDate.setHours(23, 59, 59, 999);
+
+                // 날짜 범위를 벗어나면 팝업 표시 안 함
+                if (today < startDate || today > endDate) {
+                    return;
+                }
+
+                // 쿠키 확인 (성능 최적화: 불필요한 DOM 조작 방지)
+                const cookieName = 'hidePopup';
+                if (window.getCookie(cookieName) === 'true') {
+                    return;
+                }
+
+                // 팝업 요소
+                const popup = $('#popupOverlay');
+                const closeBtn = $('#popupClose');
+                const btnClose = $('#popupBtnClose');
+                const noShowCheckbox = $('#popupNoShow');
+                const imageWrapper = $('.popup-image-wrapper');
+                const popupImage = $('#popupImage');
+
+                // 이미지 설정
+                popupImage.attr('src', config.image);
+
+                // 링크 설정
+                if (config.link) {
+                    // 기존 div를 a 태그로 변경
+                    const linkElement = $('<a></a>')
+                        .attr('href', config.link)
+                        .attr('target', config.openInNewTab ? '_blank' : '_self')
+                        .addClass('popup-image-wrapper')
+                        .append(popupImage.clone());
+
+                    imageWrapper.replaceWith(linkElement);
+                }
+
+                // 팝업 표시
+                setTimeout(function() {
+                    popup.addClass('active');
+                }, config.delay || 500);
+
+                // X 버튼 클릭
+                closeBtn.on('click', function() {
+                    closePopup();
+                });
+
+                // 닫기 버튼 클릭
+                btnClose.on('click', function() {
+                    if (noShowCheckbox.is(':checked')) {
+                        window.setCookie(cookieName, 'true', config.cookieDays || 1);
+                    }
+                    closePopup();
+                });
+
+                // 오버레이 클릭
+                popup.on('click', function(e) {
+                    if ($(e.target).is('#popupOverlay')) {
+                        closePopup();
+                    }
+                });
+
+                // ESC 키
+                $(document).on('keydown', function(e) {
+                    if (e.key === 'Escape' && popup.hasClass('active')) {
+                        closePopup();
+                    }
+                });
+
+                // 팝업 닫기
+                function closePopup() {
+                    popup.removeClass('active');
+                }
+            })
+            .fail(function() {
+                console.warn('팝업 설정 파일을 불러올 수 없습니다.');
+            });
+    }
+
+    // ============================================
     // 10. 유틸리티 함수
     // ============================================
-    
+
     // 전화번호 포맷
     window.formatPhone = function(phone) {
         return phone.replace(/[^0-9]/g, '')
