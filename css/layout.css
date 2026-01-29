@@ -3041,13 +3041,12 @@ body.lang-en .typo-4 {
 /* 팝업 컨테이너 */
 .popup-container {
     position: relative;
-    background: #fff;
+    background: transparent;
     border-radius: 12px;
     max-width: 600px;
-    width: 100%;
+    width: auto;
     max-height: 90vh;
-    overflow: hidden;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    overflow: visible;
     animation: slideUp 0.3s ease-out;
 }
 
@@ -3099,8 +3098,12 @@ body.lang-en .typo-4 {
 /* 이미지 래퍼 */
 .popup-image-wrapper {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 12px 12px 0 0;
     overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* 팝업 이미지 */
@@ -3120,9 +3123,10 @@ body.lang-en .typo-4 {
     justify-content: space-between;
     align-items: center;
     padding: 16px 20px;
-    background: #f8f8f8;
-    border-top: 1px solid #e0e0e0;
+    background: #fff;
+    border-radius: 0 0 12px 12px;
     gap: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 /* 체크박스 라벨 */

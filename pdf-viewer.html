@@ -214,6 +214,9 @@
 				const canvas = document.createElement('canvas');
 				const context = canvas.getContext('2d');
 
+				// 디바이스 픽셀 비율 (레티나 디스플레이 대응)
+				const pixelRatio = window.devicePixelRatio || 1;
+
 				// 뷰포트 설정 (화면 크기에 맞게 스케일 조정)
 				const viewport = page.getViewport({ scale: 1.5 });
 
@@ -224,9 +227,16 @@
 					scale = maxWidth / viewport.width * 1.5;
 				}
 
-				const scaledViewport = page.getViewport({ scale: scale });
+				// 최종 뷰포트 (픽셀 비율 적용)
+				const scaledViewport = page.getViewport({ scale: scale * pixelRatio });
+
+				// Canvas 실제 크기 (고해상도)
 				canvas.width = scaledViewport.width;
 				canvas.height = scaledViewport.height;
+
+				// CSS 표시 크기 (픽셀 비율로 나눔)
+				canvas.style.width = scaledViewport.width / pixelRatio + 'px';
+				canvas.style.height = scaledViewport.height / pixelRatio + 'px';
 
 				// 페이지 래퍼 생성
 				const pageDiv = document.createElement('div');
