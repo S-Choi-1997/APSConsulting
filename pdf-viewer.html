@@ -217,18 +217,12 @@
 				// 디바이스 픽셀 비율 (레티나 디스플레이 대응)
 				const pixelRatio = window.devicePixelRatio || 1;
 
-				// 뷰포트 설정 (화면 크기에 맞게 스케일 조정)
-				const viewport = page.getViewport({ scale: 1.5 });
+				// 원본 화질 유지 (고해상도 렌더링)
+				// 모바일: 2.5배, 데스크톱: 2.0배 scale
+				const baseScale = window.innerWidth <= 768 ? 2.5 : 2.0;
 
-				// 모바일에서는 스케일 조정
-				const maxWidth = window.innerWidth - 40; // 패딩 고려
-				let scale = 1.5;
-				if (viewport.width > maxWidth) {
-					scale = maxWidth / viewport.width * 1.5;
-				}
-
-				// 최종 뷰포트 (픽셀 비율 적용)
-				const scaledViewport = page.getViewport({ scale: scale * pixelRatio });
+				// 최종 뷰포트 (픽셀 비율 적용으로 레티나에서 더 선명)
+				const scaledViewport = page.getViewport({ scale: baseScale * pixelRatio });
 
 				// Canvas 실제 크기 (고해상도)
 				canvas.width = scaledViewport.width;
