@@ -67,8 +67,8 @@
       "desc": "Corporate certifications, business licenses/registrations, factory registrations, development permits, land-related permits, etc."
     },
     "service4": {
-      "title": "Civil Affairs & Admin Support",
-      "subtitle": "Civil Affairs & Administrative Support",
+      "title": "Civil Affairs & Electoral Administration",
+      "subtitle": "Civil Affairs & Electoral Administration",
       "desc": "Complaint/petition writing, administrative appeals, fine/disposition explanations, contract writing, etc."
     },
     "why": {
@@ -192,14 +192,15 @@
       "link": "Apply for Consultation →"
     },
     "detail4": {
-      "title": "Civil Affairs & Support",
-      "subtitle": "Civil Affairs & Administrative Support",
+      "title": "Civil Affairs & Electoral Administration",
+      "subtitle": "Civil Affairs & Electoral Administration",
       "desc": "Supporting various civil affairs from complaint/petition writing to administrative appeals and contract writing.",
       "list1": "Writing various complaints/petitions (school violence, etc.)",
       "list2": "Administrative appeal relief request support",
       "list3": "Fine/disposition explanation material support",
       "list4": "Premium, contract/consent/confirmation writing",
       "list5": "Other various administrative application agency services",
+      "list6": "Expert in electoral administrative support for candidates in the 2026 nationwide simultaneous elections",
       "link": "Apply for Consultation →"
     },
     "process": {
@@ -273,8 +274,8 @@
       "career3": "Regular member of Central Administrative Scriveners Association for Corporate Establishment"
     },
     "member4": {
-      "name": "Lee Chang-ho",
-      "position": "Chief Civil Affairs Scrivener",
+      "name": "Lee Chang-ho (Collaborative Partner)",
+      "position": "Civil Affairs & Electoral Administration",
       "career1": "30 years of service as a senior-level national government official",
       "career2": "Served at Washington Embassy, First Secretary",
       "career3": "Former Advisor to Korea National Oil Corporation"
@@ -395,7 +396,7 @@
       "service1": "Immigration & VISA Services",
       "service2": "Non-Profit Organization Setup",
       "service3": "Business Certification & Permits",
-      "service4": "Civil Affairs & Administrative Support",
+      "service4": "Civil Affairs & Electoral Administration",
       "address": "Main Office: 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)  |  CEO: Choi Jae-hyung  |  Business Registration No.: 551-86-03815<br/>Phone: 031-701-1663  |  Email: support@apsconsulting.kr",
       "copyright": "© 2025 APS Consulting Corporation. All rights reserved."
     }
