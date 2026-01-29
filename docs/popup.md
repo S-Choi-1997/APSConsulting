@@ -70,6 +70,27 @@
 }
 ```
 
+### PDF 파일 표시 (스크롤 뷰어)
+
+```json
+{
+  "enabled": true,
+  "startDate": "2026-01-29",
+  "endDate": "2026-02-04",
+  "image": "./images/popup.jpg",
+  "link": "./pdf-viewer.html?file=./files/선거컨설팅.pdf",
+  "openInNewTab": true,
+  "cookieDays": 1,
+  "delay": 500
+}
+```
+
+**PDF 뷰어 특징:**
+- PDF 페이지들을 위아래로 스크롤하며 볼 수 있음
+- PDF.js 라이브러리 사용
+- 모바일/데스크톱 반응형 지원
+- 새 창에서 열림
+
 ## 날짜 범위 작동 방식
 
 - `startDate`부터 `endDate`까지만 팝업 표시
@@ -79,6 +100,9 @@
 ## 파일 구조
 
 - **설정**: `popup-config.json`
-- **HTML**: `index.html` (465-487행)
+- **팝업 HTML**: `index.html` (465-487행)
+- **PDF 뷰어**: `pdf-viewer.html`
 - **CSS**: `css/layout.css` (3009-3229행)
 - **JavaScript**: `main.js` (1063-1157행)
+- **이미지**: `images/popup.jpg`
+- **PDF 파일**: `files/*.pdf`

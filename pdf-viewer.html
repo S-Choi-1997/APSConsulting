@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PDF 뷰어 - 행정사법인 APS컨설팅</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans KR', sans-serif;
+			background: #f5f5f5;
+			overflow-x: hidden;
+		}
+
+		.viewer-header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 60px;
+			background: #fff;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 20px;
+			z-index: 100;
+		}
+
+		.viewer-title {
+			font-size: 16px;
+			font-weight: 600;
+			color: #333;
+		}
+
+		.close-btn {
+			padding: 8px 16px;
+			background: #041f2f;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 14px;
+			transition: background 0.2s;
+		}
+
+		.close-btn:hover {
+			background: #9d856d;
+		}
+
+		.loading {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			z-index: 50;
+		}
+
+		.loading-spinner {
+			width: 48px;
+			height: 48px;
+			border: 4px solid #f3f3f3;
+			border-top: 4px solid #041f2f;
+			border-radius: 50%;
+			animation: spin 1s linear infinite;
+			margin: 0 auto 16px;
+		}
+
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+
+		.loading-text {
+			color: #666;
+			font-size: 14px;
+		}
+
+		.pdf-container {
+			margin-top: 80px;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+		}
+
+		.pdf-page {
+			background: #fff;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+			border-radius: 4px;
+			overflow: hidden;
+		}
+
+		canvas {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+
+		.error-message {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background: #fff;
+			padding: 40px;
+			border-radius: 8px;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+			text-align: center;
+			max-width: 400px;
+		}
+
+		.error-message h2 {
+			color: #d32f2f;
+			margin-bottom: 12px;
+			font-size: 20px;
+		}
+
+		.error-message p {
+			color: #666;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+
+		@media (max-width: 768px) {
+			.viewer-header {
+				height: 50px;
+				padding: 0 15px;
+			}
+
+			.viewer-title {
+				font-size: 14px;
+			}
+
+			.close-btn {
+				padding: 6px 12px;
+				font-size: 13px;
+			}
+
+			.pdf-container {
+				margin-top: 70px;
+				padding: 15px;
+				gap: 15px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<!-- 헤더 -->
+	<div class="viewer-header">
+		<div class="viewer-title">PDF 문서</div>
+		<button class="close-btn" onclick="window.close()">닫기</button>
+	</div>
+
+	<!-- 로딩 -->
+	<div class="loading" id="loading">
+		<div class="loading-spinner"></div>
+		<div class="loading-text">PDF를 불러오는 중...</div>
+	</div>
+
+	<!-- PDF 컨테이너 -->
+	<div class="pdf-container" id="pdfContainer"></div>
+
+	<!-- PDF.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+	<script>
+		// PDF.js worker 설정
+		pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+		// URL 파라미터에서 파일 경로 가져오기
+		const urlParams = new URLSearchParams(window.location.search);
+		const pdfFile = urlParams.get('file');
+
+		const loading = document.getElementById('loading');
+		const pdfContainer = document.getElementById('pdfContainer');
+
+		if (!pdfFile) {
+			showError('PDF 파일 경로가 지정되지 않았습니다.');
+		} else {
+			loadPDF(pdfFile);
+		}
+
+		async function loadPDF(url) {
+			try {
+				// PDF 로드
+				const loadingTask = pdfjsLib.getDocument(url);
+				const pdf = await loadingTask.promise;
+
+				// 로딩 숨기기
+				loading.style.display = 'none';
+
+				// 모든 페이지 렌더링
+				for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+					await renderPage(pdf, pageNum);
+				}
+			} catch (error) {
+				console.error('PDF 로딩 오류:', error);
+				showError('PDF 파일을 불러올 수 없습니다.<br>파일 경로를 확인해주세요.');
+			}
+		}
+
+		async function renderPage(pdf, pageNum) {
+			try {
+				const page = await pdf.getPage(pageNum);
+
+				// Canvas 생성
+				const canvas = document.createElement('canvas');
+				const context = canvas.getContext('2d');
+
+				// 뷰포트 설정 (화면 크기에 맞게 스케일 조정)
+				const viewport = page.getViewport({ scale: 1.5 });
+
+				// 모바일에서는 스케일 조정
+				const maxWidth = window.innerWidth - 40; // 패딩 고려
+				let scale = 1.5;
+				if (viewport.width > maxWidth) {
+					scale = maxWidth / viewport.width * 1.5;
+				}
+
+				const scaledViewport = page.getViewport({ scale: scale });
+				canvas.width = scaledViewport.width;
+				canvas.height = scaledViewport.height;
+
+				// 페이지 래퍼 생성
+				const pageDiv = document.createElement('div');
+				pageDiv.className = 'pdf-page';
+				pageDiv.appendChild(canvas);
+				pdfContainer.appendChild(pageDiv);
+
+				// 렌더링
+				const renderContext = {
+					canvasContext: context,
+					viewport: scaledViewport
+				};
+
+				await page.render(renderContext).promise;
+			} catch (error) {
+				console.error(`페이지 ${pageNum} 렌더링 오류:`, error);
+			}
+		}
+
+		function showError(message) {
+			loading.style.display = 'none';
+			const errorDiv = document.createElement('div');
+			errorDiv.className = 'error-message';
+			errorDiv.innerHTML = `
+				<h2>오류</h2>
+				<p>${message}</p>
+				<button class="close-btn" onclick="window.close()">닫기</button>
+			`;
+			document.body.appendChild(errorDiv);
+		}
+
+		// 창 닫기 버튼 처리 (브라우저에서 닫기가 안 될 경우 이전 페이지로)
+		document.querySelector('.close-btn').addEventListener('click', function() {
+			if (window.opener) {
+				window.close();
+			} else {
+				window.history.back();
+			}
+		});
+	</script>
+</body>
+</html>
