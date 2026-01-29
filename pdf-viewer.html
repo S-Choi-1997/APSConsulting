@@ -217,20 +217,25 @@
 				// 디바이스 픽셀 비율 (레티나 디스플레이 대응)
 				const pixelRatio = window.devicePixelRatio || 1;
 
-				// 원본 화질 유지 (고해상도 렌더링)
-				// 모바일: 2.5배, 데스크톱: 2.0배 scale
-				const baseScale = window.innerWidth <= 768 ? 2.5 : 2.0;
+				// 1. 원본 뷰포트 가져오기
+				const viewport = page.getViewport({ scale: 1.0 });
 
-				// 최종 뷰포트 (픽셀 비율 적용으로 레티나에서 더 선명)
-				const scaledViewport = page.getViewport({ scale: baseScale * pixelRatio });
+				// 2. 화면에 맞는 scale 계산 (비율 유지)
+				const containerWidth = window.innerWidth - 40;
+				const desiredScale = window.innerWidth <= 768 ? 2.5 : 2.0;
+				const scale = Math.min(desiredScale, containerWidth / viewport.width);
 
-				// Canvas 실제 크기 (고해상도)
-				canvas.width = scaledViewport.width;
-				canvas.height = scaledViewport.height;
+				// 3. 고해상도 렌더링을 위한 출력 scale
+				const outputScale = scale * pixelRatio;
+				const outputViewport = page.getViewport({ scale: outputScale });
 
-				// CSS 표시 크기 (픽셀 비율로 나눔)
-				canvas.style.width = scaledViewport.width / pixelRatio + 'px';
-				canvas.style.height = scaledViewport.height / pixelRatio + 'px';
+				// 4. Canvas 실제 크기 (고해상도)
+				canvas.width = outputViewport.width;
+				canvas.height = outputViewport.height;
+
+				// 5. CSS 표시 크기 (비율 유지, 화면에 맞춤)
+				canvas.style.width = Math.floor(viewport.width * scale) + 'px';
+				canvas.style.height = Math.floor(viewport.height * scale) + 'px';
 
 				// 페이지 래퍼 생성
 				const pageDiv = document.createElement('div');
