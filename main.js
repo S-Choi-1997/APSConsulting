@@ -1085,7 +1085,8 @@
                 }
 
                 // 쿠키 확인 (성능 최적화: 불필요한 DOM 조작 방지)
-                const cookieName = 'hidePopup';
+                // 팝업 ID 기반 쿠키 사용 (여러 팝업 독립적으로 관리)
+                const cookieName = 'hidePopup_' + (config.id || 'default');
                 if (window.getCookie(cookieName) === 'true') {
                     return;
                 }
