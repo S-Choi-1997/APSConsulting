@@ -1,0 +1,48 @@
+Đồng ý chuyển thông tin cá nhân ra nước ngoài
+
+Công ty Dịch vụ Hành chính APS Consulting (sau đây gọi là "Công ty") chuyển thông tin cá nhân ra nước ngoài như sau để cung cấp dịch vụ tư vấn.
+
+1. Hạng mục thông tin cá nhân được chuyển
+   - Hạng mục bắt buộc: Họ tên, số điện thoại, quốc tịch, lĩnh vực tư vấn, nội dung tư vấn
+   - Hạng mục tùy chọn: Tên công ty/tổ chức, tệp đính kèm (hình ảnh, tài liệu, v.v.)
+   * Tất cả thông tin được nhập khi yêu cầu tư vấn đều có thể được chuyển.
+
+2. Quốc gia chuyển đến
+   - Hoa Kỳ và các quốc gia khác nơi đặt trung tâm dữ liệu của Google Cloud Platform (GCP)
+   - Có thể thay đổi tùy theo chính sách vận hành trung tâm dữ liệu của GCP
+
+3. Thời điểm và phương thức chuyển
+   - Chuyển qua mạng tại thời điểm gửi yêu cầu tư vấn
+   - Lưu trữ và xử lý trong hạ tầng đám mây
+
+4. Bên nhận thông tin cá nhân
+   - Google Cloud Platform (Google LLC)
+   - Địa chỉ: 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+
+5. Mục đích sử dụng của bên nhận
+   - Lưu trữ và quản lý dữ liệu thông qua các dịch vụ sau của Google Cloud Platform (GCP):
+     * Firestore Database: Lưu trữ nội dung yêu cầu tư vấn
+     * Cloud Storage: Lưu trữ tệp đính kèm
+   - Cung cấp hạ tầng kỹ thuật để Công ty cung cấp dịch vụ tư vấn
+   - Google Cloud Platform chỉ xử lý dữ liệu trong phạm vi cung cấp hạ tầng và không tự sử dụng thông tin cá nhân.
+
+6. Thời hạn lưu giữ và sử dụng bởi bên nhận
+   - Lưu giữ trong 3 năm sau khi tư vấn kết thúc, sau đó hủy không chậm trễ
+   - Nếu cần lưu giữ theo pháp luật liên quan, thông tin sẽ được lưu trong thời hạn do pháp luật quy định
+
+7. Quyền từ chối đồng ý và bất lợi khi từ chối
+   - Bạn có quyền từ chối đồng ý với việc chuyển thông tin cá nhân ra nước ngoài.
+   - Tuy nhiên, nếu không đồng ý, việc sử dụng dịch vụ yêu cầu tư vấn trực tuyến có thể bị hạn chế.
+   - Ngay cả sau khi đồng ý, bạn có thể rút lại đồng ý và yêu cầu xóa thông tin cá nhân bất cứ lúc nào.
+
+8. Biện pháp bảo vệ thông tin cá nhân
+   - Mã hóa khi truyền tải và lưu trữ dữ liệu
+   - Quản lý quyền truy cập và lưu giữ nhật ký truy cập (tối thiểu 6 tháng)
+   - Kiểm tra bảo mật định kỳ và quản lý lỗ hổng
+   - Áp dụng các tiêu chuẩn bảo mật của Google Cloud Platform
+
+9. Thông tin liên hệ phụ trách bảo vệ thông tin cá nhân
+   - Email: contact@apsconsulting.kr
+   - Điện thoại: 031-701-1663
+
+Tôi đã xem đầy đủ nội dung trên về việc chuyển thông tin cá nhân ra nước ngoài và đồng ý.

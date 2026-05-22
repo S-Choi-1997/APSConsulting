@@ -304,6 +304,8 @@
                 termsFileName = 'terms/terms_en.txt';
             } else if (lang === 'zh') {
                 termsFileName = 'terms/terms_zh.txt';
+            } else if (lang === 'vi') {
+                termsFileName = 'terms/terms_vi.txt';
             } else {
                 termsFileName = 'terms/terms_ko.txt';
             }
@@ -317,17 +319,20 @@
             const loadingMessages = {
                 ko: '약관을 불러오는 중입니다...',
                 en: 'Loading terms...',
-                zh: '正在加载条款...'
+                zh: '正在加载条款...',
+                vi: 'Đang tải điều khoản...'
             };
             const emptyMessages = {
                 ko: '약관 파일 내용이 비어 있습니다.',
                 en: 'Terms file is empty.',
-                zh: '条款文件为空。'
+                zh: '条款文件为空。',
+                vi: 'Tệp điều khoản đang trống.'
             };
             const errorMessages = {
                 ko: '약관을 불러오지 못했습니다. 새로고침 후 다시 시도해주세요.',
                 en: 'Failed to load terms. Please refresh and try again.',
-                zh: '无法加载条款。请刷新后重试。'
+                zh: '无法加载条款。请刷新后重试。',
+                vi: 'Không thể tải điều khoản. Vui lòng làm mới và thử lại.'
             };
 
             $termsBox.text(loadingMessages[lang] || loadingMessages.ko);
@@ -362,17 +367,20 @@
                 terms: {
                     ko: '서비스 기본약관',
                     en: 'Terms of Service',
-                    zh: '服务基本条款'
+                    zh: '服务基本条款',
+                    vi: 'Điều khoản dịch vụ'
                 },
                 privacy: {
                     ko: '개인정보 필수 항목 수집 및 이용',
                     en: 'Personal Information Collection and Use',
-                    zh: '个人信息收集和使用'
+                    zh: '个人信息收集和使用',
+                    vi: 'Thu thập và sử dụng thông tin cá nhân'
                 },
                 transfer: {
                     ko: '개인정보의 국외 이전',
                     en: 'International Transfer of Personal Information',
-                    zh: '个人信息的跨境传输'
+                    zh: '个人信息的跨境传输',
+                    vi: 'Chuyển thông tin cá nhân ra nước ngoài'
                 }
             };
 
@@ -380,17 +388,20 @@
                 terms: {
                     ko: 'terms/terms_ko.txt',
                     en: 'terms/terms_en.txt',
-                    zh: 'terms/terms_zh.txt'
+                    zh: 'terms/terms_zh.txt',
+                    vi: 'terms/terms_vi.txt'
                 },
                 privacy: {
                     ko: 'terms/privacy_ko.txt',
                     en: 'terms/privacy_en.txt',
-                    zh: 'terms/privacy_zh.txt'
+                    zh: 'terms/privacy_zh.txt',
+                    vi: 'terms/privacy_vi.txt'
                 },
                 transfer: {
                     ko: 'terms/transfer_ko.txt',
                     en: 'terms/transfer_en.txt',
-                    zh: 'terms/transfer_zh.txt'
+                    zh: 'terms/transfer_zh.txt',
+                    vi: 'terms/transfer_vi.txt'
                 }
             };
 
@@ -1041,10 +1052,10 @@
         $('html').attr('lang', lang);
 
         // body에 언어 클래스 추가 (CSS에서 언어별 스타일 적용 가능)
-        $('body').removeClass('lang-ko lang-en lang-zh lang-ru').addClass(`lang-${lang}`);
+        $('body').removeClass('lang-ko lang-en lang-zh lang-ru lang-vi').addClass(`lang-${lang}`);
 
         // 모바일 언어 드롭다운 텍스트 업데이트
-        const langNames = { ko: '한국어', en: 'English', zh: '中文', ru: 'Русский' };
+        const langNames = { ko: '한국어', en: 'English', zh: '中文', ru: 'Русский', vi: 'Tiếng Việt' };
         $('#mobileLangText').text(langNames[lang] || '한국어');
 
         // 모바일 옵션 활성화 상태

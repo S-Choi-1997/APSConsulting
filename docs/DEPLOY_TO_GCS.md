@@ -1,5 +1,7 @@
 # Google Cloud Storage (GCS) 정적 웹사이트 배포 가이드
 
+> 현재 운영 사이트(`https://apsconsulting.kr/`)는 GitHub Pages `publish` 브랜치로 배포됩니다. 이 문서는 GCS 정적 호스팅을 사용할 경우의 참고 문서이며, 운영 배포 절차는 `docs/DEPLOY_GITHUB_PAGES.md`를 우선 확인하세요.
+
 이 문서는 행정사합동사무소 웹사이트를 Google Cloud Storage에 정적 웹사이트로 배포하는 방법을 설명합니다.
 
 ## 목차

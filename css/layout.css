@@ -1054,7 +1054,18 @@ body.lang-en .typo-scatter {
     letter-spacing: -1px;
 }
 
+body.lang-vi .typo-scatter {
+    font-size: 58px;
+    letter-spacing: 0;
+}
+
 body.lang-en .typo-1 {
+    font-size: 70px;
+    top: 8%;
+    left: 3%;
+}
+
+body.lang-vi .typo-1 {
     font-size: 70px;
     top: 8%;
     left: 3%;
@@ -1066,13 +1077,31 @@ body.lang-en .typo-2 {
     right: 8%;
 }
 
+body.lang-vi .typo-2 {
+    font-size: 52px;
+    top: 38%;
+    right: 8%;
+}
+
 body.lang-en .typo-3 {
     font-size: 68px;
     top: 68%;
     left: 12%;
 }
 
+body.lang-vi .typo-3 {
+    font-size: 68px;
+    top: 68%;
+    left: 12%;
+}
+
 body.lang-en .typo-4 {
+    font-size: 48px;
+    bottom: 3%;
+    right: 3%;
+}
+
+body.lang-vi .typo-4 {
     font-size: 48px;
     bottom: 3%;
     right: 3%;

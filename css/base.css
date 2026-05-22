@@ -60,6 +60,10 @@ body.lang-en {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
+body.lang-vi {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Serif KR', serif;
     font-weight: 700;
@@ -81,6 +85,15 @@ body.lang-en h3,
 body.lang-en h4,
 body.lang-en h5,
 body.lang-en h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+}
+
+body.lang-vi h1,
+body.lang-vi h2,
+body.lang-vi h3,
+body.lang-vi h4,
+body.lang-vi h5,
+body.lang-vi h6 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
 }
 

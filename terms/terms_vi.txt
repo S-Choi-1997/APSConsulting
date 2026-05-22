@@ -1,0 +1,114 @@
+Điều khoản dịch vụ
+
+Chương 1. Quy định chung
+
+Điều 1 (Mục đích)
+Các điều khoản này quy định điều kiện và thủ tục sử dụng các dịch vụ Internet do Công ty Dịch vụ Hành chính APS Consulting (sau đây gọi là "Công ty") cung cấp theo Luật Kinh doanh Viễn thông và các quy định thi hành liên quan.
+
+Điều 2 (Thông báo và sửa đổi điều khoản)
+1. Các điều khoản này có hiệu lực khi được đăng trên màn hình dịch vụ do Công ty cung cấp hoặc được thông báo cho người dùng, thành viên qua email hoặc phương thức khác.
+2. Công ty có thể thay đổi các điều khoản này khi cần thiết. Điều khoản sửa đổi có hiệu lực khi được thông báo theo cùng phương thức tại khoản 1 Điều này.
+
+Điều 3 (Quy định ngoài điều khoản)
+Những vấn đề không được quy định trong các điều khoản này sẽ tuân theo Luật Khung về Viễn thông, Luật Kinh doanh Viễn thông và các luật, quy định liên quan khác.
+
+Điều 4 (Định nghĩa thuật ngữ)
+Các thuật ngữ được sử dụng trong điều khoản này được hiểu như sau.
+1. Thành viên: Người đã ký kết thỏa thuận sử dụng dịch vụ với Công ty.
+2. ID (mã thành viên): Tổ hợp chữ và số do thành viên chọn, được Công ty chấp thuận để nhận dạng thành viên và sử dụng dịch vụ.
+3. Mật khẩu: Tổ hợp chữ và số do thành viên thiết lập để xác minh danh tính và bảo vệ bí mật.
+4. Quản trị viên: Người được Công ty chỉ định để quản lý tổng thể và vận hành dịch vụ ổn định.
+5. Dịch vụ: Mọi nội dung và thông tin được cung cấp qua trang web này.
+6. Chấm dứt: Việc Công ty hoặc thành viên chấm dứt thỏa thuận sử dụng dịch vụ sau khi dịch vụ được kích hoạt.
+
+Chương 2. Đăng ký và sử dụng dịch vụ
+
+Điều 5 (Thiết lập thỏa thuận sử dụng)
+1. Thỏa thuận sử dụng được thiết lập khi Công ty chấp thuận đơn đăng ký sử dụng dịch vụ của người đăng ký.
+2. Khi đăng ký dịch vụ của Công ty, nếu thành viên nhấn nút "Đồng ý", thành viên được xem là đã đồng ý với các điều khoản này.
+
+Điều 6 (Đăng ký sử dụng)
+1. Người muốn sử dụng dịch vụ phải đăng ký theo biểu mẫu do Công ty quy định.
+2. Người đăng ký phải cung cấp thông tin chính xác, đầy đủ và cập nhật.
+3. Công ty không chịu trách nhiệm đối với bất lợi phát sinh do thông tin sai, thiếu hoặc không cập nhật.
+
+Điều 7 (Chấp thuận và hạn chế đăng ký)
+1. Công ty sẽ chấp thuận đăng ký sử dụng khi thành viên đăng ký theo Điều 6, trừ các trường hợp tại khoản 2 và 3.
+2. Công ty có thể hạn chế hoặc hoãn chấp thuận trong các trường hợp sau: ① Thiếu năng lực thiết bị liên quan đến dịch vụ ② Có trở ngại kỹ thuật đối với việc cung cấp dịch vụ ③ Công ty xét thấy cần thiết vì lý do khác
+3. Công ty có thể không chấp thuận trong các trường hợp sau: ① Không đăng ký bằng tên thật của người đăng ký ② Đăng ký bằng tên người khác ③ Đơn đăng ký có thông tin sai ④ Đăng ký nhằm gây rối trật tự xã hội hoặc thuần phong mỹ tục ⑤ Đơn đăng ký không đáp ứng yêu cầu sử dụng dịch vụ của Công ty
+
+Điều 8 (Thay đổi thông tin thành viên)
+Thành viên phải cập nhật ngay trên hệ thống nếu có thay đổi thông tin đã cung cấp khi đăng ký.
+
+Điều 9 (Quản lý ID và mật khẩu)
+1. Thành viên chịu trách nhiệm về mọi hậu quả phát sinh do quản lý ID, mật khẩu cẩu thả hoặc sử dụng trái phép.
+2. Nếu ID của thành viên bị sử dụng trái phép, thành viên phải thông báo cho Công ty.
+
+Chương 3. Nghĩa vụ của các bên
+
+Điều 10 (Bài đăng của thành viên)
+Công ty có thể xóa mà không cần thông báo trước bất kỳ nội dung nào do thành viên đăng hoặc đăng ký nếu được cho là thuộc một trong các trường hợp sau.
+1. Nội dung gây hại đến trật tự công cộng và thuần phong mỹ tục
+2. Nội dung phỉ báng hoặc làm tổn hại danh dự của thành viên khác hoặc bên thứ ba
+3. Nội dung được cho là liên quan đến hoạt động phạm tội
+4. Nội dung xâm phạm bản quyền của Công ty, bản quyền của bên thứ ba hoặc quyền khác
+5. Nội dung vượt quá thời hạn đăng do Công ty quy định
+6. Nội dung vi phạm luật và quy định liên quan khác
+
+Điều 11 (Phí dịch vụ)
+1. Các dịch vụ cơ bản do Công ty cung cấp được sử dụng miễn phí sau khi đăng ký thành viên. Tuy nhiên, đối với thông tin và dịch vụ cụ thể do Công ty chỉ định, dịch vụ có thể được vận hành dưới dạng trả phí và tuân theo chính sách dịch vụ trả phí của Công ty.
+2. Phí dịch vụ đã thanh toán cho dịch vụ trả phí không được hoàn lại.
+
+Điều 12 (Thời gian dịch vụ)
+1. Dịch vụ được cung cấp 24 giờ mỗi ngày, 365 ngày mỗi năm, trừ khi có trở ngại kinh doanh, kỹ thuật hoặc trường hợp đặc biệt khác. Tuy nhiên, Công ty có thể hạn chế toàn bộ hoặc một phần việc sử dụng dịch vụ do kiểm tra thiết bị, sự cố thiết bị, quá tải dịch vụ hoặc sự kiện bất khả kháng khác.
+2. Công ty có thể quy định riêng thời gian sử dụng đối với một số dịch vụ và sẽ thông báo trước cho thành viên trong trường hợp đó.
+
+Điều 13 (Trách nhiệm sử dụng dịch vụ)
+Thành viên không được sử dụng dịch vụ cho mục đích thương mại trái phép, đặc biệt không được thực hiện hành vi tấn công hệ thống, quảng cáo kiếm tiền, hoạt động thương mại qua trang người lớn, phân phối phần mềm thương mại bất hợp pháp, v.v. Công ty không chịu trách nhiệm về kết quả, tổn thất kinh doanh hoặc biện pháp pháp lý phát sinh do vi phạm.
+
+Điều 14 (Tạm ngừng cung cấp dịch vụ)
+1. Công ty có thể tạm ngừng cung cấp dịch vụ khi bảo trì, kiểm tra, thay thế hoặc xảy ra sự cố đối với thiết bị thông tin, truyền thông như máy tính, hoặc khi truyền thông bị gián đoạn. Khi tạm ngừng dịch vụ, Công ty sẽ thông báo cho người dùng qua Internet hoặc phương thức khác.
+2. Công ty không bồi thường cho thành viên hoặc bên thứ ba đối với thiệt hại phát sinh do tạm ngừng dịch vụ.
+
+Điều 15 (Nghĩa vụ của Công ty)
+1. Công ty sẽ duy trì và sửa chữa thiết bị liên quan đến dịch vụ ở trạng thái có thể vận hành thường xuyên, và nỗ lực sửa chữa, khôi phục không chậm trễ khi có sự cố.
+2. Nếu thông tin email hoặc dịch vụ cung cấp cho thành viên bị mất do hoàn cảnh của Công ty hoặc dịch vụ phải tạm ngừng, Công ty không chịu trách nhiệm riêng biệt trừ khi pháp luật có quy định khác.
+
+Điều 16 (Nghĩa vụ của thành viên)
+1. Thành viên phải tuân thủ luật và quy định liên quan, các điều khoản này, hướng dẫn sử dụng, lưu ý và các nội dung khác do Công ty thông báo; không được thực hiện hành vi cản trở hoạt động của Công ty.
+2. Thành viên không được sử dụng, sao chép, tái tạo, sửa đổi, dịch, xuất bản, phát sóng hoặc sử dụng theo cách khác thông tin thu được qua dịch vụ khi chưa có sự đồng ý trước của Công ty, hoặc cung cấp thông tin đó cho người khác.
+3. Thành viên phải thông báo cho Công ty về mọi thay đổi thông tin đã cung cấp khi đăng ký thông qua dịch vụ.
+4. Thành viên không được thực hiện các hành vi sau khi sử dụng dịch vụ: ① Sử dụng trái phép ID của thành viên khác ② Hành vi nhằm mục đích phạm tội hoặc liên quan đến hoạt động phạm tội ③ Hành vi gây hại đến thuần phong mỹ tục hoặc trật tự xã hội ④ Hành vi phỉ báng hoặc xúc phạm người khác ⑤ Hành vi xâm phạm quyền sở hữu trí tuệ hoặc quyền khác của người khác ⑥ Tấn công hệ thống hoặc phát tán virus máy tính ⑦ Gửi liên tục nội dung quảng cáo trái với ý muốn của người nhận ⑧ Hành vi cản trở hoặc có thể cản trở việc vận hành ổn định dịch vụ ⑨ Hành vi vi phạm luật và quy định liên quan khác
+5. Thành viên đồng ý nhận email được gửi như một phần của dịch vụ.
+6. Thành viên không được chuyển nhượng hoặc tặng quyền sử dụng dịch vụ, thông tin (bài đăng) hoặc tư cách thành viên cho người khác.
+
+Điều 17 (Đăng quảng cáo)
+Công ty có thể đăng quảng cáo trên màn hình dịch vụ, email, v.v. liên quan đến hoạt động dịch vụ.
+
+Điều 18 (Chấm dứt)
+1. Khi thành viên muốn chấm dứt thỏa thuận sử dụng, thành viên phải yêu cầu chấm dứt với Công ty thông qua dịch vụ hoặc email. Khi yêu cầu chấm dứt, vui lòng cung cấp họ tên, số đăng ký cư trú, ID, số điện thoại và lý do chấm dứt có thể xác minh danh tính; Công ty sẽ chấm dứt tư cách thành viên sau khi xác nhận thông tin khớp với hồ sơ đăng ký.
+2. Công ty có thể chấm dứt thỏa thuận sử dụng hoặc tạm ngừng sử dụng dịch vụ trong một thời gian nhất định mà không cần thông báo trước nếu thành viên vi phạm Điều 16 hoặc các điều khoản khác.
+
+Chương 4. Bồi thường và miễn trừ trách nhiệm
+
+Điều 19 (Bồi thường thiệt hại)
+1. Công ty không chịu trách nhiệm về thiệt hại phát sinh cho thành viên đối với dịch vụ miễn phí. Tuy nhiên, đối với dịch vụ trả phí, nếu thiệt hại phát sinh do lỗi của Công ty trừ các trường hợp tại Điều 14, nguyên tắc là gia hạn thời gian sử dụng tương ứng.
+2. Nếu Công ty bị thiệt hại do thành viên vi phạm nghĩa vụ theo các điều khoản này, hoặc nếu thành viên gây thiệt hại cho Công ty khi sử dụng dịch vụ, thành viên phải bồi thường thiệt hại đó.
+
+Điều 20 (Miễn trừ trách nhiệm)
+1. Công ty được miễn trách nhiệm cung cấp dịch vụ nếu không thể cung cấp dịch vụ do thiên tai hoặc hoàn cảnh bất khả kháng tương đương.
+2. Công ty không chịu trách nhiệm đối với gián đoạn sử dụng dịch vụ do lỗi của thành viên.
+3. Công ty không chịu trách nhiệm về tính chính xác, độ tin cậy hoặc nội dung khác của thông tin, dữ liệu, sự kiện do thành viên đăng trên dịch vụ. Thành viên sử dụng dịch vụ trên cơ sở tự chịu rủi ro và chịu trách nhiệm về mọi thiệt hại hoặc bất lợi liên quan đến lựa chọn tài liệu hoặc sử dụng dịch vụ khác.
+4. Công ty không có nghĩa vụ can thiệp vào tranh chấp giữa thành viên hoặc giữa thành viên và bên thứ ba, và không chịu trách nhiệm bồi thường thiệt hại phát sinh từ các tranh chấp đó.
+
+Điều 21 (Giải quyết tranh chấp)
+1. Công ty và thành viên sẽ nỗ lực cần thiết để giải quyết thân thiện các tranh chấp phát sinh liên quan đến dịch vụ.
+2. Nếu phát sinh kiện tụng bất chấp khoản 1, vụ kiện sẽ thuộc thẩm quyền của tòa án có thẩm quyền tại nơi đặt trụ sở chính của Công ty.
+
+Điều khoản bổ sung
+
+Điều 1 (Ngày có hiệu lực)
+Các điều khoản này có hiệu lực kể từ ngày được đăng trên trang web.
+
+Điều 2 (Chống thư rác và bảo mật)
+Trang web này được bảo vệ bởi Google reCAPTCHA để ngăn thư rác và truy cập độc hại. Chính sách quyền riêng tư của Google (https://policies.google.com/privacy) và Điều khoản dịch vụ của Google (https://policies.google.com/terms) được áp dụng.

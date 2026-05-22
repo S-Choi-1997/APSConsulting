@@ -105,7 +105,20 @@ APSConsulting/
 
 ## 🚀 배포 방법
 
-### 정적 호스팅 (추천)
+### 현재 운영 배포: GitHub Pages
+
+현재 `https://apsconsulting.kr/` 운영 배포는 GitHub Pages의 `publish` 브랜치를 기준으로 합니다.
+
+```bash
+git checkout publish
+git add <변경 파일>
+git commit -m "변경 내용 요약"
+git push origin publish
+```
+
+push 후 GitHub Actions의 `pages build and deployment`가 자동 실행됩니다. 자세한 절차는 `docs/DEPLOY_GITHUB_PAGES.md`를 확인하세요.
+
+### 기타 정적 호스팅 참고
 
 1. **Netlify**
    ```bash
@@ -121,7 +134,7 @@ APSConsulting/
 
 3. **GitHub Pages**
    ```bash
-   # repository 설정에서 Pages 활성화
+   # 현재 운영은 publish 브랜치 기반 GitHub Pages 사용
    ```
 
 ### 일반 호스팅

@@ -1,0 +1,405 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "services": "Dịch vụ",
+    "team": "Đội ngũ chuyên gia hành chính",
+    "contact": "Đăng ký tư vấn"
+  },
+  "lang": {
+    "ko": "한국어",
+    "en": "English",
+    "zh": "中文",
+    "ru": "Русский",
+    "vi": "Tiếng Việt"
+  },
+  "index": {
+    "slide1": {
+      "subtitle": "Chuyên gia dịch vụ hành chính",
+      "title": "Đối tác chuyên nghiệp<br/>cho dịch vụ hành chính<br/><strong>APS Consulting</strong>",
+      "desc": "Từ xuất nhập cảnh đến thành lập pháp nhân và các loại giấy phép,<br/>các chuyên gia hành chính của chúng tôi xử lý nhanh chóng và chính xác.",
+      "btn1": "Đăng ký tư vấn",
+      "btn2": "Xem dịch vụ"
+    },
+    "slide2": {
+      "subtitle": "Dịch vụ chuyên nghiệp",
+      "title": "Từ thành lập pháp nhân<br/>đến giấy phép<br/><strong>Dịch vụ trọn gói</strong>",
+      "desc": "Thành lập pháp nhân, các loại giấy phép, dịch vụ xuất nhập cảnh và hơn thế nữa—<br/>mọi dịch vụ hành chính đều được hỗ trợ tại một nơi.",
+      "btn1": "Đăng ký tư vấn",
+      "btn2": "Xem đội ngũ chuyên gia hành chính"
+    },
+    "slide3": {
+      "subtitle": "Đối tác đáng tin cậy",
+      "title": "Chuẩn bị có hệ thống<br/>và chuyên môn<br/><strong>Đồng hành cùng bạn</strong>",
+      "desc": "Thông qua chuẩn bị có hệ thống và rà soát hồ sơ kỹ lưỡng,<br/>chúng tôi nỗ lực hết mình để thủ tục hành chính thành công.",
+      "btn1": "Đăng ký tư vấn",
+      "btn2": "Xem giới thiệu công ty"
+    },
+    "intro": {
+      "subtitle": "VỀ CHÚNG TÔI",
+      "value1": "Chuyên môn",
+      "value2": "Hệ thống",
+      "value3": "Tin cậy",
+      "value4": "Minh bạch",
+      "text1": "APS Consulting là <strong>người đồng hành đáng tin cậy</strong> của bạn trong nhiều lĩnh vực dịch vụ hành chính và tư vấn, bao gồm xuất nhập cảnh, thành lập tổ chức phi lợi nhuận và chứng nhận doanh nghiệp.",
+      "text2": "Chúng tôi áp dụng quy trình có hệ thống cho mọi công việc, quản lý tiến độ <strong>minh bạch và tỉ mỉ</strong> từ đầu đến cuối.",
+      "text3": "Dù mục tiêu của bạn là gì, chúng tôi sẽ tạo ra <strong>kết quả đáng tin cậy</strong> bằng sự tận tâm và chuyên môn.",
+      "btn": "Tìm hiểu thêm"
+    },
+    "services": {
+      "subtitle": "DỊCH VỤ",
+      "title": "Lĩnh vực dịch vụ chính",
+      "desc": "Chúng tôi cung cấp dịch vụ tốt nhất dựa trên chuyên môn và kinh nghiệm",
+      "viewall": "Xem tất cả dịch vụ"
+    },
+    "service1": {
+      "title": "Dịch vụ xuất nhập cảnh và visa",
+      "subtitle": "Xuất nhập cảnh và visa",
+      "desc": "Thay đổi/gia hạn tư cách lưu trú, visa lao động chuyên môn/lao động phổ thông, mời thân nhân/visa gia đình đi cùng, xin thường trú/nhập tịch, v.v."
+    },
+    "service2": {
+      "title": "Thành lập và thay đổi tổ chức phi lợi nhuận",
+      "subtitle": "Thành lập tổ chức phi lợi nhuận",
+      "desc": "Phê duyệt thành lập pháp nhân phi lợi nhuận, sửa đổi điều lệ, báo cáo hoạt động, thay đổi ban điều hành, đại diện nộp các loại hồ sơ, v.v."
+    },
+    "service3": {
+      "title": "Chứng nhận doanh nghiệp và xin cấp phép/phê duyệt",
+      "subtitle": "Chứng nhận doanh nghiệp và xin cấp phép/phê duyệt",
+      "desc": "Chứng nhận doanh nghiệp, giấy phép/đăng ký kinh doanh, đăng ký nhà máy, giấy phép phát triển, giấy phép liên quan đến đất đai, v.v."
+    },
+    "service4": {
+      "title": "Hành chính dân nguyện và hành chính bầu cử",
+      "subtitle": "Hành chính dân nguyện và hành chính bầu cử",
+      "desc": "Soạn đơn kiến nghị/đơn thỉnh cầu/đơn khiếu nại, hỗ trợ khiếu nại hành chính, giải trình tiền phạt/xử phạt, soạn hợp đồng, v.v."
+    },
+    "why": {
+      "subtitle": "VÌ SAO CHỌN CHÚNG TÔI",
+      "title": "Vì sao chọn APS Consulting",
+      "desc": "Hỗ trợ nâng cao khả năng được chấp thuận visa bằng chuyên môn và dịch vụ khác biệt"
+    },
+    "why1": {
+      "number": "01",
+      "title": "Đội ngũ chuyên gia hành chính giàu kinh nghiệm",
+      "desc": "Với tư cách là pháp nhân dịch vụ hành chính chuyên nghiệp, chúng tôi có chuyên gia phụ trách từng lĩnh vực để xử lý các công việc hành chính phức tạp một cách hệ thống và chuyên nghiệp."
+    },
+    "why2": {
+      "number": "02",
+      "title": "Mạng lưới chuyên gia hợp tác",
+      "desc": "Chúng tôi cung cấp dịch vụ tích hợp, chất lượng cao thông qua hợp tác chặt chẽ với luật sư, kế toán viên, chuyên gia thuế và các chuyên gia liên quan."
+    },
+    "why3": {
+      "number": "03",
+      "title": "Tư vấn và chăm sóc sau dịch vụ liên tục",
+      "desc": "Chúng tôi hỗ trợ công việc hành chính ổn định thông qua tư vấn và theo dõi sau khi hoàn tất hồ sơ, với vai trò là đối tác dài hạn chứ không chỉ cung cấp dịch vụ một lần."
+    },
+    "why4": {
+      "number": "04",
+      "title": "Chia sẻ tiến độ minh bạch",
+      "desc": "Chúng tôi chia sẻ mọi tiến độ theo thời gian thực, xây dựng niềm tin và giảm bớt lo lắng của khách hàng bằng hướng dẫn chi phí và quản lý lịch trình rõ ràng."
+    },
+    "cta": {
+      "title": "Tư vấn với chuyên gia hành chính",
+      "desc": "Các thủ tục hành chính phức tạp có thể được giải quyết dễ dàng và nhanh chóng cùng chuyên gia.<br/>Hãy đăng ký tư vấn ngay.",
+      "btn1": "Tư vấn trực tuyến"
+    }
+  },
+  "about": {
+    "pageHeader": {
+      "subtitle": "VỀ CHÚNG TÔI",
+      "title": "Giới thiệu",
+      "desc": "Cung cấp dịch vụ hành chính chất lượng cao dựa trên chuyên môn và uy tín"
+    },
+    "detail": {
+      "subtitle": "GIỚI THIỆU",
+      "title": "APS Consulting là<br/>pháp nhân cung cấp dịch vụ hành chính chuyên nghiệp",
+      "apsTitle": "APS là viết tắt của ...",
+      "apsA": "<strong>A</strong>dministrative",
+      "apsP": "<strong>P</strong>rofessional",
+      "apsS": "<strong>S</strong>ervice",
+      "desc1": "APS cung cấp giải pháp chính xác và nhanh chóng cho các vấn đề hành chính phức tạp<br/>thông qua dịch vụ tư vấn chuyên nghiệp.",
+      "desc2": "Chúng tôi nỗ lực trở thành đối tác dịch vụ hành chính của bạn,<br/>tận tâm giải quyết mọi vấn đề và thủ tục hành chính của khách hàng."
+    },
+    "features": {
+      "feature1": {
+        "number": "01",
+        "title": "Chuyên môn",
+        "desc": "Cung cấp dịch vụ tốt nhất với kiến thức chuyên sâu trong nhiều lĩnh vực hành chính"
+      },
+      "feature2": {
+        "number": "02",
+        "title": "Uy tín",
+        "desc": "Xây dựng niềm tin khách hàng thông qua xử lý công việc minh bạch và trung thực"
+      },
+      "feature3": {
+        "number": "03",
+        "title": "Nhanh chóng",
+        "desc": "Tiết kiệm thời gian và chi phí thông qua xử lý công việc nhanh và chính xác"
+      }
+    },
+    "vision": {
+      "visionTitle": "TẦM NHÌN",
+      "visionDesc": "Hài hòa, cùng phát triển và đóng góp cho xã hội",
+      "missionTitle": "SỨ MỆNH",
+      "missionDesc": "1. Xử lý công việc đúng pháp luật<br/>2. Thực hiện công việc chính xác<br/>3. Thực hiện công việc hiệu quả",
+      "valueTitle": "GIÁ TRỊ",
+      "valueDesc": "Cung cấp dịch vụ hành chính tốt nhất<br/>dựa trên các giá trị cốt lõi: lấy khách hàng làm trung tâm, chuyên môn, uy tín, nhanh chóng và minh bạch"
+    },
+    "cta": {
+      "title": "Tư vấn với chuyên gia hành chính",
+      "desc": "Các thủ tục hành chính phức tạp có thể được giải quyết dễ dàng và nhanh chóng cùng chuyên gia",
+      "btn1": "Tư vấn trực tuyến"
+    }
+  },
+  "services_page": {
+    "pageHeader": {
+      "subtitle": "DỊCH VỤ",
+      "title": "Dịch vụ của chúng tôi",
+      "desc": "Mang lại kết quả tốt nhất bằng dịch vụ hành chính chuyên nghiệp"
+    },
+    "detail1": {
+      "title": "Dịch vụ xuất nhập cảnh và visa",
+      "subtitle": "Xuất nhập cảnh và visa",
+      "desc": "Xử lý chuyên nghiệp mọi công việc liên quan đến xuất nhập cảnh, bao gồm thay đổi tư cách lưu trú, thường trú và nhập tịch.",
+      "list1": "Thay đổi/gia hạn tư cách lưu trú",
+      "list2": "Visa lao động chuyên môn/lao động phổ thông",
+      "list3": "Mời thân nhân/visa gia đình đi cùng",
+      "list4": "Xin thường trú/nhập tịch",
+      "list5": "Thư mời/bản giải trình lý do",
+      "list6": "Thông báo thay đổi nơi cư trú/việc làm",
+      "list7": "Hỗ trợ ứng phó với thủ tục xem xét tư pháp",
+      "link": "Đăng ký tư vấn →"
+    },
+    "detail2": {
+      "title": "Thành lập tổ chức phi lợi nhuận",
+      "subtitle": "Thành lập tổ chức phi lợi nhuận",
+      "desc": "Hỗ trợ có hệ thống từ thành lập pháp nhân phi lợi nhuận đến sửa đổi điều lệ và thay đổi ban điều hành.",
+      "list1": "Phê duyệt thành lập pháp nhân phi lợi nhuận (hiệp hội, quỹ, tổ chức dân sự phi lợi nhuận, tổ chức tự nguyện, doanh nghiệp xã hội, hợp tác xã, v.v.)",
+      "list2": "Sửa đổi điều lệ",
+      "list3": "Báo cáo hoạt động",
+      "list4": "Thay đổi ban điều hành",
+      "list5": "Đại diện nộp các loại hồ sơ sau thành lập",
+      "list6": "Tư vấn vận hành pháp nhân",
+      "link": "Đăng ký tư vấn →"
+    },
+    "detail3": {
+      "title": "Chứng nhận doanh nghiệp và xin cấp phép/phê duyệt",
+      "subtitle": "Chứng nhận doanh nghiệp và xin cấp phép/phê duyệt",
+      "desc": "Xử lý trọn gói từ chứng nhận doanh nghiệp đến giấy phép kinh doanh và giấy phép liên quan đến đất đai.",
+      "list1": "Các loại chứng nhận doanh nghiệp",
+      "list2": "Giấy phép/đăng ký kinh doanh theo ngành",
+      "list3": "Đăng ký nhà máy và rà soát tiêu chuẩn cơ sở",
+      "list4": "Giấy phép phát triển (thay đổi hiện trạng đất, v.v.)",
+      "list5": "Các giấy phép liên quan đến đất đai",
+      "link": "Đăng ký tư vấn →"
+    },
+    "detail4": {
+      "title": "Hành chính dân nguyện và hành chính bầu cử",
+      "subtitle": "Hành chính dân nguyện và hành chính bầu cử",
+      "desc": "Hỗ trợ nhiều công việc hành chính dân nguyện, từ soạn đơn kiến nghị/đơn trình bày đến khiếu nại hành chính và soạn hợp đồng.",
+      "election": "Chuyên hỗ trợ hành chính bầu cử cho ứng viên trong cuộc bầu cử địa phương đồng thời toàn quốc năm 2026",
+      "list1": "Soạn các loại đơn khiếu nại/kiến nghị (bạo lực học đường, v.v.)",
+      "list2": "Hỗ trợ yêu cầu khắc phục thông qua thủ tục khiếu nại hành chính",
+      "list3": "Hỗ trợ tài liệu giải trình tiền phạt/xử phạt",
+      "list4": "Soạn hồ sơ liên quan đến tiền sang nhượng quyền kinh doanh, hợp đồng/văn bản đồng ý/văn bản xác nhận",
+      "list5": "Đại diện thực hiện các thủ tục hành chính khác",
+      "link": "Đăng ký tư vấn →"
+    },
+    "process": {
+      "subtitle": "QUY TRÌNH",
+      "title": "Quy trình làm việc",
+      "desc": "Chúng tôi tiến hành theo quy trình có hệ thống và minh bạch",
+      "step1": {
+        "number": "01",
+        "title": "Đăng ký tư vấn",
+        "desc": "Đăng ký tư vấn trực tuyến/qua điện thoại"
+      },
+      "step2": {
+        "number": "02",
+        "title": "Tư vấn & phân tích",
+        "desc": "Tư vấn chuyên gia và hướng dẫn hồ sơ cần thiết"
+      },
+      "step3": {
+        "number": "03",
+        "title": "Ký hợp đồng",
+        "desc": "Xác nhận báo giá và ký hợp đồng"
+      },
+      "step4": {
+        "number": "04",
+        "title": "Thực hiện công việc",
+        "desc": "Chuẩn bị hồ sơ và đại diện nộp đơn"
+      },
+      "step5": {
+        "number": "05",
+        "title": "Hoàn tất",
+        "desc": "Xác nhận kết quả và bàn giao tài liệu"
+      }
+    },
+    "cta": {
+      "title": "Bạn cần dịch vụ visa nào?",
+      "desc": "Các chuyên gia hành chính của chúng tôi sẽ phụ trách toàn bộ quy trình từ tư vấn đến hoàn tất",
+      "btn1": "Đăng ký tư vấn trực tuyến"
+    }
+  },
+  "team": {
+    "pageHeader": {
+      "subtitle": "ĐỘI NGŨ",
+      "title": "Chuyên gia của chúng tôi",
+      "desc": "Gặp gỡ các chuyên gia hành chính APS phụ trách nhiều lĩnh vực hành chính khác nhau."
+    },
+    "section": {
+      "subtitle": "HỒ SƠ ĐỘI NGŨ",
+      "title": "Hồ sơ chuyên gia hành chính",
+      "desc": "Chúng tôi công khai minh bạch kinh nghiệm và chuyên môn của các chuyên gia hành chính theo từng lĩnh vực."
+    },
+    "member1": {
+      "name": "Choi Jae-hyung",
+      "position": "Tổng giám đốc",
+      "career1": "30 năm công tác với tư cách công chức nhà nước cấp cao",
+      "career2": "Chứng nhận tham gia Chương trình CNS Visiting Scholars tại Middlebury Institute of International Studies at Monterey (MIIS), Hoa Kỳ",
+      "career3": "Được trao Huân chương Công trạng An ninh Quốc gia của Hàn Quốc",
+      "career4": "Được trao Huân chương Cần chính Hongjo của Hàn Quốc"
+    },
+    "member2": {
+      "name": "Lee Chung-min",
+      "position": "Chuyên gia phụ trách xuất nhập cảnh",
+      "career1": "30 năm công tác với tư cách công chức nhà nước cấp cao",
+      "career2": "Hoàn thành chương trình học bổng tại Đại học Missouri, Hoa Kỳ",
+      "career3": "Được trao Huân chương Cần chính Hongjo của Hàn Quốc",
+      "career4": "Thành viên chính thức của Hội Nghiên cứu Thực tiễn về Tiền sang nhượng kinh doanh Hàn Quốc"
+    },
+    "member3": {
+      "name": "Cho Young-sang",
+      "position": "Chuyên gia phụ trách thành lập pháp nhân",
+      "career1": "30 năm công tác với tư cách công chức nhà nước cấp cao",
+      "career2": "Chủ tịch Hội Nghiên cứu Chứng nhận Doanh nghiệp Hàn Quốc",
+      "career3": "Thành viên chính thức của Hiệp hội Hành chính Trung ương về Thành lập Pháp nhân"
+    },
+    "member4": {
+      "name": "Lee Chang-ho, chuyên gia hành chính đối tác",
+      "position": "Chuyên gia phụ trách hành chính dân nguyện",
+      "career1": "30 năm công tác với tư cách công chức nhà nước cấp cao",
+      "career2": "Từng công tác tại Đại sứ quán Hàn Quốc tại Washington, Bí thư thứ nhất",
+      "career3": "Cựu cố vấn của Tổng công ty Dầu khí Quốc gia Hàn Quốc"
+    },
+    "cta": {
+      "title": "Tư vấn với chuyên gia hành chính",
+      "desc": "Chuyên gia hành chính phụ trách sẽ trực tiếp kết nối và xem xét hồ sơ của bạn. Vui lòng liên hệ nhanh qua điện thoại hoặc tư vấn trực tuyến.",
+      "btn1": "Đăng ký tư vấn"
+    }
+  },
+  "contact": {
+    "pageHeader": {
+      "subtitle": "LIÊN HỆ",
+      "title": "Đăng ký tư vấn",
+      "desc": "Các chuyên gia hành chính của chúng tôi sẽ phản hồi nhanh chóng"
+    },
+    "methods": {
+      "phone": {
+        "title": "Tư vấn qua điện thoại",
+        "desc": "Thứ Hai - Thứ Sáu 09:00 ~ 18:00",
+        "link": "031-701-1663"
+      },
+      "email": {
+        "title": "Tư vấn qua email",
+        "desc": "Có thể gửi bất cứ lúc nào",
+        "link": "contact@apsconsulting.kr"
+      },
+      "visit": {
+        "title": "Tư vấn trực tiếp",
+        "desc": "Cần đặt lịch trước",
+        "link": "Phòng 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do"
+      }
+    },
+    "form": {
+      "subtitle": "TƯ VẤN TRỰC TUYẾN",
+      "title": "Gửi yêu cầu tư vấn trực tuyến",
+      "intro": "Nếu bạn cần tư vấn về công việc hành chính, vui lòng liên hệ với chúng tôi bất cứ lúc nào.<br/>Chúng tôi sẽ xem xét nội dung gửi và liên hệ lại nhanh chóng.",
+      "benefit1": "Tư vấn chuyên nghiệp",
+      "benefit2": "Phản hồi nhanh",
+      "benefit3": "Tư vấn phù hợp bởi chuyên gia",
+      "name": "Họ tên *",
+      "namePlaceholder": "Nhập họ tên của bạn",
+      "phone": "Số điện thoại *",
+      "phonePlaceholder": "010-0000-0000",
+      "email": "Email",
+      "emailPlaceholder": "example@email.com",
+      "category": "Lĩnh vực tư vấn *",
+      "categoryPlaceholder": "Chọn",
+      "categoryVisa": "Xuất nhập cảnh và visa",
+      "categoryNonprofit": "Thành lập/thay đổi tổ chức phi lợi nhuận",
+      "categoryCorporate": "Chứng nhận doanh nghiệp · cấp phép/phê duyệt",
+      "categoryCivil": "Đại diện xử lý hành chính dân nguyện · khiếu nại hành chính",
+      "categoryOther": "Khác",
+      "nationality": "Quốc tịch *",
+      "nationalityPlaceholder": "Chọn quốc tịch",
+      "nationalityKOR": "Hàn Quốc",
+      "nationalityOther": "Khác",
+      "nationalityNote": "Danh sách quốc gia được tải tự động. Nếu chọn Khác, vui lòng nhập trực tiếp trong phần ghi chú.",
+      "company": "Tên doanh nghiệp/tổ chức",
+      "companyPlaceholder": "Nhập nơi công tác hoặc tên công ty",
+      "attachments": "Tệp đính kèm (bao gồm ảnh)",
+      "attachmentsNote": "Tối đa 5 tệp, mỗi tệp không quá 20MB (hình ảnh/tài liệu)",
+      "message": "Nội dung tư vấn *",
+      "messagePlaceholder": "Vui lòng viết chi tiết nội dung cần tư vấn",
+      "termsTitle": "Điều khoản dịch vụ cơ bản",
+      "termsDownload": "Tải xuống điều khoản",
+      "agreeAllBtn": "Tôi đồng ý với tất cả các mục bắt buộc nêu trên",
+      "agreeTerms": "[Bắt buộc] Tôi đồng ý với Điều khoản dịch vụ cơ bản",
+      "viewTerms": "Xem toàn văn",
+      "agreePrivacy": "[Bắt buộc] Tôi đồng ý với việc thu thập và sử dụng các mục thông tin cá nhân bắt buộc",
+      "viewPrivacy": "Xem chi tiết",
+      "agreeTransfer": "[Bắt buộc] Tôi đồng ý với việc chuyển thông tin cá nhân ra nước ngoài",
+      "viewTransfer": "Xem chi tiết",
+      "submit": "Gửi yêu cầu tư vấn"
+    },
+    "modal": {
+      "close": "Đóng"
+    },
+    "success": {
+      "title": "Yêu cầu tư vấn đã được gửi",
+      "desc": "Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất"
+    },
+    "location": {
+      "subtitle": "VỊ TRÍ",
+      "title": "Chỉ đường",
+      "desc": "Giao thông thuận tiện, dễ dàng đến văn phòng",
+      "addressTitle": "Địa chỉ",
+      "address": "Phòng 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do<br/><span style=\"font-size: 0.9em; color: #666;\">경기 성남시 분당구 황새울로 315 401호 (서현동 273-2)</span>",
+      "transportTitle": "Phương tiện công cộng",
+      "transport": "<strong>Tàu điện ngầm</strong> Đi bộ 3 phút từ Lối ra 4 ga Seohyeon",
+      "parkingTitle": "Đỗ xe",
+      "parking": "Có bãi đỗ xe trong tòa nhà",
+      "hoursTitle": "Giờ làm việc",
+      "hours": "Thứ Hai - Thứ Sáu 09:00 ~ 18:00<br/>Nghỉ thứ Bảy, Chủ nhật và ngày lễ"
+    }
+  },
+  "footer": {
+    "fixed": {
+      "label": "Menu nhanh",
+      "about": "Giới thiệu",
+      "services": "Dịch vụ",
+      "team": "Đội ngũ chuyên gia hành chính",
+      "contact": "Đăng ký tư vấn",
+      "phone": "Tư vấn qua điện thoại",
+      "cta": "Đăng ký tư vấn",
+      "top": "TOP"
+    },
+    "main": {
+      "description": "Chúng tôi suy nghĩ từ góc nhìn của khách hàng và đặt quyền, lợi ích của khách hàng lên hàng đầu.<br/>Chúng tôi cung cấp dịch vụ hành chính đáng tin cậy dựa trên chuyên môn và sự tận tâm.",
+      "phone": "031-701-1663",
+      "email": "contact@apsconsulting.kr",
+      "quickLinksTitle": "Liên kết nhanh",
+      "quickLink1": "Giới thiệu",
+      "quickLink2": "Dịch vụ",
+      "quickLink3": "Đội ngũ chuyên gia hành chính",
+      "quickLink4": "Đăng ký tư vấn",
+      "servicesTitle": "Dịch vụ chính",
+      "service1": "Dịch vụ xuất nhập cảnh và visa",
+      "service2": "Thành lập và thay đổi tổ chức phi lợi nhuận",
+      "service3": "Chứng nhận doanh nghiệp và xin cấp phép/phê duyệt",
+      "service4": "Hành chính dân nguyện và hành chính bầu cử",
+      "address": "Văn phòng chính: Phòng 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)  |  Đại diện: Choi Jae-hyung  |  Số đăng ký kinh doanh: 551-86-03815<br/>Điện thoại: 031-701-1663  |  Email: contact@apsconsulting.kr",
+      "copyright": "© 2025 APS Consulting Corporation. Mọi quyền được bảo lưu."
+    }
+  }
+}
