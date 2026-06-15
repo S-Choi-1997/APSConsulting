@@ -1781,6 +1781,164 @@ body.lang-vi .typo-4 {
     transform: translateX(3px);
 }
 
+/* 업무 협력분야 페이지 */
+.section-cooperation-fields {
+    padding: 100px 50px;
+}
+
+.cooperation-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.cooperation-card {
+    background: #fff;
+    border: 1px solid rgba(2, 49, 99, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 6px 24px rgba(2, 49, 99, 0.08);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cooperation-card::before,
+.mou-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-lighter) 0%, var(--second) 100%);
+}
+
+.cooperation-icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-lighter) 0%, var(--primary-light) 100%);
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 6px 16px rgba(5, 99, 184, 0.2);
+}
+
+.cooperation-card:nth-child(2) .cooperation-icon {
+    background: linear-gradient(135deg, #034a8f 0%, #02407d 100%);
+}
+
+.cooperation-card:nth-child(3) .cooperation-icon {
+    background: linear-gradient(135deg, var(--second) 0%, #b89a7d 100%);
+}
+
+.cooperation-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.cooperation-desc {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.section-mou-records {
+    padding: 100px 50px;
+    background: linear-gradient(180deg, #fff 0%, var(--bg-light) 100%);
+}
+
+.mou-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.mou-item {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 34px;
+    background: #fff;
+    border: 1px solid rgba(2, 49, 99, 0.08);
+    border-radius: 24px;
+    box-shadow: 0 6px 24px rgba(2, 49, 99, 0.08);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mou-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.mou-date {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.mou-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 72px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(201, 169, 110, 0.16);
+    color: var(--second-dark);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+.mou-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.mou-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-bottom: 18px;
+}
+
+.mou-points {
+    display: grid;
+    gap: 8px;
+}
+
+.mou-points li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text-dark);
+}
+
+.mou-points li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    color: var(--second);
+    font-weight: 700;
+}
+
 /* 프로세스 섹션 */
 .section-process {
     background: linear-gradient(180deg, #fff 0%, var(--bg-light) 50%, var(--bg-lighter) 100%);

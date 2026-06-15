@@ -51,7 +51,7 @@
 /* PC 메뉴 */
 .main-nav ul {
     display: flex;
-    gap: 50px;
+    gap: 38px;
 }
 
 .main-nav a {

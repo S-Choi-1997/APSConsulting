@@ -15,6 +15,14 @@
     .section-title {
         font-size: 36px;
     }
+
+    .main-nav ul {
+        gap: 26px;
+    }
+
+    .main-nav a {
+        font-size: 16px;
+    }
     
     .slide-content .title {
         font-size: 48px;
@@ -627,11 +635,17 @@
     }
 
     /* 서비스 상세 페이지 카드 - 2열 */
-    .services-detail-grid {
+    .services-detail-grid,
+    .cooperation-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 12px;
         padding: 0 20px;
         width: 100%;
+    }
+
+    .mou-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .service-detail-card {
@@ -2005,6 +2019,7 @@
 
     /* 기타 카드들 - 모두 2열 유지 */
     .services-detail-grid,
+    .cooperation-grid,
     .cases-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -2038,6 +2053,41 @@
         overflow: hidden !important;
         display: flex !important;
         flex-direction: column !important;
+    }
+
+    .cooperation-card {
+        padding: 28px 24px !important;
+        border-radius: 20px !important;
+    }
+
+    .cooperation-icon {
+        width: 56px !important;
+        height: 56px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .cooperation-title {
+        font-size: 18px !important;
+    }
+
+    .cooperation-desc,
+    .mou-desc {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    .mou-item {
+        grid-template-columns: 1fr !important;
+        padding: 28px 24px !important;
+        border-radius: 20px !important;
+    }
+
+    .mou-title {
+        font-size: 20px !important;
+    }
+
+    .mou-points li {
+        font-size: 14px !important;
     }
 
     .service-detail-card::before {
@@ -2918,8 +2968,14 @@
     }
 
     .services-detail-grid,
+    .cooperation-grid,
     .cases-grid {
         grid-template-columns: 1fr;
+    }
+
+    .mou-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 
     .stats-container {

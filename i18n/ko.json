@@ -3,6 +3,7 @@
     "home": "홈",
     "about": "회사소개",
     "services": "업무분야",
+    "cooperation": "업무 협력분야",
     "team": "행정사 소개",
     "contact": "상담신청"
   },
@@ -240,6 +241,46 @@
       "btn1": "온라인 상담신청"
     }
   },
+  "cooperation_page": {
+    "meta_title": "업무 협력분야 | 행정사법인 APS컨설팅",
+    "meta_description": "APS컨설팅의 업무 협력분야와 MOU 체결 내용을 소개합니다. 각 분야 전문기관과의 협력 네트워크를 통해 통합 행정 서비스를 제공합니다.",
+    "meta_keywords": "업무협력, MOU, 협력기관, 행정사법인, APS컨설팅, 전문기관협력",
+    "og_site_name": "행정사법인 APS컨설팅",
+    "og_title": "업무 협력분야 | 행정사법인 APS컨설팅",
+    "og_description": "APS컨설팅의 업무 협력분야와 MOU 체결 내용을 소개합니다.",
+    "pageHeader": {
+      "subtitle": "BUSINESS PARTNERSHIP",
+      "title": "업무 협력분야",
+      "desc": "MOU 체결기관과의 협력 내용을 한눈에 확인할 수 있습니다."
+    },
+    "fields": {
+      "subtitle": "COOPERATION FIELDS",
+      "title": "협력 가능한 업무영역",
+      "desc": "출입국, 법인·단체 설립, 기업인증, 민원행정 등 주요 업무와 연결되는 전문 협력망을 정리합니다."
+    },
+    "field1": {
+      "title": "기관·단체 협력",
+      "desc": "공공기관, 협회, 비영리단체와의 업무협약 및 행정지원 협력 내용을 기록합니다."
+    },
+    "field2": {
+      "title": "기업·전문가 협력",
+      "desc": "기업 인증, 인허가, 세무·노무·법률 자문 등 유관 전문가 협력 이력을 정리합니다."
+    },
+    "field3": {
+      "title": "행정서비스 연계",
+      "desc": "MOU를 통해 제공되는 상담, 서류 검토, 교육, 공동 프로젝트 범위를 관리합니다."
+    },
+    "records": {
+      "subtitle": "MOU RECORDS",
+      "title": "MOU 체결 내용",
+      "desc": "체결된 업무협약은 기관명, 협력분야, 주요 협약내용 기준으로 게시합니다."
+    },
+    "cta": {
+      "title": "업무 협력 제안이 있으신가요?",
+      "desc": "APS컨설팅은 전문성과 신뢰를 바탕으로 지속 가능한 협력 관계를 만들어갑니다.",
+      "btn1": "협력 문의"
+    }
+  },
   "team": {
     "pageHeader": {
       "subtitle": "OUR TEAM",
@@ -278,7 +319,7 @@
       "name": "이창호 협력파트너 행정사",
       "position": "민원행정 대표행정사",
       "career1": "국가 고위직 공무원 30년 근무",
-      "career2": "워싱턴 대사관 1서 근무",
+      "career2": "워싱턴대사관 1등서기관 근무",
       "career3": "前 한국석유공사 자문"
     },
     "cta": {

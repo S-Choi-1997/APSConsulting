@@ -3,6 +3,7 @@
     "home": "Trang chủ",
     "about": "Giới thiệu",
     "services": "Dịch vụ",
+    "cooperation": "Lĩnh vực hợp tác",
     "team": "Đội ngũ chuyên gia hành chính",
     "contact": "Đăng ký tư vấn"
   },
@@ -238,6 +239,46 @@
       "title": "Bạn cần dịch vụ visa nào?",
       "desc": "Các chuyên gia hành chính của chúng tôi sẽ phụ trách toàn bộ quy trình từ tư vấn đến hoàn tất",
       "btn1": "Đăng ký tư vấn trực tuyến"
+    }
+  },
+  "cooperation_page": {
+    "meta_title": "Lĩnh vực hợp tác | APS Consulting",
+    "meta_description": "Giới thiệu các lĩnh vực hợp tác, đối tác đã ký MOU và nội dung hợp tác chính của APS Consulting.",
+    "meta_keywords": "hợp tác nghiệp vụ,MOU,tổ chức đối tác,APS Consulting,hợp tác dịch vụ hành chính",
+    "og_site_name": "APS Consulting",
+    "og_title": "Lĩnh vực hợp tác | APS Consulting",
+    "og_description": "Giới thiệu các lĩnh vực hợp tác và nội dung MOU của APS Consulting.",
+    "pageHeader": {
+      "subtitle": "HỢP TÁC NGHIỆP VỤ",
+      "title": "Lĩnh vực hợp tác",
+      "desc": "Bạn có thể xem nhanh các đối tác đã ký MOU và nội dung hợp tác với APS Consulting."
+    },
+    "fields": {
+      "subtitle": "LĨNH VỰC HỢP TÁC",
+      "title": "Các phạm vi có thể hợp tác",
+      "desc": "Chúng tôi hệ thống hóa mạng lưới hợp tác chuyên môn liên quan đến xuất nhập cảnh, thành lập pháp nhân và tổ chức, chứng nhận doanh nghiệp, giấy phép và hành chính dân sự."
+    },
+    "field1": {
+      "title": "Hợp tác với cơ quan và tổ chức",
+      "desc": "Ghi nhận nội dung MOU và hợp tác hỗ trợ hành chính với cơ quan công, hiệp hội và tổ chức phi lợi nhuận."
+    },
+    "field2": {
+      "title": "Hợp tác với doanh nghiệp và chuyên gia",
+      "desc": "Tổng hợp lịch sử hợp tác với doanh nghiệp và các chuyên gia liên quan trong chứng nhận, giấy phép, thuế, lao động và tư vấn pháp lý."
+    },
+    "field3": {
+      "title": "Liên kết dịch vụ hành chính",
+      "desc": "Quản lý phạm vi tư vấn, rà soát hồ sơ, đào tạo và dự án chung được cung cấp thông qua MOU."
+    },
+    "records": {
+      "subtitle": "HỒ SƠ MOU",
+      "title": "Nội dung ký kết MOU",
+      "desc": "Các MOU đã ký sẽ được đăng theo tổ chức đối tác, lĩnh vực hợp tác và nội dung thỏa thuận chính."
+    },
+    "cta": {
+      "title": "Bạn muốn đề xuất hợp tác?",
+      "desc": "APS Consulting xây dựng quan hệ hợp tác bền vững dựa trên tính chuyên nghiệp và sự tin cậy.",
+      "btn1": "Liên hệ hợp tác"
     }
   },
   "team": {

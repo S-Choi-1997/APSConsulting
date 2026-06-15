@@ -3,6 +3,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "cooperation": "Business Partnerships",
     "team": "Our Team",
     "contact": "Contact"
   },
@@ -238,6 +239,46 @@
       "title": "What Visa Services Do You Need?",
       "desc": "Our expert administrative scriveners will handle everything from consultation to completion",
       "btn1": "Online Consultation"
+    }
+  },
+  "cooperation_page": {
+    "meta_title": "Business Partnerships | APS Consulting",
+    "meta_description": "View APS Consulting's business partnership areas, MOU partners, and key cooperation details.",
+    "meta_keywords": "business partnerships, MOU, partner organizations, APS Consulting, administrative services cooperation",
+    "og_site_name": "APS Consulting",
+    "og_title": "Business Partnerships | APS Consulting",
+    "og_description": "View APS Consulting's business partnership areas and MOU details.",
+    "pageHeader": {
+      "subtitle": "BUSINESS PARTNERSHIPS",
+      "title": "Business Partnerships",
+      "desc": "View APS Consulting's MOU partners and cooperation details at a glance."
+    },
+    "fields": {
+      "subtitle": "COOPERATION AREAS",
+      "title": "Areas of Cooperation",
+      "desc": "We organize our professional cooperation network across immigration, corporate and organization setup, business certifications, permits, and civil administrative services."
+    },
+    "field1": {
+      "title": "Institutional and Association Partnerships",
+      "desc": "We record MOUs and administrative-support cooperation with public institutions, associations, and nonprofit organizations."
+    },
+    "field2": {
+      "title": "Business and Professional Partnerships",
+      "desc": "We organize cooperation history with businesses and related experts in certifications, permits, tax, labor, and legal advisory matters."
+    },
+    "field3": {
+      "title": "Administrative Service Coordination",
+      "desc": "We manage the scope of consultations, document reviews, training, and joint projects provided through MOUs."
+    },
+    "records": {
+      "subtitle": "MOU RECORDS",
+      "title": "MOU Details",
+      "desc": "Signed MOUs are published by partner organization, cooperation area, and key agreement details."
+    },
+    "cta": {
+      "title": "Interested in partnering with us?",
+      "desc": "APS Consulting builds sustainable partnerships based on professionalism and trust.",
+      "btn1": "Partnership Inquiry"
     }
   },
   "team": {

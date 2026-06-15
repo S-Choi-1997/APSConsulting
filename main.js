@@ -1016,6 +1016,11 @@
             const value = getNestedValue(translations, key);
 
             if (value) {
+                if (this.tagName && this.tagName.toLowerCase() === 'meta') {
+                    $(this).attr('content', value);
+                    return;
+                }
+
                 // HTML 태그가 포함된 경우 html() 사용
                 if (value.includes('<')) {
                     $(this).html(value);
