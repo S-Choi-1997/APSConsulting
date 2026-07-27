@@ -69,8 +69,8 @@
       "desc": "Corporate certifications, business licenses/registrations, factory registrations, development permits, land-related permits, etc."
     },
     "service4": {
-      "title": "Civil Affairs & Electoral Administration",
-      "subtitle": "Civil Affairs & Electoral Administration",
+      "title": "Civil Affairs Administration",
+      "subtitle": "Civil Affairs Administration",
       "desc": "Complaint/petition writing, administrative appeals, fine/disposition explanations, contract writing, etc."
     },
     "why": {
@@ -194,8 +194,8 @@
       "link": "Apply for Consultation →"
     },
     "detail4": {
-      "title": "Civil Affairs & Electoral Administration",
-      "subtitle": "Civil Affairs & Electoral Administration",
+      "title": "Civil Affairs Administration",
+      "subtitle": "Civil Affairs Administration",
       "desc": "Supporting various civil affairs from complaint/petition writing to administrative appeals and contract writing.",
       "list1": "Land transaction contract permit application services",
       "list2": "Premium, contract/consent/confirmation writing",
@@ -437,7 +437,7 @@
       "service1": "Immigration & VISA Services",
       "service2": "Non-Profit Organization Setup",
       "service3": "Business Certification & Permits",
-      "service4": "Civil Affairs & Electoral Administration",
+      "service4": "Civil Affairs Administration",
       "address": "Main Office: 401, 315 Hwangsaeul-ro, Bundang-gu, Seongnam-si, Gyeonggi-do (Seohyeon-dong 273-2)  |  CEO: Choi Jae-hyung  |  Business Registration No.: 551-86-03815<br/>Phone: 031-701-1663  |  Email: contact@apsconsulting.kr",
       "copyright": "© 2025 APS Consulting Corporation. All rights reserved."
     }

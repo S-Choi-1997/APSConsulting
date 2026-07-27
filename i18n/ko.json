@@ -69,8 +69,8 @@
       "desc": "기업 인증, 영업허가·신고, 공장등록, 개발행위허가, 토지 관련 인허가 등"
     },
     "service4": {
-      "title": "민원행정 · 선거행정",
-      "subtitle": "Civil Affairs & Electoral Administration",
+      "title": "민원행정",
+      "subtitle": "Civil Affairs Administration",
       "desc": "진정·탄원·청원서 작성, 행정심판 구제 청구, 과태료·처분 소명, 계약서 작성 등"
     },
     "why": {
@@ -194,8 +194,8 @@
       "link": "상담 신청하기 →"
     },
     "detail4": {
-      "title": "민원행정 · 선거행정",
-      "subtitle": "Civil Affairs & Electoral Administration",
+      "title": "민원행정",
+      "subtitle": "Civil Affairs Administration",
       "desc": "각종 진정·탄원서 작성부터 행정심판, 계약서 작성까지 다양한 민원 업무를 지원합니다.",
       "list1": "토지거래계약허가 대행",
       "list2": "권리금, 계약서·동의서·확인서 작성",
@@ -437,7 +437,7 @@
       "service1": "출입국 VISA 업무",
       "service2": "비영리단체 설립·변경",
       "service3": "기업인증 및 인허가",
-      "service4": "민원행정 · 선거행정",
+      "service4": "민원행정",
       "address": "본점 : 경기 성남시 분당구 황새울로 315 401호 (서현동 273-2)  |  대표 : 최재형  |  사업자등록번호 : 551-86-03815<br/>대표전화 : 031-701-1663  |  Email : contact@apsconsulting.kr",
       "copyright": "© 2025 행정사법인에이피에스컨설팅 (APS 컨설팅) All rights reserved."
     }
