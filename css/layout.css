@@ -1448,10 +1448,14 @@ body.lang-vi .typo-4 {
     color: var(--text-dark);
 }
 
-/* 대표 행정사 소개 */
+/* 구성원 소개 */
 .section-team {
     padding: 100px 50px;
     background: #fff;
+}
+
+.section-advisory-lawyer {
+    background: #f7f9fc;
 }
 
 .team-slider-wrapper {

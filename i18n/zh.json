@@ -4,7 +4,7 @@
     "about": "关于我们",
     "services": "服务领域",
     "cooperation": "业务合作领域",
-    "team": "行政士团队介绍",
+    "team": "团队成员介绍",
     "contact": "联系我们"
   },
   "lang": {
@@ -283,8 +283,8 @@
   "team": {
     "pageHeader": {
       "subtitle": "OUR TEAM",
-      "title": "行政士介绍",
-      "desc": "认识负责各类行政业务的APS专业行政士团队"
+      "title": "团队成员介绍",
+      "desc": "认识在行政与法律领域提供支持的APS专业团队成员。"
     },
     "section": {
       "subtitle": "TEAM PROFILE",
@@ -320,6 +320,18 @@
       "career1": "国家高级职位公务员30年工作经历",
       "career2": "华盛顿大使馆一等秘书任职",
       "career3": "前韩国石油公社顾问"
+    },
+    "lawyerSection": {
+      "subtitle": "法律顾问",
+      "title": "顾问律师简介",
+      "desc": "介绍为行政业务相关法律审查提供支持的顾问律师。"
+    },
+    "lawyer1": {
+      "name": "姓名待定",
+      "position": "顾问律师",
+      "career1": "行政业务相关法律咨询",
+      "career2": "企业及合同相关法律审查",
+      "career3": "详细简介准备中"
     },
     "cta": {
       "title": "与专业行政士咨询",
@@ -418,7 +430,7 @@
       "label": "快速导航",
       "about": "公司介绍",
       "services": "服务领域",
-      "team": "行政士介绍",
+      "team": "团队成员介绍",
       "contact": "咨询申请",
       "phone": "电话咨询",
       "cta": "立即咨询 →",
@@ -431,7 +443,7 @@
       "quickLinksTitle": "快速链接",
       "quickLink1": "公司介绍",
       "quickLink2": "服务领域",
-      "quickLink3": "行政士介绍",
+      "quickLink3": "团队成员介绍",
       "quickLink4": "咨询申请",
       "servicesTitle": "主要业务",
       "service1": "出入境VISA业务",

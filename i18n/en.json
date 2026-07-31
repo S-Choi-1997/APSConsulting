@@ -284,7 +284,7 @@
     "pageHeader": {
       "subtitle": "OUR TEAM",
       "title": "Our Team",
-      "desc": "Meet the APS administrative scriveners responsible for various administrative tasks."
+      "desc": "Meet the APS professionals supporting clients across administrative and legal matters."
     },
     "section": {
       "subtitle": "TEAM PROFILE",
@@ -320,6 +320,18 @@
       "career1": "30 years of service as a senior-level national government official",
       "career2": "Served at Washington Embassy, First Secretary",
       "career3": "Former Advisor to Korea National Oil Corporation"
+    },
+    "lawyerSection": {
+      "subtitle": "LEGAL ADVISOR",
+      "title": "Legal Advisor Profile",
+      "desc": "Meet the legal advisor who supports legal reviews related to administrative matters."
+    },
+    "lawyer1": {
+      "name": "Name Coming Soon",
+      "position": "Legal Advisor",
+      "career1": "Legal advice on administrative matters",
+      "career2": "Legal review of corporate and contract matters",
+      "career3": "Detailed profile coming soon"
     },
     "cta": {
       "title": "Consult with an Expert",

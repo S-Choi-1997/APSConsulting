@@ -4,7 +4,7 @@
     "about": "Giới thiệu",
     "services": "Dịch vụ",
     "cooperation": "Lĩnh vực hợp tác",
-    "team": "Đội ngũ chuyên gia hành chính",
+    "team": "Đội ngũ chuyên gia",
     "contact": "Đăng ký tư vấn"
   },
   "lang": {
@@ -284,7 +284,7 @@
     "pageHeader": {
       "subtitle": "ĐỘI NGŨ",
       "title": "Chuyên gia của chúng tôi",
-      "desc": "Gặp gỡ các chuyên gia hành chính APS phụ trách nhiều lĩnh vực hành chính khác nhau."
+      "desc": "Gặp gỡ đội ngũ chuyên gia APS đồng hành trong các lĩnh vực hành chính và pháp lý."
     },
     "section": {
       "subtitle": "HỒ SƠ ĐỘI NGŨ",
@@ -320,6 +320,18 @@
       "career1": "30 năm công tác với tư cách công chức nhà nước cấp cao",
       "career2": "Từng công tác tại Đại sứ quán Hàn Quốc tại Washington, Bí thư thứ nhất",
       "career3": "Cựu cố vấn của Tổng công ty Dầu khí Quốc gia Hàn Quốc"
+    },
+    "lawyerSection": {
+      "subtitle": "CỐ VẤN PHÁP LÝ",
+      "title": "Hồ sơ luật sư cố vấn",
+      "desc": "Giới thiệu luật sư cố vấn hỗ trợ rà soát pháp lý liên quan đến công việc hành chính."
+    },
+    "lawyer1": {
+      "name": "Tên sẽ được cập nhật",
+      "position": "Luật sư cố vấn",
+      "career1": "Tư vấn pháp lý liên quan đến công việc hành chính",
+      "career2": "Rà soát pháp lý về doanh nghiệp và hợp đồng",
+      "career3": "Hồ sơ chi tiết đang được chuẩn bị"
     },
     "cta": {
       "title": "Tư vấn với chuyên gia hành chính",
@@ -418,7 +430,7 @@
       "label": "Menu nhanh",
       "about": "Giới thiệu",
       "services": "Dịch vụ",
-      "team": "Đội ngũ chuyên gia hành chính",
+      "team": "Đội ngũ chuyên gia",
       "contact": "Đăng ký tư vấn",
       "phone": "Tư vấn qua điện thoại",
       "cta": "Đăng ký tư vấn",
@@ -431,7 +443,7 @@
       "quickLinksTitle": "Liên kết nhanh",
       "quickLink1": "Giới thiệu",
       "quickLink2": "Dịch vụ",
-      "quickLink3": "Đội ngũ chuyên gia hành chính",
+      "quickLink3": "Đội ngũ chuyên gia",
       "quickLink4": "Đăng ký tư vấn",
       "servicesTitle": "Dịch vụ chính",
       "service1": "Dịch vụ xuất nhập cảnh và visa",

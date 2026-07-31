@@ -845,7 +845,7 @@
         /* 모바일에서 전체 텍스트 표시 */
     }
 
-    /* 대표 행정사 소개 모바일 - 2x2 그리드 */
+    /* 구성원 소개 모바일 - 2x2 그리드 */
     .section-team {
         padding: 30px 20px;
     }
@@ -2213,7 +2213,7 @@
         line-height: 1.5;
     }
 
-    /* 대표 행정사 소개 480px - 모던 디자인 */
+    /* 구성원 소개 480px - 모던 디자인 */
     .section-team {
         padding: 25px 16px !important;
     }
