@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="889" height="1270" viewBox="0 0 889 1270" role="img" aria-labelledby="title">
-    <title id="title">자문 변호사 프로필 사진 준비 중</title>
-    <rect width="889" height="1270" fill="#ffffff"/>
+    <title id="title">자문변호사 기본 프로필 이미지</title>
+    <rect width="889" height="1270" fill="#f1f3f5"/>
+    <circle cx="444.5" cy="635" r="292" fill="#d5d9de"/>
+    <circle cx="444.5" cy="536" r="112" fill="#ffffff"/>
+    <path d="M236.5 829c0-114.9 93.1-208 208-208s208 93.1 208 208v44h-416z" fill="#ffffff"/>
 </svg>
