@@ -131,7 +131,7 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">이름 *</label>
-                                    <input type="text" id="name" name="name" required placeholder="이름을 입력하세요">
+                                    <input type="text" id="name" name="name" required maxlength="100" placeholder="이름을 입력하세요">
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">연락처 *</label>
@@ -157,18 +157,29 @@
                                 </div>
                             </div>
 
+                            <div class="form-group">
+                                <label for="nationality">국적 *</label>
+                                <select id="nationality" name="nationality" required>
+                                    <option value="">선택하세요</option>
+                                    <option value="KOR">대한민국</option>
+                                    <option value="OTHER">기타 국가</option>
+                                </select>
+                            </div>
+
                             <div class="form-group full">
                                 <label for="message">상담내용 *</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="상담하실 내용을 자세히 작성해주세요"></textarea>
+                                <textarea id="message" name="message" rows="6" required minlength="10" maxlength="1950" placeholder="상담하실 내용을 10자 이상 작성해주세요"></textarea>
                             </div>
 
                             <div class="form-footer">
                                 <label class="privacy-check">
-                                    <input type="checkbox" required>
+                                    <input type="checkbox" name="consentPrivacy" required>
                                     <span>개인정보 수집 및 이용에 동의합니다</span>
                                 </label>
-                                <button type="submit" class="submit-btn">상담 신청하기</button>
+                                <button type="submit" class="submit-btn" disabled>상담 신청하기</button>
                             </div>
+                            <p id="contactStatus" role="status" aria-live="polite"></p>
+                            <noscript>온라인 상담 접수에는 JavaScript가 필요합니다. 현재 문의는 접수되지 않았습니다.</noscript>
                         </form>
                     </div>
                 </div>
@@ -270,6 +281,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script async defer src="https://www.google.com/recaptcha/enterprise.js?render=6LeE3x4sAAAAAAvqktA6CeAWI-YQ1Mw6l_iHd8ks"></script>
+    <script src="./contact-form.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

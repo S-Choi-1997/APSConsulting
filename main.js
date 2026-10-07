@@ -153,49 +153,8 @@
             $(this).val(value);
         });
 
-        // 상담 폼 제출
-        $('#contactForm').on('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = {
-                name: $('#name').val(),
-                phone: $('#phone').val(),
-                message: $('#message').val()
-            };
+        // 상담 전송은 contact-form.js에서 처리합니다.
 
-            // 유효성 검사
-            if (!formData.name || !formData.phone || !formData.message) {
-                alert('모든 항목을 입력해주세요.');
-                return;
-            }
-
-            // 개인정보 동의 확인
-            if (!$('.privacy-check input').is(':checked')) {
-                alert('개인정보 수집 및 이용에 동의해주세요.');
-                return;
-            }
-
-            // 실제 서버로 전송하는 코드 (예시)
-            /*
-            $.ajax({
-                url: '/api/contact',
-                method: 'POST',
-                data: formData,
-                success: function(response) {
-                    alert('상담 신청이 완료되었습니다.');
-                    $('#contactForm')[0].reset();
-                },
-                error: function(error) {
-                    alert('오류가 발생했습니다. 다시 시도해주세요.');
-                }
-            });
-            */
-
-            // 임시: 콘솔 출력
-            console.log('Form submitted:', formData);
-            alert('상담 신청이 완료되었습니다.\n빠른 시일 내에 연락드리겠습니다.');
-            this.reset();
-        });
     }
 
     // ============================================
@@ -352,3 +311,4 @@
     };
 
 })(jQuery);
+
